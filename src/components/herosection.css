@@ -1,0 +1,34 @@
+/* Apply background image to the hero section */
+.hero {
+    /* margin-top: -3rem; */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFdNhGGacc6FWmvBb_gMva3Z6IfaBVuTZKYw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwZi749VUTHxZmI0J5vzZAx13V7tpAVWDFg&s'); /* Replace with a valid direct image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center;  */
+    text-align: center;
+}
+.welcome{
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* Styling for CTA buttons */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;  
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #626462;
+}
