@@ -1,34 +1,97 @@
-/* Apply background image to the hero section */
-.hero {
-    /* margin-top: -3rem; */
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFdNhGGacc6FWmvBb_gMva3Z6IfaBVuTZKYw&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwZi749VUTHxZmI0J5vzZAx13V7tpAVWDFg&s'); /* Replace with a valid direct image URL */
+body, section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove margin and padding from header and hero section */
+header, .hero-section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styling to the hero section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 0; /* Ensure no margin around the hero section */
+    padding: 0; /* Ensure no padding around the hero section */
+    /* No additional margin here, so it should touch the navbar */
+}
+
+.hero-section .hero-content {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGNqwA1Y9RR5YsLp9xAEVP2aL0EK_c7TUt1g&s'); /* Replace with a valid 4K image URL */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center;  */
-    text-align: center;
-}
-.welcome{
-    margin-top: -2rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    background-position: center;
+    padding: 100px 20px; /* Adjust padding as needed */
+    min-height: 400px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+.hero-section h2 {
+    font-size: 2.5rem; /* Adjust font size for large screens */
+    margin: 0;
+    line-height: 1.2;
+}
 
-/* Styling for CTA buttons */
+.hero-section p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 800px; /* Control text width for readability */
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+}
+
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 16px;
     color: #fff;
-    background-color: #0a0a0a;
+    background-color: #0f0f0f; /* Adjust the color as needed */
     border: none;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    margin: 0 10px;  
-    transition: background-color 0.3s ease;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #626462;
+    background-color: #6a6b6d; /* Adjust hover color */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.welcome {
+    font-family: 'Roboto', sans-serif; /* Change to a modern, clean font */
+    font-style: italic;
+    color: rgb(250, 250, 253);
+    font-weight: bold; /* Makes the text bold */
+    font-size: 2rem;
+    text-align: center;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }

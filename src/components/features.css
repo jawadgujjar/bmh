@@ -1,0 +1,127 @@
+/* src/components/features.css */
+
+/* Container for features section */
+.features-container {
+    padding: 2rem;
+    background-color: #f4f4f4; /* Light background color for contrast */
+    text-align: center; /* Center align text */
+}
+
+/* Flex container for weoffers and additional text */
+.weoffers-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 1rem; /* Space between columns */
+    justify-content: center; /* Center align content */
+    margin-bottom: 2rem; /* Space below the container */
+}
+
+/* Styles for weoffers section */
+.weoffers {
+    flex: 1;
+    text-align: center;
+    font-style: italic;
+    padding: 1.5rem;
+    color: #333; /* Darker color for better readability */
+    background: #ffffff; /* White background for clarity */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold; /* Makes the text bold */
+    font-size: 2rem; /* Adjust font size */
+    margin: 0;
+}
+
+/* Styles for additional text section */
+.additional-text {
+    flex: 1;
+    text-align: center;
+    font-style: italic;
+    background: #ffffff; /* White background for clarity */
+    padding: 1.5rem;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.additional-text h3 {
+    font-size: 1.75rem; /* Adjust header size */
+    margin-bottom: 0.5rem; /* Space below header */
+}
+
+.additional-text p {
+    font-size: 1rem; /* Adjust text size */
+    color: #666; /* Subtle gray for additional text */
+}
+
+/* Ant Design Card Styles */
+.ant-card {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    margin-bottom: 1.5rem; /* Space below each card */
+    text-align: left; /* Align text to the left */
+    background-color: #f5f5f5; /* Default light gray background color */
+    color: #333; /* Default text color */
+}
+
+/* Different shades of gray for each card */
+.ant-card:nth-child(1) {
+    background-color: #e0e0e0; /* Light gray */
+}
+
+.ant-card:nth-child(2) {
+    background-color: #c0c0c0; /* Medium light gray */
+}
+
+.ant-card:nth-child(3) {
+    background-color: #a0a0a0; /* Medium gray */
+}
+
+.ant-card:nth-child(4) {
+    background-color: #808080; /* Darker gray */
+}
+
+.ant-card:nth-child(5) {
+    background-color: #606060; /* Even darker gray */
+}
+
+/* Hover effects */
+.ant-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Card title styling */
+.ant-card-head-title {
+    font-weight: bold; /* Bold title */
+    font-size: 1.25rem; /* Adjust title size */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .weoffers-container {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 1rem; /* Space between stacked sections */
+    }
+
+    .weoffers, .additional-text {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .ant-card {
+        margin-bottom: 1rem; /* Adjust spacing between cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .features-container {
+        padding: 1rem; /* Further reduce padding */
+    }
+
+    .weoffers, .additional-text {
+        padding: 0.75rem; /* Further reduce padding inside sections */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .ant-card {
+        margin-bottom: 0.5rem; /* Adjust spacing between cards */
+    }
+}

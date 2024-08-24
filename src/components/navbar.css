@@ -1,7 +1,44 @@
-/* Navbar.css */
+/* src/components/navbar.css */
 
+/* Navbar styling */
 .navbar {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd; /* Optional: Adds a border at the bottom */
+  margin: 0; /* Ensure no margin at the bottom */
+  padding: 0; /* Remove padding if causing extra space */
+  border-bottom: 1px solid #ddd; /* Optional: Adds a border at the bottom */
+  background-color: #343a40; /* Dark background color */
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.navbar-brand .brand-name {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+/* Nav links styling */
+.nav-link {
+  margin-left: 1rem;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #17a2b8; /* Change color on hover */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 992px) {
+  .navbar-brand {
+      flex-direction: column;
+      text-align: center;
   }
-  
+
+  .navbar-brand .brand-name {
+      margin-left: 0;
+      margin-top: 0.5rem;
+  }
+}
