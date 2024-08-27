@@ -15,7 +15,7 @@ const Features = () => (
             </div>
         </div>
 
-        {/* First Row */}
+        
         <Row gutter={[16, 16]} justify="center">
             <Col xs={24} sm={12} md={8}  >
                 <Card title="Brand Marketing" bordered={false}>

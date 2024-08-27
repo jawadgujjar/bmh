@@ -19,6 +19,8 @@ const App = () => {
             <Features />
             <Car/>
             <About />
+            <Contact />
+            <Footer/>
             {/* <Features />
             <About />
             <Contact />

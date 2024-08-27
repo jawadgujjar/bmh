@@ -1,23 +1,53 @@
 import React from 'react';
-import { Carousel } from 'antd';
-import './carousel.css'; // Ensure this is the correct path to your CSS file
+import Carousel from 'react-bootstrap/Carousel';
+import './carousel.css';  // Import your CSS file
+
+const ExampleCarouselImage = ({ src, alt }) => (
+  <img
+    className="d-block w-100 carousel-img"
+    src={src}
+    alt={alt}
+  />
+);
 
 const Car = () => (
-  <div className="carousel-container">
-    <Carousel autoplay>
-      <div>
-        <img src="https://via.placeholder.com/800x300?text=Slide+1" alt="Slide 1" className="carousel-img" />
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/800x300?text=Slide+2" alt="Slide 2" className="carousel-img" />
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/800x300?text=Slide+3" alt="Slide 3" className="carousel-img" />
-      </div>
-      <div>
-        <img src="https://via.placeholder.com/800x300?text=Slide+4" alt="Slide 4" className="carousel-img" />
-      </div>
-    </Carousel>
+  <div className="carousel-wrapper">
+    <div className="carousel-container">
+      <Carousel>
+        <Carousel.Item>
+          <ExampleCarouselImage
+            src="https://images.unsplash.com/photo-1499914485622-a88fac536970?w=800&auto=format&fit=crop&q=60"
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <ExampleCarouselImage
+            src="https://images.unsplash.com/photo-1499914485622-a88fac536970?w=800&auto=format&fit=crop&q=60"
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <ExampleCarouselImage
+            src="https://images.unsplash.com/photo-1499914485622-a88fac536970?w=800&auto=format&fit=crop&q=60"
+            alt="Third slide"
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   </div>
 );
 

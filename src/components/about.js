@@ -1,14 +1,35 @@
 // src/components/About.js
 import React from 'react';
+import Image from '../assests/image/aboutus.png'; // Ensure the path is correct
 import './about.css';
+import CircleIcon from '@mui/icons-material/Circle';
 
 const About = () => {
     return (
         <section id="about">
+            <h1 className="about">About Us</h1>
             <div className="container">
-                <h2>About Us</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div className="text-content">
+                    <h2>About Brand Marketing Hub</h2>
+                    <h3>At Brand Marketing Hub, we are a team of Brand marketing, Digital marketing, SEO Specialists, Web Development and creators dedicated to helping businesses thrive in the fast-paced digital landscape. Our mission is to harness technology and imagination to achieve real results and help our clients succeed.</h3>
+                </div>
+                <div className="image-content">
+                    <img src={Image} alt="aboutus" />
+                </div>
             </div>
+            
+            <div className="container1">
+    <h2 className="ourservices">Our services Includes</h2>
+
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+    <p><CircleIcon className="circle-icon" /> SEO: Developing strategies to improve your website's search engine rankings, drive organic traffic, and grow.</p>
+</div>
+
         </section>
     );
 };
