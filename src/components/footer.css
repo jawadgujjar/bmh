@@ -1,75 +1,73 @@
-/* General styling for the footer */
+/* src/components/Footer.css */
+
 .footer {
-    background-color: #333; /* Dark background color for contrast */
-    color: #f9f9f9; /* Light text color for readability */
-    padding: 2rem 1rem; /* Add padding around the footer */
-    text-align: center; /* Center align text */
-}
-
-.footer-content {
-    max-width: 1200px; /* Limit the width of the content */
-    margin: 0 auto; /* Center align the content horizontally */
-}
-
-.footer-logo h1 {
-    margin-bottom: 1rem; /* Space below the logo */
-    font-size: 2rem; /* Adjust font size */
-}
-
-.footer-nav ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-}
-
-.footer-nav ul li {
-    display: inline; /* Display list items in a row */
-    margin: 0 1rem; /* Space between list items */
-}
-
-.footer-nav ul li a {
-    color: #f9f9f9; /* Light text color */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 1rem; /* Adjust font size */
-}
-
-.footer-nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-.footer-social {
-    margin: 1rem 0; /* Space above and below social links */
-}
-
-.footer-social a {
-    color: #f9f9f9; /* Light text color */
-    margin: 0 0.5rem; /* Space between social links */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 1rem; /* Adjust font size */
-}
-
-.footer-social a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-.footer-bottom {
-    margin-top: 1rem; /* Space above the bottom section */
-    font-size: 0.875rem; /* Smaller font size */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .footer-nav ul {
-        display: flex; /* Display list items in a row */
-        flex-direction: column; /* Stack list items vertically */
-    }
-
-    .footer-nav ul li {
-        margin: 0.5rem 0; /* Space between items */
-    }
-
-    .footer-social a {
-        display: block; /* Stack social links vertically */
-        margin: 0.5rem 0; /* Space between social links */
-    }
-}
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between columns */
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 220px; /* Ensures a minimum width for each column */
+    padding: 10px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  

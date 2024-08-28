@@ -1,0 +1,122 @@
+/* aboutorigin.css */
+
+#about {
+    background-color: #f9f9f9; /* Background color for the section */
+     
+}
+
+.origin-container {
+    text-align: center; /* Center-align text in the container */
+}
+
+.origin-container1 {
+    background-color: #585757; /* Dark background for contrast */
+    padding: 2em;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+     
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.ourorigin {
+    font-size: 2.5rem; /* Increase font size for the heading */
+    font-weight: bold;
+    color: #fff; /* White color for the heading text */
+    margin-bottom: 1rem;
+}
+
+.werose {
+    font-size: 1.1rem; /* Adjust font size for better readability */
+    color: #ddd; /* Lighter gray for the subheading */
+    margin-bottom: 3rem; /* Adjust margin for spacing */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the grid container */
+    gap: 1.5em; /* Increased space between cards */
+    margin-top: 2em; /* Add top margin for spacing */
+}
+
+.card {
+    background-color: #fff; /* White background for the card */
+    padding: 1.5em; /* Add padding inside cards */
+    border-radius: 12px; /* Rounded corners for cards */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more lifted effect */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+    color: #333; /* Dark text color for better readability */
+    width: 100%; /* Ensure the card takes full width of its column */
+    max-width: 350px; /* Maximum width of the card */
+}
+
+.cardtext {
+    color: #333; /* Dark text color for the card content */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ourorigin {
+        font-size: 2rem; /* Adjust font size for medium screens */
+    }
+
+    .werose {
+        font-size: 1rem; /* Adjust font size for medium screens */
+        margin-bottom: 2rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center; /* Center-align cards in column layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .ourorigin {
+        font-size: 1.5rem; /* Adjust font size for small screens */
+    }
+
+    .werose {
+        font-size: 0.9rem; /* Adjust font size for small screens */
+        margin-bottom: 1.5rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center; /* Center-align cards in column layout */
+    }
+}
+
+@media (max-width: 375px) {
+    .ourorigin {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    .werose {
+        font-size: 0.9rem; /* Adjust font size for small screens */
+        margin-bottom: 1.5rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center; /* Center-align cards in column layout */
+        margin-left: -17px;
+    }
+    .card {
+        background-color: #fff; /* White background for the card */
+        padding: 1.5em; /* Add padding inside cards */
+        border-radius: 12px; /* Rounded corners for cards */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for a more lifted effect */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+        color: #333; /* Dark text color for better readability */
+        width: 100%; /* Ensure the card takes full width of its column */
+        
+    }
+}

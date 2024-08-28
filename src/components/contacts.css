@@ -2,7 +2,6 @@
 #contact {
     background-color: #f9f9f9; /* Light background color for the contact section */
     padding: 50px 20px; /* Add padding around the section */
-    display: flex; /* Use flexbox for centering */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
   }
@@ -76,6 +75,55 @@
     background-color: #6a6b6d; /* Darker shade of the primary color on hover */
   }
   
+  .contact{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .gethelp{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+  }
+  .contacttoday{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .cta-buttons {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0f0f0f; /* Adjust the color as needed */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   
+}
+
+.cta-button:hover {
+    background-color: #6a6b6d; /* Adjust hover color */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .contact-heading {

@@ -5,8 +5,17 @@ import './contacts.css';
 const Contact = () => {
     return (
         <section id="contact">
+            <h1 className="contact">CONTACT US</h1>
+             <h4 className="gethelp">Get the Help you need</h4>
+             <p className="contacttoday">Contact us today and let’s start creating something amazing together!</p>
+           
+             <div className="cta-buttons">
+                    <a href="#contact" className="cta-button"> info@bmh.com</a>
+                    <a href="#contact" className="cta-button">(410) 834-9965</a>
+                </div>
+
             <div className="contact-container">
-                <h2 className="contact-heading">Contact Us</h2>
+                
                 <form className="contact-form" action="#" method="post">
                     <div className="form-group">
                         <label htmlFor="name">Name:</label>

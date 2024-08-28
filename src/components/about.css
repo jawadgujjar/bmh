@@ -55,25 +55,46 @@
 .container1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
     background-color: black;
     color: #f9f9f9;
     border-radius: 2px;
     padding: 1em;
-    text-align: center;
     margin-top: 1px;
 }
 
 .ourservices {
     font-size: 2rem;
     margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.circle-icon {
+.ourorigin {
     font-size: 2rem;
-    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    padding: 1em;
+    margin-top: 1px;
 }
+/* App.css */
+
+
+.circle-icon {
+    vertical-align: middle; /* Align the icon with the text vertically */
+    margin-right: 0.5em; /* Space between the icon and the text */
+}
+
+p {
+    margin: 0.5em 0; /* Adjust spacing between paragraphs */
+}
+
 
 .service-list {
     width: 100%;
