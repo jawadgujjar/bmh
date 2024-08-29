@@ -1,141 +1,164 @@
-/* General styling for the contact section */
+/* Centering the contact section */
 #contact {
-    background-color: #f9f9f9; /* Light background color for the contact section */
-    padding: 50px 20px; /* Add padding around the section */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-  
-  /* Container for the contact form */
-  .contact-container {
-    background-color: #fff; /* White background color for the form container */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 600px; /* Limit the maximum width */
-    width: 100%; /* Full width for small screens */
-    padding: 30px; /* Padding inside the container */
-  }
-  
-  /* Styling for the heading */
-  .contact-heading {
-    text-align: center; /* Center align heading */
-    font-size: 2rem; /* Larger font size */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #333; /* Dark color for contrast */
-  }
-  
-  /* Styling for the form */
-  .contact-form {
-    display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-  }
-  
-  /* Styling for form groups */
-  .form-group {
-    margin-bottom: 20px; /* Space between form groups */
-  }
-  
-  /* Styling for form labels */
-  .form-group label {
-    display: block; /* Ensure label takes full width */
-    font-size: 1rem; /* Font size for labels */
-    margin-bottom: 5px; /* Space below the label */
-    color: #333; /* Dark color for contrast */
-  }
-  
-  /* Styling for form inputs */
-  .form-group input, .form-group textarea {
-    width: 100%; /* Full width for input fields */
-    padding: 10px; /* Padding inside the input fields */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in element's width and height */
-  }
-  
-  /* Styling for the textarea */
-  .form-group textarea {
-    height: 150px; /* Set height for textarea */
-    resize: vertical; /* Allow vertical resizing */
-  }
-  
-  /* Styling for the submit button */
-  .submit-button {
-    background-color: #0d0d0e; /* Primary color for the button */
-    color: #fff; /* White text color */
-    border: none; /* Remove border */
-    padding: 15px; /* Padding inside the button */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1rem; /* Font size for the button */
-    transition: background-color 0.3s ease; /* Smooth background color transition */
-  }
-  
-  /* Button hover effect */
-  .submit-button:hover {
-    background-color: #6a6b6d; /* Darker shade of the primary color on hover */
-  }
-  
-  .contact{
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 3rem;
-  }
-  .gethelp{
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-style: italic;
-    text-align: center;
-  }
-  .contacttoday{
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-style: italic;
-    text-align: center;
-  }
+  background-color: #f9f9f9; /* Light background color for the contact section */
+  padding: 50px 20px; /* Add padding around the section */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  min-height: 100vh; /* Full viewport height to center vertically */
+}
 
-  .cta-buttons {
-    margin-top: 2rem;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
+/* Container for the contact form */
+.contact-container {
+  background-color: #dad5d5; /* White background color for the form container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 600px; /* Limit the maximum width */
+  width: 100%; /* Full width for small screens */
+  padding: 30px; /* Padding inside the container */
+  margin-top: 3rem; /* Margin above the container */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: left; /* Center items horizontally */
+}
+
+/* Styling for the heading */
+.contact-heading {
+  text-align: center; /* Center align heading */
+  font-size: 2rem; /* Larger font size */
+  margin-bottom: 20px; /* Space below the heading */
+  color: #333; /* Dark color for contrast */
+}
+
+/* Styling for the form */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  font-weight: bold;
+}
+
+/* Styling for form groups */
+.form-group {
+  margin-bottom: 20px; /* Space between form groups */
+}
+
+/* Styling for form labels */
+.form-group label {
+  display: block; /* Ensure label takes full width */
+  font-size: 1rem; /* Font size for labels */
+  margin-bottom: 5px; /* Space below the label */
+  color: #333; /* Dark color for contrast */
+}
+
+/* Styling for form inputs */
+.form-group input, .form-group textarea {
+  width: 100%; /* Full width for input fields */
+  padding: 10px; /* Padding inside the input fields */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+/* Styling for the textarea */
+.form-group textarea {
+  height: 150px; /* Set height for textarea */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+/* Styling for the submit button */
+.submit-button {
+  background-color: #0d0d0e; /* Primary color for the button */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  padding: 15px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size for the button */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Button hover effect */
+.submit-button:hover {
+  background-color: #6a6b6d; /* Darker shade of the primary color on hover */
+}
+
+/* Other classes */
+.contact {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 20px;
+  margin-top: -18px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.gethelp {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contacttoday {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: center;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #0f0f0f; /* Adjust the color as needed */
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-   
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0f0f0f;  
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #6a6b6d; /* Adjust hover color */
-    transform: translateY(-2px); /* Subtle lift effect */
+  background-color: #6a6b6d; 
+  transform: translateY(-2px); 
 }
 
+.privacy {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
+.nomobile {
+  font-weight: bold;
+  margin-left: 1rem;
+}
 
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .contact-heading {
-      font-size: 1.5rem; /* Adjust font size for smaller screens */
-    }
-  
-    .form-group input, .form-group textarea {
-      font-size: 0.9rem; /* Adjust font size for input fields */
-    }
-  
-    .submit-button {
-      font-size: 0.9rem; /* Adjust font size for the button */
-    }
+.byproviding {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+ 
+@media (max-width: 768px) {
+  .contact-heading {
+      font-size: 1.5rem;  
   }
-  
+
+  .form-group input, .form-group textarea {
+      font-size: 0.9rem;  
+  }
+
+  .submit-button {
+      font-size: 0.9rem ;
+  }
+}

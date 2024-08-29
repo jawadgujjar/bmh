@@ -20,6 +20,7 @@
     align-items: center;
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Text content styling */
@@ -31,11 +32,11 @@
 .text-content h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-style: italic;
+     
 }
 
 .text-content h3 {
-    font-size: 1rem;
+    font-size: 0rem;
     line-height: 1.5;
 }
 

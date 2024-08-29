@@ -2,11 +2,6 @@
 import React from 'react';
 import Image from '../assests/image/aboutus.png'; // Ensure the path is correct
 import './about.css';
-import Aboutorigin1 from '../components/aboutorigin';
-import Leadershipteam from './leadership';
- 
- 
-
 import CircleIcon from '@mui/icons-material/Circle';
  
 const About = () => {
@@ -33,10 +28,6 @@ const About = () => {
     <p><CircleIcon className="circle-icon" /> E-Commerce Specialization:We offer tailored solutions for platform development, user experience optimization, and digital marketing strategies to drive sales and growth.</p>
      
 </div>
-
-       <Aboutorigin1/>
-       <Leadershipteam/>
-         
         </section>
     );
 };

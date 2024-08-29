@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import About from './components/about';
+import Aboutpage1 from './pages/aboutpage'
 import Contact from './components/contacts';
 import Features from './components/features';
 import Landingpage from './pages/landing';
@@ -15,7 +15,7 @@ const AppRoutes = () => {
                 <Route path="/" element={<Landingpage />} />
                 <Route path="/home" element={<Landingpage />} />
                 <Route path="/features" element={<Features />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/about" element={<Aboutpage1 />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer1 />

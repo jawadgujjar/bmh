@@ -1,0 +1,26 @@
+/* Container for carousel items */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-item:hover {
+    background-color: #ccc; /* Change background on hover */
+  }
+  
+  /* Additional styling for carousel if needed */
+  .alice-carousel {
+    width: 100%; /* Ensure carousel takes full width */
+    max-width: 1200px; /* Optional: Max width to limit size */
+    margin: 0 auto; /* Center carousel */
+  }
+  

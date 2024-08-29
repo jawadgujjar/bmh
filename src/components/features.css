@@ -17,14 +17,12 @@
 /* Styles for weoffers section */
 .weoffers {
     flex: 1;
-    text-align: center;
+    text-align: right;
     font-style: italic;
-    padding: 1.5rem;
     color: #333; /* Darker color for better readability */   
-    border-radius: 8px; /* Rounded corners */
     font-weight: bold; /* Makes the text bold */
     font-size: 3rem; /* Adjust font size */
-    margin: 0;
+    
 }
 
 /* Styles for additional text section */
@@ -33,7 +31,8 @@
     text-align: center;
     font-style: italic;
     padding: 1.5rem;
-    border-radius: 8px; /* Rounded corners */
+    text-align: left;
+     
 }
 
 .additional-text h3 {
@@ -56,6 +55,26 @@
     background-color: #f5f5f5; /* Default light gray background color */
     color: #333; /* Default text color */
 }
+.learnmore{
+  text-align: center;
+  font-weight: bold;
+}
+
+.learnmore {
+    margin-top: 1rem; /* Adjust spacing above the link */
+    font-weight: bold; /* Make the text bold */
+}
+
+.learnmore a {
+    color: #1f2525; /* Link color */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.learnmore a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #080808; /* Darker color on hover for better visibility */
+}
+
 
 /* Different shades of gray for each card */
 .ant-card:nth-child(1) {

@@ -14,6 +14,10 @@ const Contact = () => {
                     <a href="#contact" className="cta-button">(410) 834-9965</a>
                 </div>
 
+                <p className="privacy">Privacy Policy</p>
+             <p className="nomobile"> 1. No email or name information will be shared with third parties or affiliates for marketing or IT purposes. All other categories of information are excluded from this policy.</p>
+             <p className="byproviding"> 2.By providing your email address, name and message and submitting this form, you are consenting to be contacted via email.You can opt-out of further emails by replying to the email with 'UNSUBSCRIBE'.</p>
+
             <div className="contact-container">
                 
                 <form className="contact-form" action="#" method="post">
