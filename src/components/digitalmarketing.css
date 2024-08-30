@@ -155,9 +155,17 @@
 .image-content {
     flex: 1; /* Allow the image container to take up available space */
 }
+.image-content1 {
+    flex: 1; /* Allow the image container to take up available space */
+    margin-top: 5rem;
+}
 
 /* Ensure image fits well */
 .image-content img {
+    width: 100%; /* Ensure image takes up full width of container */
+    height: auto; /* Maintain aspect ratio */
+}
+.image-content1 img {
     width: 100%; /* Ensure image takes up full width of container */
     height: auto; /* Maintain aspect ratio */
 }
@@ -210,6 +218,9 @@
     }
 
     .image-content {
+        margin-top: 20px; /* Add space above the image when stacked */
+    }
+    .image-content1 {
         margin-top: 20px; /* Add space above the image when stacked */
     }
 }

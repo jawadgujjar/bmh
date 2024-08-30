@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
-import './faqs.css';
+import './faqseo.css';
 
 const FAQseo = () => {
     const [openIndex, setOpenIndex] = useState(null);

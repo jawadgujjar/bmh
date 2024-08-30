@@ -4,13 +4,15 @@
   padding: 0; /* Remove padding if causing extra space */
   border-bottom: 1px solid #ddd; /* Optional: Adds a border at the bottom */
   background-color: #343a40; /* Dark background color */
+  height: 80px; /* Set a fixed height for the navbar */
 }
 
-/* Navbar brand styling */
+/* Adjust padding and font size within the navbar to fit the new height */
 .navbar-brand {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* Font size of the brand name */
+  height: 100%; /* Ensure brand takes full height */
 }
 
 .navbar-brand .brand-name {
@@ -19,7 +21,12 @@
   color: #ffffff; /* Ensure the brand name is readable */
 }
 
-/* Nav links styling */
+.navbar-nav {
+  height: 100%; /* Ensure nav links take full height */
+  display: flex;
+  align-items: center; /* Center align nav links vertically */
+}
+
 .nav-link {
   margin-left: 1rem;
   color: #ffffff; /* Default link color */
@@ -31,36 +38,18 @@
   font-weight: bold;
 }
 
-/* Dropdown menu styling */
-.nav-dropdown .dropdown-toggle {
-  display: flex;
-  align-items: center;
-  color: #ffffff; /* Ensure the dropdown toggle text is readable */
-}
-
-.nav-dropdown .dropdown-toggle span {
-  margin-right: 5px; /* Space between text and icon */
-}
-
-.nav-dropdown .dropdown-menu {
-  background-color: #343a40; /* Dark background for dropdown menu */
-  border: none; /* Remove border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-}
-
-.nav-dropdown .dropdown-item {
-  color: #ffffff; /* Default item color */
-}
-
-.nav-dropdown .dropdown-item:hover {
-  background-color: #495057; /* Darker background on hover */
-}
-
 /* Responsive styling for small screens */
 @media (max-width: 992px) {
+  .navbar {
+    height: auto; /* Allow height to adjust based on content */
+    padding: 0.5rem 0; /* Add some padding for small screens */
+  }
+
   .navbar-brand {
     flex-direction: column;
     text-align: center;
+    height: auto; /* Reset height on small screens */
+    padding: 0.5rem 0; /* Add some padding for better spacing */
   }
 
   .navbar-brand .brand-name {
@@ -70,10 +59,22 @@
 
   .navbar-nav {
     text-align: center; /* Center nav links on small screens */
+    margin-top: 0.5rem; /* Add some space above nav links */
   }
 
   .nav-link {
     margin-left: 0; /* Remove margin for nav links on small screens */
+    margin-bottom: 0.5rem; /* Add space between links */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column; /* Stack nav links vertically on extra-small screens */
+  }
+
+  .nav-link {
+    margin-left: 0; /* Remove margin on extra-small screens */
     margin-bottom: 0.5rem; /* Add space between links */
   }
 }

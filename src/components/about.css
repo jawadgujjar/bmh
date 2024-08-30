@@ -100,6 +100,9 @@ p {
 .service-list {
     width: 100%;
 }
+.span{
+    color: rgb(253, 126, 20);
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

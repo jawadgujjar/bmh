@@ -1,10 +1,10 @@
 
 import React from 'react';
 import Image from '../assests/image/seo.png';
-import Image1 from '../assests/image/seoo.png'
+import Image1 from '../assests/image/seoo.png';
+import { Link } from 'react-router-dom'; 
 import './seo.css';
 import { FaFire  } from 'react-icons/fa';
-import FAQseo from './faqseo';
 
  
 const Seo1 = () => {
@@ -51,14 +51,12 @@ const Seo1 = () => {
                 <p className="points-text">Social Media Marketing: Creating engaging content and campaigns that build brand awareness, foster community growth, and increase conversions.</p>
                 <p className="points-text">Google Ads: Developing targeted advertising solutions to reach your ideal audience, maximize ROI and grow business.</p>
                 <div className="cta-buttons">
-                    <a href="#contact" className="cta-button">Get Started</a>
+                    
+                    <Link to="/contact" className="cta-button">Get Started</Link>
                 </div>
             </div>
            
         </div>
-
-         
-        <FAQseo/>
 
         </section>
     );

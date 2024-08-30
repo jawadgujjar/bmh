@@ -11,7 +11,11 @@ const ExampleCarouselImage = ({ src, alt }) => (
 );
 
 const Car = () => (
+  <div className="customerdiv">
+     <h1 className="customer">From our customers</h1>
+     <h5 className="customer">Client highlighting our services and successful results.</h5>
   <div className="carousel-wrapper">
+   
     <div className="carousel-container">
       <Carousel>
         <Carousel.Item>
@@ -48,6 +52,7 @@ const Car = () => (
         </Carousel.Item>
       </Carousel>
     </div>
+  </div>
   </div>
 );
 

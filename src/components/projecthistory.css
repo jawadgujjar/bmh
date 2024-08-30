@@ -1,0 +1,103 @@
+/* src/components/ProjectHistory.css */
+
+.project-history {
+    padding: 60px 0;
+    background-color: #58595a; /* Dark background for contrast */
+}
+
+.container2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   align-items: center;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px; /* Space between heading and the statistics */
+    color: #f5f0f0;
+    font-weight: bold;
+    position: relative; /* Ensure the title is positioned relative to its normal flow */
+}
+
+.span {
+    color: rgb(253, 126, 20);
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    text-align: center;
+}
+
+.col-md-4 {
+    flex: 1;
+    max-width: 33.333%; /* Ensure that columns fit into three columns layout */
+    margin: 0 15px; /* Add margin for spacing between columns */
+    box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 3rem;
+    margin: 0;
+    color: #0a0a0a;
+    animation: pulse 1.5s infinite;
+}
+
+.stat-label {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #080808;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 425px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -2.6rem;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}

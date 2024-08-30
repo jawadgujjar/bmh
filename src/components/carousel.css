@@ -19,6 +19,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   background-color: #fff;  
 }
+.customer{
+  text-align: center;
+  color: #fff;
+  
+}
+.customerdiv{
+  background-color: #0e0d0d;
+}
 
 /* Styling for carousel images */
 .carousel-img {

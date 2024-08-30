@@ -2,9 +2,10 @@
 import React from 'react';
 import Image from '../assests/image/brandmarketing.png';
 import Image1 from '../assests/image/digital.png'
+import { Link } from 'react-router-dom'; 
 import './brandmarketing.css';
 import { FaFire  } from 'react-icons/fa';
-import FAQ1 from './faqs';
+ 
  
  
 const Brandmarketing1 = () => {
@@ -51,15 +52,13 @@ const Brandmarketing1 = () => {
                 <p className="points-text">Consistent Messaging: Maintain uniformity in brand voice and messaging.</p>
                 <p className="points-text">Customer Engagement: Foster meaningful interactions to build loyalty.</p>
                 <div className="cta-buttons">
-                    <a href="#contact" className="cta-button">Get Started</a>
+                <Link to="/contact" className="cta-button">Get Started</Link>
                 </div>
             </div>
            
         </div>
         
-        <FAQ1/>
-
-
+         
         </section>
     );
 };

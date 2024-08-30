@@ -109,6 +109,9 @@
     font-size: 1.25rem; /* Adjust title size */
     color: #333; /* Dark text color for better readability */
 }
+.spann{
+    color: rgb(253, 126, 20);
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

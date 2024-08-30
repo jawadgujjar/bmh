@@ -10,7 +10,7 @@ const About = () => {
             <h1 className="about">ABOUT US</h1>
             <div className="container">
                 <div className="text-content">
-                    <h2>About Brand Marketing Hub</h2>
+                    <h2>About <span className="span">Brand Marketing</span>  Hub</h2>
                     <h3>At Brand Marketing Hub, we are a team of Brand marketing, Digital marketing, SEO Specialists, Web Development and creators dedicated to helping businesses thrive in the fast-paced digital landscape. Our mission is to harness technology and imagination to achieve real results and help our clients succeed.</h3>
                 </div>
                 <div className="image-content">
