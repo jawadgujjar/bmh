@@ -5,7 +5,7 @@ import './projecthistory.css';
 const Projecthistory1 = () => {
     return (
         <section className="project-history">
-             <h3 className="section-title">Our <span className="span">Company</span> Success</h3>
+             <h1 className="section-title">Our <span className="span">Company</span> Success</h1>
             <div className="container2">
                
                 <div className="row">

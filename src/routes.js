@@ -11,11 +11,16 @@ import Seopage1 from './pages/seopage';
 import Ecommercepage1 from './pages/ecommercepage';
 import Digitalmarketingpage1 from './pages/digitalmarketingpage';
 import Webdevelopmentpage1 from './pages/webdevelopmentpage';
+import Privacy1 from './components/privacypolicy';
+import Refund1 from './components/refundpolicy';
+import Termofservice1 from './components/termofservice';
+import ScrollToTop from './components/scroll';
 
 const AppRoutes = () => {
     return (
         <Router>
             <Header/>
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Landingpage />} />
                 <Route path="/home" element={<Landingpage />} />
@@ -27,6 +32,9 @@ const AppRoutes = () => {
                 <Route path="/ecommercepage" element={<Ecommercepage1 />} />
                 <Route path="/digitalmarketingpage" element={<Digitalmarketingpage1 />} />
                 <Route path="/webdevelopmentpage" element={<Webdevelopmentpage1 />} />
+                <Route path="/privacypolicy" element={<Privacy1 />} />
+                <Route path="/refundpolicy" element={<Refund1 />} />
+                <Route path="/termofservice" element={<Termofservice1 />} />
             </Routes>
             <Footer1 />
         </Router>

@@ -148,6 +148,41 @@
   margin-left: 1rem;
 }
 
+/* form bottom part */
+.info-row1 {
+  display: flex; /* Use Flexbox for row layout */
+  justify-content: space-around; /* Space out columns evenly */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add padding around the row */
+  padding-top: 4rem;
+}
+
+/* Style for each column */
+.info-column {
+  text-align: center; /* Center text and icon within column */
+  flex: 1; /* Allow columns to grow equally */
+  padding: 10px; /* Add padding within each column */
+}
+
+/* Style for the icons */
+.info-icon {
+  font-size: 3rem; /* Set the size of the icons to 3rem */
+  color: rgb(253, 126, 20); /* Set icon color */
+  margin-bottom: 10px; /* Add space below the icon */
+}
+
+/* Style for the text */
+.info-text {
+  font-size: 1.5rem; /* Set the font size */
+  color: #555; /* Set text color */
+  font-weight: bold;
+}
+.info-text1 {
+  font-size: 15px; /* Set the font size */
+  color: #555; /* Set text color */
+  font-weight: bold;
+}
+
  
 @media (max-width: 768px) {
   .contact-heading {
@@ -161,4 +196,22 @@
   .submit-button {
       font-size: 0.9rem ;
   }
+  /* remaining */
+  .info-row1 {
+    flex-direction: column; /* Stack columns vertically on small screens */
+    align-items: center; /* Center items horizontally */
+}
+
+.info-column {
+    text-align: center; /* Center text and icon within column */
+    padding: 20px 0; /* Add vertical padding */
+}
+
+.info-icon {
+    font-size: 2.5rem; /* Larger icon size for smaller screens */
+}
+
+.info-text {
+    font-size: 0.9rem; /* Smaller text size */
+}
 }

@@ -69,5 +69,16 @@
   .footer-bottom p {
     margin: 0;
   }
+  .link{
+    color: #fff;
+  }
+  .link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
   
   

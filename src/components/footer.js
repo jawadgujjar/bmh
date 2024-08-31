@@ -1,5 +1,6 @@
 import React from 'react';
 import { Image } from 'antd';
+import { Link } from 'react-router-dom'; 
 import './footer.css';
 
 const Footer1 = () => {
@@ -20,23 +21,25 @@ const Footer1 = () => {
         <div className="footer-column">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#privacy policy">Privacy policy</a></li>
-            <li><a href="#Refund Policy">Refund Policy</a></li>
-            <li><a href="#Terms Of Service">Terms Of Service</a></li>
+          <li><Link className="link" to="/home" >Home</Link></li>
+          <li><Link className="link" to="/features" >Services</Link></li>
+          <li><Link className="link" to="/about" >About</Link></li>
+          
+            <li><a href="/blog">Blog</a></li>
+            <li><Link className="link" to="/privacypolicy" >Privacy Policy</Link></li>
+            <li><Link className="link" to="/refundpolicy" >Refund Policy</Link></li>
+            <li><Link className="link" to="/termofservice" >Term Of Service</Link></li>
           </ul>
         </div>
         <div className="footer-column">
           <h4>Services</h4>
           <ul>
-            <li><a href="#web-development">Web Development</a></li>
-            <li><a href="#seo">SEO</a></li>
-            <li><a href="#brand-marketing">Brand Marketing</a></li>
-            <li><a href="#E-Commerce Specialization">E-Commerce Specialization</a></li>
-            <li><a href="#Digital Marketing">Digital Marketing</a></li>
+          <li><Link className="link" to="/webdevelopmentpage" >Web Development</Link></li>
+          <li><Link className="link" to="/seopage" >SEO</Link></li>
+          <li><Link className="link" to="/brandmarketingpage" >Brand Marketing</Link></li>
+          <li><Link className="link" to="/ecommercepage" >E-Commerce Specialization</Link></li>
+          <li><Link className="link" to="/digitalmarketingpage" >Digital Marketing</Link></li>
+             
           </ul>
         </div>
         <div className="footer-column">

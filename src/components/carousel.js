@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './carousel.css';  // Import your CSS file
+import './carousel.css'; 
 
 const ExampleCarouselImage = ({ src, alt }) => (
   <img
@@ -12,8 +12,8 @@ const ExampleCarouselImage = ({ src, alt }) => (
 
 const Car = () => (
   <div className="customerdiv">
-     <h1 className="customer">From our customers</h1>
-     <h5 className="customer">Client highlighting our services and successful results.</h5>
+     <h1 className="customers">From our customers</h1>
+     <h6 className="customer">Client highlighting our services and successful results.</h6>
   <div className="carousel-wrapper">
    
     <div className="carousel-container">

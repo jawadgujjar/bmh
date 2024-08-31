@@ -1,5 +1,8 @@
 // src/components/Contact.js
 import React from 'react';
+import {  FaClock } from 'react-icons/fa';
+import { GiScales } from 'react-icons/gi';
+import { AiOutlineCalculator } from 'react-icons/ai'; 
 import './contacts.css';
 
 const Contact = () => {
@@ -36,6 +39,26 @@ const Contact = () => {
                     <button type="submit" className="submit-button">Send Message</button>
                 </form>
             </div>
+
+            <div className="info-row1">
+            <div className="info-column">
+                    <FaClock  className="info-icon" />  
+                    <p className="info-text">Leverage 24/7 Support</p>
+                    <p className="info-text1">We are available 24 hours a day and 7 days a week - serving you support for top-notch CDN and compatible solutions. When your web things don’t feel right, send us a message immediately, and we’ll respond.</p>
+                </div>
+                <div className="info-column">
+                <GiScales className="info-icon" />  
+                    <p className="info-text">Report Improper Content</p>
+                    <p className="info-text1">It’s crucial to report any inappropriate or illegal content on your website for its wellness. Let our experts know about it and they’ll help you remove any such content and double-strengthen your web security.</p>
+                </div>
+                <div className="info-column">
+                    <AiOutlineCalculator className="info-icon" />  
+                    <p className="info-text">Resolve Payment Issues</p>
+                    <p className="info-text1">
+                    We gladly answer your payment and billing queries and deal with any possible issues that might be occurring on your side. Never hesitate to share your questions and problems with us, irrespective of their complexity level.</p>
+                </div>
+                
+        </div>
         </section>
     );
 };

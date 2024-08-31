@@ -119,9 +119,12 @@
         flex-direction: column; /* Stack sections vertically */
         gap: 1rem; /* Space between stacked sections */
     }
+    .weoffers{
+        margin-bottom: -3rem;
+    }
 
     .weoffers, .additional-text {
-        padding: 1rem; /* Adjust padding for smaller screens */
+        text-align: center;
     }
 
     .ant-card {

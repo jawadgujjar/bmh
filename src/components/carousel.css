@@ -22,7 +22,16 @@
 .customer{
   text-align: center;
   color: #fff;
+  padding: 0.4rem;
   
+  
+}
+.customers{
+  text-align: center;
+  color: #fff;
+  padding: 0.4rem;
+  padding-top: 2.5rem;  
+  font-weight: bold;
 }
 .customerdiv{
   background-color: #0e0d0d;
