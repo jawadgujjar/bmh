@@ -1,40 +1,53 @@
 /* Container for centering and responsiveness */
+.customerdiv{
+  text-align: center;
+}
 .carousel-wrapper {
   display: flex;
   justify-content: center;  
   align-items: center;  
   padding: 20px; 
   box-sizing: border-box;  
-  background-color: #0e0d0d;
 }
 
 /* Carousel container styling */
 .carousel-container {
   width: 90%; 
+  height: 80vh;
+  padding: 2rem;
   max-width: 800px; 
-  height: 80vh; 
   overflow: hidden; 
   position: relative; 
   border-radius: 10px; 
+  background-color: #605e5e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  background-color: #fff;  
 }
-.customer{
+
+/* Ensure carousel items are displayed as block and centered */
+.carousel-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Center card content */
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  width: 100%;
+  background-color: transparent !important;
   color: #fff;
-  padding: 0.4rem;
-  
-  
+  max-width: 300px; /* Adjust max-width if needed */
 }
-.customers{
-  text-align: center;
-  color: #fff;
-  padding: 0.4rem;
-  padding-top: 2.5rem;  
-  font-weight: bold;
-}
-.customerdiv{
-  background-color: #0e0d0d;
+
+/* Card avatar styling */
+.avatar-review {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
 }
 
 /* Styling for carousel images */

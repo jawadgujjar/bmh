@@ -1,0 +1,135 @@
+/* Logo Width */
+.logo-width {
+  width: 8rem;
+  height: 8rem;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  border-bottom: 1px solid #ddd;
+  /* Optional: Adds a border at the bottom */
+  height: 80px;
+  /* Set a fixed height for the navbar */
+}
+
+/* Navbar Custom Styles */
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.navbar-custom:hover {
+  background-position: right center;
+}
+
+.navbar-custom .navbar-brand .brand-name {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  font-weight: bold;
+  color: black;
+  /* Default link color */
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: black;
+  /* Change link color on hover */
+  font-weight: bold;
+}
+
+/* Center the nav links */
+.navbar-collapse {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  /* Ensure it takes available space */
+}
+
+.nav-link {
+  margin-left: 3rem;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  position: relative;
+  width: 250px;
+  transition: width 0.4s ease-in-out;
+  margin-right: 1rem;
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+  width: 300px;
+}
+
+.search-bar .form-control {
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+/* Responsive Styling for Screens Smaller Than 992px */
+@media (max-width: 992px) {
+  .navbar-custom {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+    width: 100%;
+    /* Ensure it spans the full width */
+    text-align: center;
+    margin-top: 1rem;
+    /* Add some spacing above */
+  }
+
+  .search-bar {
+    width: 70%;
+    margin-right: 0;
+    /* Remove right margin on smaller screens */
+  }
+
+  .navbar-brand {
+    margin-bottom: 1rem;
+    /* Add spacing below the brand */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    /* Add some spacing between links */
+  }
+}
+
+/* Responsive Styling for Screens Smaller Than 576px */
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    /* Center text for small screens */
+  }
+
+  .nav-link {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    /* Consistent spacing between links */
+  }
+
+  .search-bar {
+    width: 100%;
+    /* Full width for very small screens */
+    margin: 0;
+    /* Remove margin */
+  }
+}
