@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHeart } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import './footer2.css';
 
 const Footer12 = () => {
@@ -13,51 +14,51 @@ const Footer12 = () => {
         <div className="footer-column">
            
           <ul>   
-            <li><a href="#">ARLINGTON</a></li>
-            <li><a href="#">ATLANTA</a></li>
-            <li><a href="#">AUSTIN</a></li>
-            <li><a href="#">BALTIMORE</a></li>
-            <li><a href="#">CHICAGO</a></li>
+            <li><Link className="link" to="/home" >ARLINGTON</Link></li>
+            <li><Link className="link" to="/home" >ATLANTA</Link></li>
+            <li><Link className="link" to="/home" >AUSTIN</Link></li>
+            <li><Link className="link" to="/home" >BALTIMORE</Link></li>
+            <li><Link className="link" to="/home" >CHICAGO</Link></li>
           </ul>
         </div>
         <div className="footer-column">
            
           <ul>
-          <li><a href="#">CLEVELAND</a></li>
-            <li><a href="#">DALLAS</a></li>
-            <li><a href="#">DENVER</a></li>
-            <li><a href="#">HOUSTON</a></li>
-            <li><a href="#">JACKSONVILLE</a></li>
+          <li><Link className="link" to="/home" >CLEVELAND</Link></li>
+          <li><Link className="link" to="/home" >DALLAS</Link></li>
+          <li><Link className="link" to="/home" >DENVER</Link></li>
+          <li><Link className="link" to="/home" >HOUSTON</Link></li>
+          <li><Link className="link" to="/home" >JACKSONVILLE</Link></li> 
           </ul>
         </div>
         <div className="footer-column">
            
           <ul>
-            <li><a href="#">KANSAS CITY</a></li>
-            <li><a href="#">LAS VEGAS</a></li>
-            <li><a href="#">LOS ANGELES</a></li>
-            <li><a href="#">LOUISVILLE</a></li>
-            <li><a href="#">NEW YORK CITY</a></li>
+          <li><Link className="link" to="/home" >KANSAS CITY</Link></li> 
+          <li><Link className="link" to="/home" >LAS VEGAS</Link></li> 
+          <li><Link className="link" to="/home" >LOS ANGELES</Link></li> 
+          <li><Link className="link" to="/home" >LOUISVILLE</Link></li> 
+          <li><Link className="link" to="/home" >NEW YORK CITY</Link></li> 
           </ul>
         </div>
         <div className="footer-column">
           
           <ul>
-            <li><a href="#">MIAMI</a></li>
-            <li><a href="#">MINNEAPOLIS</a></li>
-            <li><a href="#">PHOENIX</a></li>
-            <li><a href="#">NEW ORLEANS</a></li>
-            <li><a href="#">ORLANDO</a></li>
+          <li><Link className="link" to="/home" >MIAMI</Link></li> 
+          <li><Link className="link" to="/home" >MINNEAPOLIS</Link></li> 
+          <li><Link className="link" to="/home" >PHOENIX</Link></li> 
+          <li><Link className="link" to="/home" >NEW ORLEANS</Link></li> 
+          <li><Link className="link" to="/home" >ORLANDO</Link></li> 
           </ul>
         </div>
         <div className="footer-column">
           
           <ul>
-            <li><a href="#">PHILADELPHIA</a></li>
-            <li><a href="#">PORTLAND</a></li>
-            <li><a href="#">SAN ANTONIO</a></li>
-            <li><a href="#">SAN DIEGO</a></li>
-            <li><a href="#">SEATTLE</a></li>
+          <li><Link className="link" to="/home" >PHILADELPHIA</Link></li> 
+          <li><Link className="link" to="/home" >PORTLAND</Link></li> 
+          <li><Link className="link" to="/home" >SAN ANTONIO</Link></li> 
+          <li><Link className="link" to="/home" >SAN DIEGO</Link></li> 
+          <li><Link className="link" to="/home" >SEATTLE</Link></li> 
           </ul>
         </div>
       </div>

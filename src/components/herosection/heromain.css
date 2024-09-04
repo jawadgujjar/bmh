@@ -3,7 +3,7 @@
     width: 100%;
     height: auto; /* Full viewport height */
     overflow: hidden;
-    background-image: url("../../../public/images/back-ground.jpg");
+    background-image: url("../../assests/image/orange.jpg");
     background-size: cover; /* Ensure the image covers the entire background */
     background-position: center; /* Center the background image */
     display: flex;
