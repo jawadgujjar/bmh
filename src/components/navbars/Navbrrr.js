@@ -70,6 +70,26 @@ function Navbrrr() {
                                                 <li>SEO Audits</li>
                                                 <li>Franchise SEO Audit</li>
                                             </ul>
+                                            <NavDropdown.Item as={Link} to="/social-media-marketing">Social Media Marketing</NavDropdown.Item>
+                                            <ul className='unorder-list'>
+                                                <li> Social Media Management
+                                                </li>
+                                                <li>Social Media Brand Management
+                                                </li>
+                                                <li>
+                                                    Franchise Social Media
+                                                </li>
+                                                <li> Enterprise Social Media
+                                                </li>
+                                            </ul>
+                                            <NavDropdown.Item as={Link} to="/email-marketing">Email Marketing</NavDropdown.Item>
+                                            <ul className='unorder-list'>
+                                                <li>Email Campaign Creation</li>
+                                                <li>Audience Segmentation</li>
+                                                <li>Automated Email Workflows</li>
+                                                <li>Personalized Email Content</li>
+                                                <li>Email Analytics & Reporting</li>
+                                            </ul>
                                         </Col>
 
                                         {/* Column 2 */}
