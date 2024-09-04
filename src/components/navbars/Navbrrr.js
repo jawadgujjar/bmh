@@ -48,20 +48,36 @@ function Navbrrr() {
                                 id="offcanvasNavbarDropdown-expand-lg"
                                 className="dropdown-multi-column"
                             >
-                                <Container>
+                                <Container fluid> {/* Ensure full-width container */}
                                     <Row>
                                         {/* Column 1 */}
-                                        <Col md={4}>
-                                            <h6>Marketing</h6>
+                                        <Col xs={12} md={4}> {/* Adjust for smaller screens */}
+                                            <div>
+                                                <img className="market-logo" alt='Marketing' src='../images/loud-speaker.png' />
+                                                <h6>Marketing</h6>
+                                            </div>
                                             <NavDropdown.Item as={Link} to="/digital-marketing">Digital Marketing</NavDropdown.Item>
+                                            <ul className='unorder-list'>
+                                                <li> Marketing Strategy Development </li>
+                                                <li>Franchise Digital Marketing</li>
+                                                <li>Enterprise Digital Marketing</li>
+                                            </ul>
                                             <NavDropdown.Item as={Link} to="/seo">SEO Services</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/social-media-marketing">Social Media Marketing</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/email-marketing">Email Marketing</NavDropdown.Item>
+                                            <ul className='unorder-list'>
+                                                <li>Technical SEO</li>
+                                                <li>Franchise SEO</li>
+                                                <li>Enterprise SEO Audit</li>
+                                                <li>SEO Audits</li>
+                                                <li>Franchise SEO Audit</li>
+                                            </ul>
                                         </Col>
 
                                         {/* Column 2 */}
-                                        <Col md={4}>
-                                            <h6>Web Development</h6>
+                                        <Col xs={12} md={4}>
+                                            <div>
+                                                <img className="market-logo-web" alt='Web Development' src='../images/web-development.png' />
+                                                <h6>Web Development</h6>
+                                            </div>
                                             <NavDropdown.Item as={Link} to="/web-development">Website Design</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/ecommerce-development">E-commerce Development</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/app-development">App Development</NavDropdown.Item>
@@ -69,8 +85,11 @@ function Navbrrr() {
                                         </Col>
 
                                         {/* Column 3 */}
-                                        <Col md={4}>
-                                            <h6>Consulting</h6>
+                                        <Col xs={12} md={4}>
+                                            <div>
+                                                <img className="market-logo" alt='App Development' src='../images/mobile-development.png' />
+                                                <h6>App Development</h6>
+                                            </div>
                                             <NavDropdown.Item as={Link} to="/strategy-consulting">Strategy Consulting</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/business-consulting">Business Consulting</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/marketing-consulting">Marketing Consulting</NavDropdown.Item>
@@ -79,6 +98,7 @@ function Navbrrr() {
                                     </Row>
                                 </Container>
                             </NavDropdown>
+
                             <Nav.Link as={Link} to="/about" onClick={() => handleNavClick('/about')}>About</Nav.Link>
                             <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Contact Us</Nav.Link>
                         </Nav>
