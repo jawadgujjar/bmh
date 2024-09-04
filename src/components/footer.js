@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image } from 'antd';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 import './footer.css';
 
 const Footer1 = () => {
@@ -8,23 +8,23 @@ const Footer1 = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-column">
-        
-          <h4 > <Image className="bmh"
-                    width={50}
-                    src='https://cdn.discordapp.com/attachments/1275985777267966043/1275988075838705704/BMH_Icon.png?ex=66c88cbf&is=66c73b3f&hm=fde6493610c74f92767ecf8e0bfc39bbb5909bfb4859446ed2ff48a61b694704&'
-                    alt="Brand Logo"
-                    preview={false}
-                />
-                Brand Marketing Hub</h4>
+
+          <h4> <Image className="bmh"
+            width={50}
+            src='bmhlogo.png'
+            alt="Brand Logo"
+            preview={false}
+          />
+            Brand Marketing Hub</h4>
           <p>We are a leading company in providing the best services to our clients. Our mission is to deliver top-notch quality and ensure customer satisfaction.</p>
         </div>
         <div className="footer-column">
           <h4>Quick Links</h4>
           <ul>
-          <li><Link className="link" to="/home" >Home</Link></li>
-          <li><Link className="link" to="/features" >Services</Link></li>
-          <li><Link className="link" to="/about" >About</Link></li>
-          
+            <li><Link className="link" to="/home" >Home</Link></li>
+            <li><Link className="link" to="/features" >Services</Link></li>
+            <li><Link className="link" to="/about" >About</Link></li>
+
             <li><a href="/blog">Blog</a></li>
             <li><Link className="link" to="/privacypolicy" >Privacy Policy</Link></li>
             <li><Link className="link" to="/refundpolicy" >Refund Policy</Link></li>
@@ -34,12 +34,12 @@ const Footer1 = () => {
         <div className="footer-column">
           <h4>Services</h4>
           <ul>
-          <li><Link className="link" to="/webdevelopmentpage" >Web Development</Link></li>
-          <li><Link className="link" to="/seopage" >SEO</Link></li>
-          <li><Link className="link" to="/brandmarketingpage" >Brand Marketing</Link></li>
-          <li><Link className="link" to="/ecommercepage" >E-Commerce Specialization</Link></li>
-          <li><Link className="link" to="/digitalmarketingpage" >Digital Marketing</Link></li>
-             
+            <li><Link className="link" to="/webdevelopmentpage" >Web Development</Link></li>
+            <li><Link className="link" to="/seopage" >SEO</Link></li>
+            <li><Link className="link" to="/brandmarketingpage" >Brand Marketing</Link></li>
+            <li><Link className="link" to="/ecommercepage" >E-Commerce Specialization</Link></li>
+            <li><Link className="link" to="/digitalmarketingpage" >Digital Marketing</Link></li>
+
           </ul>
         </div>
         <div className="footer-column">
