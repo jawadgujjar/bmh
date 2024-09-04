@@ -1,0 +1,50 @@
+.back {
+    position: relative;
+    width: 100%;
+    height: auto; /* Full viewport height */
+    overflow: hidden;
+    background-image: url("../../../public/images/back-ground.jpg");
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    padding: 2rem; /* Add padding for all screen sizes */
+}
+
+.row-margin {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .row-margin {
+        padding: 0; /* Remove padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .back {
+        height: auto; /* Adjust height for very small screens */
+        padding: 2rem 0;
+    }
+
+    .content {
+        padding: 1rem; /* Ensure padding is consistent on small screens */
+    }
+
+    .row-margin {
+        padding: 0;
+    }
+
+    .back {
+        height: auto; /* Ensure background fits the content */
+    }
+}

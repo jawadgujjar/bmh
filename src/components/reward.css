@@ -1,0 +1,19 @@
+.reward-body {
+    margin-top: 3rem;
+    text-align: center;
+    color: black;
+}
+
+.text-h6 {
+    color: black;
+    margin-top: 1rem;
+}
+.bolder-text{
+    font-size: larger;
+    font-weight: bolder;
+}
+.image-awards{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}

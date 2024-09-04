@@ -1,0 +1,95 @@
+import React from 'react';
+import { Form, Input, Button, Select } from 'antd';
+import './form.css';
+
+const { TextArea } = Input;
+const { Option } = Select;
+
+function Form1() {
+    const onFinish = (values) => {
+        console.log('Form Values:', values);
+    };
+
+    return (
+        <div className="form-container">
+            <h2 className="form-heading">
+                Get a Free Proposal
+            </h2>
+            <Form layout="vertical" onFinish={onFinish}>
+                <Form.Item
+                    label={<span className="form-label">Select Service</span>}
+                    name="service"
+                    rules={[{ message: 'Please select a service!' }]}
+                >
+                    <Select placeholder="Select a service" className="custom-select">
+                        <Option value="seo">SEO</Option>
+                        <Option value="ppc">PPC</Option>
+                        <Option value="social-media">Social Media Marketing</Option>
+                    </Select>
+                </Form.Item>
+
+                {/* Email Input */}
+                <Form.Item
+                    label={<span className="form-label">Email Address</span>}
+                    name="email"
+                    rules={[
+                        { message: 'Please enter your email!' },
+                        { type: 'email', message: 'Please enter a valid email!' },
+                    ]}
+                >
+                    <Input
+                        placeholder="Enter your email address"
+                        className="custom-input"
+                    />
+                </Form.Item>
+
+                {/* Large Text Input */}
+                <Form.Item
+                    label={<span className="form-label">Project Details</span>}
+                    name="projectDetails"
+                    rules={[{ message: 'Please describe your project!' }]}
+                >
+                    <TextArea
+                        placeholder="Describe your project in detail"
+                        rows={4}
+                        className="custom-textarea"
+                    />
+                </Form.Item>
+
+                <Form.Item>
+                    <Button
+                        type="primary"
+                        htmlType="submit"
+                        block
+                        className="submit-button"
+                    >
+                        Submit
+                    </Button>
+                </Form.Item>
+            </Form>
+            <h6 className='h6-form'>In a Hurry? Give us a call us at  <a href="tel:+1234567890" style={{ color: 'orange', textDecoration: 'none' }}>
+                +123-456-7890
+            </a></h6>
+            <hr />
+            <div className="how-it-works-container">
+                <h2 className="how-it-works-heading">How it Works?</h2>
+                <div className="steps-container">
+                    <div className="step">
+                        <div className="step-number">1</div>
+                        <p className="step-description">Step 1 <br />Complete Form</p>
+                    </div>
+                    <div className="step">
+                        <div className="step-number">2</div>
+                        <p className="step-description">Step 2 <br />Free Consultation</p>
+                    </div>
+                    <div className="step">
+                        <div className="step-number">3</div>
+                        <p className="step-description">Step 3 <br /> Get Proposal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Form1;

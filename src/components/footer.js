@@ -11,7 +11,7 @@ const Footer1 = () => {
         
           <h4 > <Image className="bmh"
                     width={50}
-                    src='https://cdn.discordapp.com/attachments/1275985777267966043/1275988075838705704/BMH_Icon.png?ex=66c88cbf&is=66c73b3f&hm=fde6493610c74f92767ecf8e0bfc39bbb5909bfb4859446ed2ff48a61b694704&'
+                    src='bmhlogo.png'
                     alt="Brand Logo"
                     preview={false}
                 />

@@ -1,0 +1,119 @@
+.navbar {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    /* Remove any shadow if present */
+}
+
+.custom-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-links .nav-link {
+    color: #333;
+}
+
+.nav-links .nav-link:hover {
+    color: #ff6600;
+}
+
+.dropdown-multi-column .dropdown-menu {
+    width: 600px;
+    padding: 20px;
+    
+}
+
+.dropdown-multi-column .dropdown-menu .dropdown-item {
+    white-space: normal;
+    padding: 10px 15px;
+}
+
+.dropdown-multi-column .dropdown-menu .row {
+    margin: 0;
+}
+
+.dropdown-multi-column .dropdown-menu .col {
+    padding: 0;
+}
+
+.search-button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.search-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.custom-navbar {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.nav-links .nav-link,
+.nav-links .nav-dropdown {
+    color: #000;
+    /* Black color for text */
+    margin-right: 1.5rem;
+    /* Space between links */
+    font-weight: bold;
+    /* Bold text */
+    text-transform: uppercase;
+    /* Uppercase text */
+    transition: color 0.3s ease;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-dropdown:hover {
+    color: #FFA500;
+    /* Orange color on hover */
+}
+
+.nav-links .nav-dropdown .dropdown-item {
+    color: #000;
+    /* Black for dropdown items */
+    font-weight: normal;
+}
+
+.nav-links .nav-dropdown .dropdown-item:hover {
+    color: #FFA500;
+    /* Orange color on hover */
+}
+
+.search-form .search-button {
+    background-color: #000;
+    /* Black background for the search button */
+    border-color: #000;
+    /* Black border */
+    color: #fff;
+    /* White text */
+    transition: background-color 0.3s ease;
+}
+
+.search-form .search-button:hover {
+    background-color: #FFA500;
+    /* Change to orange on hover */
+    border-color: #FFA500;
+    /* Orange border */
+    color: #000;
+    /* Black text */
+}
+
+.logo-width {
+    max-width: 120px;
+    /* Adjust logo size */
+}
+
+
+
+
+@media (max-width: 993px) {
+
+    .navbar {
+        margin: 0%;
+        height: auto;
+    }
+}
