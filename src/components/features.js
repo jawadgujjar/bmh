@@ -10,7 +10,7 @@ const Features = () => {
     return (
         <div className="features-container">
             <div>
-                <p className='how-text'>How we  <span className="spann">Work?</span></p>
+                <p className='how-text'>Services We  <span className="spann">Offer?</span></p>
 
                 <p className='additional-text'>See how we can help your business grow</p>
                 <div>
