@@ -51,7 +51,7 @@ function Form1() {
                 >
                     <TextArea
                         placeholder="Describe your project in detail"
-                        rows={4}
+                        rows={2}
                         className="custom-textarea"
                     />
                 </Form.Item>
