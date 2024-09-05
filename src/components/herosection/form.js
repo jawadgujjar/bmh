@@ -71,23 +71,7 @@ function Form1() {
                 +123-456-7890
             </a></h6>
             <hr />
-            <div className="how-it-works-container">
-                <h2 className="how-it-works-heading">How it Works?</h2>
-                <div className="steps-container">
-                    <div className="step">
-                        <div className="step-number">1</div>
-                        <p className="step-description">Step 1 <br />Complete Form</p>
-                    </div>
-                    <div className="step">
-                        <div className="step-number">2</div>
-                        <p className="step-description">Step 2 <br />Free Consultation</p>
-                    </div>
-                    <div className="step">
-                        <div className="step-number">3</div>
-                        <p className="step-description">Step 3 <br /> Get Proposal</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     );
 }
