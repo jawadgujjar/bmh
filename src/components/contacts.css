@@ -185,6 +185,10 @@
 
  
 @media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+  }
+
   .contact-heading {
       font-size: 1.5rem;  
   }
