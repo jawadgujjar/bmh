@@ -7,8 +7,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, useNavigate } from 'react-router-dom';
-import "./Navbrr.css"
+import { BiWorld } from "react-icons/bi";
+import { GiPublicSpeaker } from "react-icons/gi";
+import { HiDeviceMobile } from "react-icons/hi";
+
 import { Col, Row } from 'react-bootstrap';
+import "./Navbrr.css"
 
 function Navbrrr() {
     const navigate = useNavigate();
@@ -52,9 +56,9 @@ function Navbrrr() {
                                     <Row>
                                         {/* Column 1 */}
                                         <Col xs={12} md={4}> {/* Adjust for smaller screens */}
-                                            <div>
-                                                <img className="market-logo" alt='Marketing' src='../images/loud-speaker.png' />
-                                                <h6>Marketing</h6>
+                                            <div className='image-h6'>
+                                                <GiPublicSpeaker />
+                                                <p className='dropdown-links'>Marketing</p>
                                             </div>
                                             <NavDropdown.Item as={Link} to="/digital-marketing">Digital Marketing</NavDropdown.Item>
                                             <ul className='unorder-list'>
@@ -94,9 +98,9 @@ function Navbrrr() {
 
                                         {/* Column 2 */}
                                         <Col xs={12} md={4}>
-                                            <div>
-                                                <img className="market-logo-web" alt='Web Development' src='../images/web-development.png' />
-                                                <h6>Web Development</h6>
+                                            <div className='image-h6'>
+                                                <BiWorld />
+                                                <p className='dropdown-links'>Web Development</p>
                                             </div>
                                             <NavDropdown.Item as={Link} to="/web-development">Website Design</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/ecommerce-development">E-commerce Development</NavDropdown.Item>
@@ -106,9 +110,9 @@ function Navbrrr() {
 
                                         {/* Column 3 */}
                                         <Col xs={12} md={4}>
-                                            <div>
-                                                <img className="market-logo" alt='App Development' src='../images/mobile-development.png' />
-                                                <h6>App Development</h6>
+                                            <div className='image-h6'>
+                                                <HiDeviceMobile />
+                                                <p className='dropdown-links'>App Development</p>
                                             </div>
                                             <NavDropdown.Item as={Link} to="/strategy-consulting">Strategy Consulting</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/business-consulting">Business Consulting</NavDropdown.Item>
