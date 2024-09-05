@@ -3,7 +3,15 @@
     width: 10rem;
     height: 10rem;
 }
-
+.navbars-fixed{
+    position: sticky; /* Keeps the navbar fixed at the top */
+    top: 0; /* Aligns the navbar to the top */
+    left: 0;
+    right: 0;
+    bottom: 5;
+    z-index: 1000;
+    background-color: white;
+}
 /* Navbar Styles */
 .navbar {
     border-bottom: none !important;
@@ -11,9 +19,16 @@
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
     height: 80px;
+    margin-bottom: 5rem ;
     /* Set a fixed height for the navbar */
 }
-
+.first-fixed{
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0; /* Aligns the navbar to the top */
+    left: 0;
+    right: 0;
+    z-index: 500;
+}
 /* Navbar Custom Styles */
 .custom-navbar {
     display: flex;
@@ -126,6 +141,9 @@
 
 .dropdown-multi-column .dropdown-menu .row {
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 .dropdown-multi-column .dropdown-menu .col {
@@ -188,6 +206,7 @@
 
     .custom-navbar {
         flex-direction: column;
+        height: 10rem !important;
     }
 
     .navbar-collapse {
@@ -197,8 +216,8 @@
     }
 
     .search-form {
-        width: 70%;
-        margin-right: 0;
+        width: auto;
+        margin-top: 1rem;
     }
 
     .navbar-brand {
@@ -242,6 +261,5 @@
 
     .search-form {
         width: 100%;
-        margin: 0;
     }
 }

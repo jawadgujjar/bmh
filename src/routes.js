@@ -13,14 +13,12 @@ import Privacy1 from './components/privacypolicy';
 import Refund1 from './components/refundpolicy';
 import Termofservice1 from './components/termofservice';
 import ScrollToTop from './components/scroll';
-import FirstNav from './components/navbars/firstnav';
 import Navbrrr from './components/navbars/Navbrrr';
 import Footer12 from "./components/footer2"
 
 const AppRoutes = () => {
     return (
         <Router>
-            <FirstNav />
             <Navbrrr />
             <> 
             <ScrollToTop />

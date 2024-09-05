@@ -165,13 +165,6 @@
 
 }
 
-/* Hover effects */
-.ant-card:hover {
-    transform: translateY(-5px);
-    /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Enhanced shadow on hover */
-}
 
 /* Card title styling */
 .ant-card-head-title {
