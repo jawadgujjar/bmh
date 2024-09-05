@@ -9,19 +9,19 @@ const carouselItems = [
     img: "../images/download.jpg", // Use absolute URLs or correct path
     name: "John Wick",
     occupation: "Broker – About Roatan Real Estate",
-    review: "“Thrive is a much needed blessing and exceeded our expectations in every way. They are honest, straightforward, they take care of ALL your needs quickly, they are reliable, you can count on them and most of all, they do everything they say they will do, no BS.”"
+    review: "“Thrive exceeded our expectations in every way. They are honest, reliable, and handle all needs quickly. They deliver on their promises without any fuss.”"
   },
   {
     img: "../images/download.jpg", // Use absolute URLs or correct path
     name: "ACP",
     occupation: "Practice Manager – PARC Urology",
-    review: "“These guys are incredible. They’ve helped us to grow our business and now the biggest problem we seem to come across is having too much business – which is the ideal problem to have. We are right where we wanted to be and Thrive made that possible. Thanks guys!”"
+    review: "“Thrive is incredible. They helped us grow our business so much that our biggest challenge now is managing the overflow. We're exactly where we wanted to be, thanks to them.”"
   },
   {
     img: "../images/download.jpg", // Use absolute URLs or correct path
     name: "NINI",
     occupation: "CEO – Accurate Leak and Line",
-    review: "“Working with the Thrive team has been a most pleasant experience! Their dedication and passion for what they do is exemplified by their unrivaled customer support and attentiveness to the specific needs of our business. We look forward to a long lasting and prosperous relationship!”"
+    review: "“Working with Thrive has been a pleasure. Their dedication, exceptional support, and attention to our needs make us excited for a long-term partnership.”"
   }
 ];
 
@@ -30,7 +30,7 @@ const Car = () => (
     <h1 className="customers">From our customers</h1>
     <p className="customer">Client highlighting our services and successful results.</p>
     <div className="carousel-wrapper">
-      <div className="carousel-container">
+      <div className="carousel-container1">
         <Carousel>
           {carouselItems.map((item, index) => (
             <Carousel.Item key={index}>

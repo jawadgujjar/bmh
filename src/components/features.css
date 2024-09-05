@@ -112,10 +112,7 @@
 
 
 /* Different shades of gray for each card */
-.ant-card:nth-child(1) {
-    background-color: #c0c0c0;
-    /* Light gray */
-}
+ 
 
 .ant-card:nth-child(2) {
     background-color: #c0c0c0;
@@ -146,6 +143,7 @@
     background-color: rgb(253, 126, 20) ;
     color: white;
     border-radius: 1.5rem;
+    font-size: 1rem;
 }
 
 .discover-button:hover {
@@ -165,6 +163,8 @@
 
 }
 
+/* Hover effects */
+
 
 /* Card title styling */
 .ant-card-head-title {
@@ -179,6 +179,7 @@
 .spann {
     color: rgb(253, 126, 20);
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
