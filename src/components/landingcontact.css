@@ -21,22 +21,25 @@
 }
 
 .callus-text {
-    color:  rgb(253, 126, 20);
+    color: rgb(253, 126, 20);
 }
-.all-logos-contact{
+
+.all-logos-contact {
     display: flex;
     gap: 1rem;
 }
+
 .fontsize-call {
     font-size: 1.5rem;
 }
-.div-logos{
+
+.div-logos {
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     width: 2.5rem;
     height: 2.5rem;
-    background-color:  rgb(253, 126, 20);
+    background-color: rgb(253, 126, 20);
     border-radius: 2rem;
     font-size: 1.5rem;
     color: white;
@@ -44,6 +47,11 @@
 
 
 @media screen and (max-width: 768px) {
+    .image-landingcontact {
+        display: flex;
+        justify-content: center !important;
+    }
+
     .centered-whole-component {
         display: flex;
         justify-content: center;
@@ -52,8 +60,10 @@
     }
 
     .landing-leftcol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
         width: auto;
-
         height: auto;
     }
 
