@@ -26,7 +26,7 @@
 
 
 /* Ant Design Card Styles */
-.ant-card {
+.ant-cards {
     border-radius: 12px; /* Rounded corners for a modern look */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
@@ -39,7 +39,7 @@
 }
 
 /* Hover effects for the card */
-.ant-card:hover {
+.ant-cards:hover {
     transform: translateY(-10px); /* Slight lift effect */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
     background: linear-gradient(135deg, #333 0%, #c09055 100%); /* Reverse gradient on hover */
@@ -47,7 +47,7 @@
 }
 
 /* Card title styling */
-.ant-card-head-title {
+.ant-cards-head-title {
     font-weight: bold;
     font-size: 1.5rem;
     color: #fff; /* White title text */
@@ -55,7 +55,7 @@
 }
 
 /* Additional content inside the card */
-.ant-card-body {
+.ant-cards-body {
     font-size: 1rem;
     line-height: 1.6;
     color: #fff; /* White text for the card body */
