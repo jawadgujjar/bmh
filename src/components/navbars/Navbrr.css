@@ -1,8 +1,7 @@
 /* Logo Width */
 .logo-width {
-    max-width: 120px;
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
 }
 
 /* Navbar Styles */
@@ -219,6 +218,10 @@
 
 /* Responsive Styling for Screens Smaller Than 576px */
 @media (max-width: 576px) {
+    .logo-width {
+        width: 7rem;
+        height: 7rem;
+    }
     .dropdown-multi-column .dropdown-menu .row {
         display: flex;
         flex-direction: row;

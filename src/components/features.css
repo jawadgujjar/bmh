@@ -27,30 +27,39 @@
 
 /* Ant Design Card Styles */
 .ant-cards {
-    border-radius: 12px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border-radius: 2rem;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     margin-bottom: 1.5rem;
     text-align: left;
-    background: linear-gradient(135deg, #ff8c00 0%, #333 100%) !important; /* Gradient background */
-    color: #fff; /* White text color for high contrast */
-    padding: 1.5rem; /* Padding for content spacing */
-    border: 1px solid #ff8c00; /* Orange border for a touch of color */
+    background: white;
+    color: black;
+    /* Orange text color on hover */
+    padding: 1.5rem;
+    /* Padding for content spacing */
+    border: 1px solid #ff8c00;
+    /* Orange border for a touch of color */
 }
 
 /* Hover effects for the card */
 .ant-cards:hover {
-    transform: translateY(-10px); /* Slight lift effect */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
-    background: linear-gradient(135deg, #333 0%, #c09055 100%); /* Reverse gradient on hover */
-    color: #ff8c00; /* Orange text color on hover */
+    transform: translateY(-10px);
+    /* Slight lift effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow */
+    background: linear-gradient(45deg, rgba(255, 126, 0, 0.3), rgba(255, 180, 0, 0.3), rgba(255, 95, 0, 0.3), rgba(255, 154, 0, 0.3));
+    color: black;
+    /* White text color for high contrast */
 }
 
 /* Card title styling */
 .ant-cards-head-title {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #fff; /* White title text */
+    color: #fff;
+    /* White title text */
     margin-bottom: 1rem;
 }
 
@@ -58,7 +67,8 @@
 .ant-cards-body {
     font-size: 1rem;
     line-height: 1.6;
-    color: #fff; /* White text for the card body */
+    color: #fff;
+    /* White text for the card body */
 }
 
 /* Button/link styles */
@@ -68,19 +78,24 @@
 }
 
 .learnmore a {
-    color: #fff; /* White link text */
+    color: #fff;
+    /* White link text */
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #ff8c00; /* Orange border for emphasis */
+    border: 1px solid #ff8c00;
+    /* Orange border for emphasis */
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background-color: #333; /* Black background for the button */
+    background-color: #333;
+    /* Black background for the button */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .learnmore a:hover {
-    background-color: #d57a0a; /* Orange background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #d57a0a;
+    /* Orange background on hover */
+    color: #fff;
+    /* White text on hover */
 }
 
 .additional-text {
@@ -128,7 +143,7 @@
 }
 
 .discover-button {
-    background-color: coral;
+    background-color: rgb(253, 126, 20) ;
     color: white;
     border-radius: 1.5rem;
 }
@@ -138,15 +153,18 @@
     color: orange !important;
     border-color: orange !important;
 }
-.additional-text{
+
+.additional-text {
     font-size: 1.5rem;
 }
-.icon-down{
+
+.icon-down {
     color: orange;
     font-size: 2rem;
     margin-bottom: 2rem;
 
 }
+
 /* Hover effects */
 .ant-card:hover {
     transform: translateY(-5px);

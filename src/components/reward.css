@@ -11,6 +11,7 @@
 .bolder-text{
     font-size: larger;
     font-weight: bolder;
+    color: rgb(253, 126, 20) ;
 }
 .image-awards{
     margin-top: 2rem;
