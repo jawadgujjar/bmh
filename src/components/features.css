@@ -1,148 +1,215 @@
 /* Container for features section */
 .features-container {
-    padding: 2rem;
-    background-color: #f4f4f4; /* Light background color for contrast */
-    text-align: center; /* Center align text */
+    padding: 0 2rem;
+    text-align: center;
+    /* Center align text */
 }
 
 /* Flex container for weoffers and additional text */
+
+
+/* Styles for weoffers section */
 .weoffers-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 1rem; /* Space between columns */
-    justify-content: center; /* Center align content */
-    margin-bottom: 2rem; /* Space below the container */
+    /* Stack elements vertically */
+    /* Center items vertically */
+    /* Center items horizontally */
+    text-align: center;
 }
 
 /* Styles for weoffers section */
 .weoffers {
-    flex: 1;
-    text-align: right;
     font-style: italic;
-    color: #333; /* Darker color for better readability */   
-    font-weight: bold; /* Makes the text bold */
-    font-size: 3rem; /* Adjust font size */
-    
+    color: #333;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
-/* Styles for additional text section */
-.additional-text {
-    flex: 1;
-    text-align: center;
-    font-style: italic;
-    padding: 1.5rem;
-    text-align: left;
-     
-}
-
-.additional-text h3 {
-    font-size: 1.75rem; /* Adjust header size */
-    margin-bottom: 0.5rem; /* Space below header */
-}
-
-.additional-text p {
-    font-size: 1rem; /* Adjust text size */
-    color: #666; /* Subtle gray for additional text */
-}
 
 /* Ant Design Card Styles */
-.ant-card {
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-    margin-bottom: 1.5rem; /* Space below each card */
-    text-align: left; /* Align text to the left */
-    background-color: #f5f5f5; /* Default light gray background color */
-    color: #333; /* Default text color */
-}
-.learnmore{
-  text-align: center;
-  font-weight: bold;
+.ant-cards {
+    border-radius: 12px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    background: linear-gradient(135deg, #ff8c00 0%, #333 100%) !important; /* Gradient background */
+    color: #fff; /* White text color for high contrast */
+    padding: 1.5rem; /* Padding for content spacing */
+    border: 1px solid #ff8c00; /* Orange border for a touch of color */
 }
 
+/* Hover effects for the card */
+.ant-cards:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    background: linear-gradient(135deg, #333 0%, #c09055 100%); /* Reverse gradient on hover */
+    color: #ff8c00; /* Orange text color on hover */
+}
+
+/* Card title styling */
+.ant-cards-head-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff; /* White title text */
+    margin-bottom: 1rem;
+}
+
+/* Additional content inside the card */
+.ant-cards-body {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff; /* White text for the card body */
+}
+
+/* Button/link styles */
 .learnmore {
-    margin-top: 1rem; /* Adjust spacing above the link */
-    font-weight: bold; /* Make the text bold */
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .learnmore a {
-    color: #1f2525; /* Link color */
-    text-decoration: none; /* Remove underline from link */
+    color: #fff; /* White link text */
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff8c00; /* Orange border for emphasis */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #333; /* Black background for the button */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .learnmore a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #080808; /* Darker color on hover for better visibility */
+    background-color: #d57a0a; /* Orange background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.additional-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.learnmore a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+    color: #080808;
+    /* Darker color on hover for better visibility */
 }
 
 
 /* Different shades of gray for each card */
 .ant-card:nth-child(1) {
-    background-color: #c0c0c0; /* Light gray */
+    background-color: #c0c0c0;
+    /* Light gray */
 }
 
 .ant-card:nth-child(2) {
-    background-color: #c0c0c0; /* Medium light gray */
+    background-color: #c0c0c0;
+    /* Medium light gray */
 }
 
 .ant-card:nth-child(3) {
-    background-color: #a0a0a0; /* Medium gray */
+    background-color: #a0a0a0;
+    /* Medium gray */
 }
 
 .ant-card:nth-child(4) {
-    background-color: #808080; /* Darker gray */
+    background-color: #808080;
+    /* Darker gray */
 }
 
 .ant-card:nth-child(5) {
-    background-color: #606060; /* Even darker gray */
+    background-color: #606060;
+    /* Even darker gray */
 }
 
+.how-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.discover-button {
+    background-color: coral;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.discover-button:hover {
+    background-color: white;
+    color: orange !important;
+    border-color: orange !important;
+}
+.additional-text{
+    font-size: 1.5rem;
+}
+.icon-down{
+    color: orange;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
 /* Hover effects */
 .ant-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
 }
 
 /* Card title styling */
 .ant-card-head-title {
-    font-weight: bold; /* Bold title */
-    font-size: 1.25rem; /* Adjust title size */
-    color: #333; /* Dark text color for better readability */
+    font-weight: bold;
+    /* Bold title */
+    font-size: 1.25rem;
+    /* Adjust title size */
+    color: #333;
+    /* Dark text color for better readability */
 }
-.spann{
+
+.spann {
     color: rgb(253, 126, 20);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .weoffers-container {
-        flex-direction: column; /* Stack sections vertically */
-        gap: 1rem; /* Space between stacked sections */
-    }
-    .weoffers{
-        margin-bottom: -3rem;
+        flex-direction: column;
     }
 
-    .weoffers, .additional-text {
-        text-align: center;
+    .weoffers {
+        margin-bottom: 1rem;
+        /* Adjust margin to give space between elements */
+    }
+
+    .weoffers,
+    .additional-text {
+        padding: 1rem;
+        /* Adjust padding for smaller screens */
+        font-size: 1.5rem;
+        /* Adjust font size */
     }
 
     .ant-card {
-        margin-bottom: 1rem; /* Adjust spacing between cards */
+        margin-bottom: 1rem;
+        /* Adjust spacing between cards */
     }
 }
 
 @media (max-width: 480px) {
     .features-container {
-        padding: 1rem; /* Further reduce padding */
+        padding: 1rem;
+        /* Further reduce padding */
     }
 
-    .weoffers, .additional-text {
-        padding: 0.75rem; /* Further reduce padding inside sections */
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    .weoffers,
+    .additional-text {
+        padding: 0.75rem;
+        /* Further reduce padding inside sections */
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
     }
 
     .ant-card {
-        margin-bottom: 0.5rem; /* Adjust spacing between cards */
+        margin-bottom: 0.5rem;
+        /* Adjust spacing between cards */
     }
 }

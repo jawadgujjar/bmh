@@ -154,6 +154,18 @@
     font-size: x-small;
 }
 
+.image-h6 {
+    display: flex;
+    justify-content: left;
+    gap: 6px;
+    align-items: center !important;
+}
+
+.dropdown-links {
+    font-weight: 700;
+}
+
+
 /* Responsive Styling for Screens Smaller Than 992px */
 @media (max-width: 992px) {
     .dropdown-multi-column .dropdown-menu .row {
