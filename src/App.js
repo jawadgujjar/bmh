@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import AppRoutes from './routes.js';
-
 const App = () => {
     return (
         <div className="App">

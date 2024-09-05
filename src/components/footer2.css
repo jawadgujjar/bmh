@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    background-color: rgb(68, 63, 53); /* Dark background */
+    padding: 20px;
+    border-top: 1px solid #e7e7e7;
+    text-align: center; /* Center align text for the entire footer */
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+  
+  .footer-heading {
+    margin-bottom: 20px; /* Space between heading and columns */
+  }
+  
+  .footer-heading h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold text */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-heading h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #e7e7e7; /* Slightly lighter color for subheading */
+   
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between columns and bottom section */
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 150px; /* Ensures columns are not too narrow */
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for links */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* .footer-column a:hover {
+    text-decoration: underline;
+  } */
+  
+  .footer-bottom {
+    font-size: 16px;
+    color: #e7e7e7; /* Slightly lighter color for bottom text */
+    font-weight: bold; /* Bold text */
+  }
+  

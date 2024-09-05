@@ -1,0 +1,124 @@
+.navbar1 {
+    background-color: #ff7f50;
+    /* Orangish theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    /* Small height for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for better visibility */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    /* Adjust spacing */
+}
+
+.contact-link span {
+    margin-left: 8px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* Adjust as needed */
+}
+
+.demo-button {
+    background: linear-gradient(90deg, #ffffff, #deb82d);
+    /* Gradient background */
+    color: black;
+    /* Text color */
+    border: none;
+    /* Remove default border */
+    padding: 8px 16px;
+    /* Smaller button padding */
+    font-size: 14px;
+    /* Smaller text size */
+    border-radius: 25px;
+    /* Rounded corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    outline: none;
+    /* Remove default outline */
+    font-weight: bold;
+    /* Bold text */
+    text-transform: uppercase;
+    /* Uppercase text */
+    letter-spacing: 0.5px;
+    /* Slight spacing between letters */
+    position: relative;
+    overflow: hidden;
+    /* Ensure pseudo-elements don't overflow */
+}
+
+.demo-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    /* Light overlay */
+    transition: transform 0.4s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+.demo-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.demo-button:hover {
+    background: linear-gradient(90deg, #ffffff, #4e54c8);
+    /* Gradient on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
+
+
+@media (max-width: 768px) {
+    .navbar1 {
+        display: block;
+        justify-content: center;
+        height: auto;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .contact-link {
+        margin-right: 0;
+    }
+
+    .demo-button {
+        margin-top: 1rem;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .button-center {
+        display: flex;
+        justify-content: center;
+    }
+}

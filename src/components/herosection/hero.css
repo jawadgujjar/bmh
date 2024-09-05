@@ -1,0 +1,35 @@
+.brand-text {
+    background: linear-gradient(to right, #fffefc, rgb(248, 247, 247), #FFD700);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background-position 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background-size: 200%;
+    background-position: left;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand-text:hover {
+    background-position: right;
+    transform: scale(1.05);
+}
+
+.margtop {
+    margin-top: 2rem;
+}
+.p-hero {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #f7f4f4;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.image-landing{
+    width: 95%;
+    height: 20%;
+    border-radius: 1rem;
+}
