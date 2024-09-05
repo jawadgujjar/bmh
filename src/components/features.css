@@ -112,10 +112,7 @@
 
 
 /* Different shades of gray for each card */
-.ant-card:nth-child(1) {
-    background-color: #c0c0c0;
-    /* Light gray */
-}
+ 
 
 .ant-card:nth-child(2) {
     background-color: #c0c0c0;
@@ -166,12 +163,7 @@
 }
 
 /* Hover effects */
-.ant-card:hover {
-    transform: translateY(-5px);
-    /* Lift effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* Enhanced shadow on hover */
-}
+
 
 /* Card title styling */
 .ant-card-head-title {
@@ -186,6 +178,7 @@
 .spann {
     color: rgb(253, 126, 20);
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

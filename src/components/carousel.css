@@ -1,28 +1,34 @@
 /* Container for centering and responsiveness */
 .customerdiv {
   text-align: center;
-  margin-top: 0.4rem; /* Add margin-top if required */
+  margin-top: 0.4rem;
+  /* Adjust margin as needed */
 }
 
+/* Carousel wrapper styling */
 .carousel-wrapper {
   display: flex;
-  justify-content: center;  
-  align-items: center;  
-  padding: 20px; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 /* Carousel container styling */
-.carousel-container {
-  width: 90%; 
-  height: auto; /* Adjust height for responsiveness */
+.carousel-container1 {
+  width: 90%;
+  height: auto;
+  /* Adjust height for responsiveness */
   padding: 2rem;
-  max-width: 800px; 
-  overflow: hidden; 
-  position: relative; 
-  border-radius: 10px; 
-  background: linear-gradient(135deg, #ff6f6f, #ff8c00); /* Red and orange gradient */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  max-width: 1000px;
+  /* Increased max-width for the carousel container */
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  /* Rounded corners for carousel container */
+  background: linear-gradient(135deg, #f5f3f3, #faf8f6);
+  /* Light gradient background */
+  box-shadow: 0 4px 8px rgba(248, 246, 246, 0.2);
 }
 
 /* Hide carousel indicators */
@@ -35,7 +41,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 18rem;
+  /* Adjust height as needed */
+  width: 100%;
+  /* Full width of container */
+  padding: 1rem;
+  /* Add padding to ensure spacing around the card */
+}
+
+.ant-card .ant-card-body {
+  padding: 0;
 }
 
 /* Center card content */
@@ -45,74 +60,90 @@
   align-items: center;
   text-align: center;
   width: 100%;
-   
-  color: #000000; /* Set card text color to black for better contrast */
-  max-width: 300px; /* Adjust max-width if needed */
-  margin-top: 1rem;
-  padding: 1rem; /* Add padding for better spacing inside the card */
-  border-radius: 8px; /* Optional: Rounded corners for the card */
+  max-width: 420px;
+  /* Increased card width */
+  color: #000000;
+  /* Set card text color to black */
+  padding: 1rem;
+  /* Padding for better spacing */
+  border-radius: 0px;
+  /* Rounded corners for the card */
+  background: #fff;
+  /* White background for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Light shadow for card */
+  margin: auto;
+  /* Center the card horizontally */
 }
 
 /* Card avatar styling */
 .avatar-review {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  /* Adjust avatar size */
+  height: 4rem;
+  /* Adjust avatar size */
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  /* Make the avatar circular */
+}
+
+/* Card title styling */
+.carousel-card h5 {
+  font-size: 1rem;
+  /* Smaller font size for title */
+  color: #070707;
+  margin: 0.5rem 0;
+}
+
+/* Card review styling */
+.carousel-card p {
+  font-size: 0.7rem;
+  /* Adjust font size for review text */
+  color: #070707;
+  line-height: 1.4;
   margin-bottom: 1rem;
 }
 
-/* Styling for carousel images */
-.carousel-img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; 
-}
-
-/* Carousel caption styling */
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); 
-  color: #fff; 
-  bottom: 20px; 
-  text-align: center; 
-  padding: 10px; 
-  border-radius: 5px; 
-}
-.ant-card:nth-child(1) {
-  background-color: #fdfcfc;
+/* Hide carousel controls (Next and Prev icons) */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
 }
 
 /* Media queries for different screen sizes */
 @media (max-width: 1024px) {
-  .carousel-container {
-    height: 91vh; 
+  .carousel-container1 {
+    height: auto;
+    /* Adjust height for larger screens */
   }
 }
 
 @media (max-width: 768px) {
-  .carousel-container {
-    height: 92vh; 
+  .carousel-card {
+    max-width: 300px;
+    /* Further adjust card size for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .carousel-container {
-    height: 70vh; 
+  .carousel-card {
+    max-width: 250px;
+    /* Even smaller card size */
   }
 }
 
 @media (max-width: 425px) {
-  .carousel-container {
-    height: 96vh; 
+  .carousel-card {
+    max-width: 250px;
+    /* Even smaller card size */
+    height: 30rem;
   }
 }
 
 @media (max-width: 375px) {
-  .carousel-container {
-    height: 112vh; 
-  }
-}
-
-@media (max-width: 320px) {
-  .carousel-container {
-    height: 30vh; 
+  .carousel-card {
+    max-width: 250px;
+    /* Even smaller card size */
+    height: 30rem;
   }
 }
