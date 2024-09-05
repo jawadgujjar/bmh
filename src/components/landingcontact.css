@@ -1,0 +1,61 @@
+.centered-whole-component {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+}
+
+.logo-svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.landing-leftcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 40%;
+    text-align: left;
+    height: 10rem;
+}
+
+.callus-text {
+    color:  rgb(253, 126, 20);
+}
+.all-logos-contact{
+    display: flex;
+    gap: 1rem;
+}
+.fontsize-call {
+    font-size: 1.5rem;
+}
+.div-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color:  rgb(253, 126, 20);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    .centered-whole-component {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing-leftcol {
+        width: auto;
+
+        height: auto;
+    }
+
+
+}
