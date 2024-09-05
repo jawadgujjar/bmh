@@ -7,6 +7,7 @@ import HeroMain from '../components/herosection/heromain';
 import Reviews from '../components/Reviews';
 import Reward from '../components/rewards';
 import Proposalform from '../components/proposalform/proposalform';
+import Landingcontact from '../components/landingcontact';
 
 
 function Landingpage() {
@@ -20,6 +21,7 @@ function Landingpage() {
       <Car />
       <Reward />
       <Proposalform />
+      <Landingcontact/>
     </div>
   )
 }

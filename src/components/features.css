@@ -146,6 +146,7 @@
     background-color: rgb(253, 126, 20) ;
     color: white;
     border-radius: 1.5rem;
+    font-size: 1rem;
 }
 
 .discover-button:hover {
