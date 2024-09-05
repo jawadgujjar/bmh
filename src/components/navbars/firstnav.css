@@ -122,3 +122,9 @@
         justify-content: center;
     }
 }
+@media (max-width: 360px) {
+
+.contact-info {
+    font-size: small;
+}
+}
