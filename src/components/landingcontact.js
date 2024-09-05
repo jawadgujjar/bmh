@@ -2,7 +2,7 @@ import React from 'react'
 import "./landingcontact.css"
 import { TiSocialFacebook } from "react-icons/ti";
 import { RiTwitterXFill } from "react-icons/ri";
-import { FaLinkedinIn,FaThreads } from "react-icons/fa6";
+import { FaLinkedinIn, FaThreads } from "react-icons/fa6";
 import { TiSocialYoutubeCircular } from "react-icons/ti";
 import { AiFillInstagram } from "react-icons/ai";
 
@@ -15,7 +15,8 @@ function Landingcontact() {
     return (
         <div className='centered-whole-component'>
             <div className='landing-leftcol'>
-                <img className='logo-svg' alt='logo' src='bmhlogo.png' />
+                <div className='image-landingcontact'>                <img className='logo-svg' alt='logo' src='bmhlogo.png' />
+                </div>
                 <p>Brand Marketing Hub is a full-service digital marketing agency. Attract, Impress, and Convert more leads online and get results with Thrive.</p>
 
             </div>
