@@ -1,0 +1,46 @@
+.main-proposalform {
+    display: flex;
+    /* Enable flexbox */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: center;
+    /* Center items vertically */
+}
+
+.free-text {
+    color: orange;
+}
+
+.get-proposal-text {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.center-proposalform {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.contact-container-poposal {
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    max-width: 600px;
+    /* Limit the maximum width */
+    width: 100%;
+    /* Full width for small screens */
+    padding: 30px;
+    /* Padding inside the container */
+    margin-top: 1rem;
+    /* Margin above the container */
+    display: flex;
+    /* Flexbox layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: center;
+    align-items: left;
+    /* Center items horizontally */
+}
