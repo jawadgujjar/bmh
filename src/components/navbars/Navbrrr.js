@@ -1,7 +1,5 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -10,11 +8,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { BiWorld } from "react-icons/bi";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiDeviceMobile } from "react-icons/hi";
-
 import { Col, Row } from 'react-bootstrap';
+import Modal1 from '../modal';
 import "./Navbrr.css"
 
 function Navbrrr() {
+
+   
+
     const navigate = useNavigate();
 
     const handleNavClick = (path) => {
@@ -126,15 +127,8 @@ function Navbrrr() {
                             <Nav.Link as={Link} to="/about" onClick={() => handleNavClick('/about')}>About</Nav.Link>
                             <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Contact Us</Nav.Link>
                         </Nav>
-                        <Form className="d-flex search-form">
-                            <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button className='search-button' variant="outline-success">Search</Button>
-                        </Form>
+                       <Modal1/>
+      
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
             </Container>

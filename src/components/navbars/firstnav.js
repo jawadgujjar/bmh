@@ -2,6 +2,9 @@ import React from 'react';
 import "./firstnav.css";
 import { Layout } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 
 const { Header } = Layout;
 
@@ -16,11 +19,15 @@ function FirstNav() {
                     <PhoneOutlined /> <span>(123) 456-7890</span>
                 </a>
             </div>
-            <div className='button-center'>
-                <button className='demo-button'>
-                    Get a Free Proposal
-                </button>
-            </div>
+            <Form className="d-flex search-form">
+                            <Form.Control
+                                type="search"
+                                placeholder="Search"
+                                className="me-2"
+                                aria-label="Search"
+                            />
+                            <Button className='search-button' variant="outline-success">Search</Button>
+                        </Form>
         </div>
     )
 }

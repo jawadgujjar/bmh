@@ -83,13 +83,13 @@
 /* Media queries for different screen sizes */
 @media (max-width: 1024px) {
   .carousel-container {
-    height: 80vh; 
+    height: 91vh; 
   }
 }
 
 @media (max-width: 768px) {
   .carousel-container {
-    height: 83vh; 
+    height: 92vh; 
   }
 }
 
@@ -101,13 +101,13 @@
 
 @media (max-width: 425px) {
   .carousel-container {
-    height: 86vh; 
+    height: 96vh; 
   }
 }
 
 @media (max-width: 375px) {
   .carousel-container {
-    height: 94vh; 
+    height: 112vh; 
   }
 }
 
