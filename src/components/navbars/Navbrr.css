@@ -92,9 +92,11 @@
 /* Search Bar Styles */
 .search-form {
     position: relative;
-    width: 250px;
+    width: auto;
     transition: width 0.4s ease-in-out;
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .search-form:hover,
@@ -110,9 +112,8 @@
 
 /* Search Button Styles */
 .search-button {
-    background-color: #000;
+    background-color: rgb(253, 126, 20);;
     color: #fff;
-    border: 1px solid #000;
     transition: background-color 0.3s ease;
 }
 
@@ -181,7 +182,12 @@
 .dropdown-links {
     font-weight: 700;
 }
+@media (max-width: 1217px) {
 
+.nav-link {
+    margin-left: 1rem;
+}
+}
 
 /* Responsive Styling for Screens Smaller Than 992px */
 @media (max-width: 992px) {

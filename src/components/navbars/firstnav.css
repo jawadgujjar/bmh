@@ -96,6 +96,11 @@
 
 
 @media (max-width: 768px) {
+    .modal-responsive{
+        display: flex;
+        justify-content: center;
+    }
+
     .navbar1 {
         display: block;
         justify-content: center;
