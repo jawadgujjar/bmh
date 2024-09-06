@@ -5,6 +5,7 @@ import { Layout } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Modal1 from '../modal';
 
 const { Header } = Layout;
 
@@ -19,15 +20,11 @@ function FirstNav() {
                     <PhoneOutlined /> <span>(123) 456-7890</span>
                 </a>
             </div>
-            <Form className="d-flex search-form">
-                <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                />
-                <Button className='search-button' variant="outline-light">Search</Button>
-            </Form>
+            <div className='modal-responsive'>         
+                   <Modal1 />
+            </div>
+
+
         </Header>
     );
 }
