@@ -1,31 +1,30 @@
 // FirstNav.js
 import React from 'react';
 import "./firstnav.css";
-import { Layout } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Modal1 from '../modal';
 
-const { Header } = Layout;
+import Modal1 from '../modal'; // Assuming this is a functional modal component
 
 function FirstNav() {
     return (
-        <Header className="navbar1">
+        <div className="navbar1">
             <div className="contact-info">
+                {/* Email link (clickable and opens email client) */}
                 <a href="mailto:email@example.com" className="contact-link">
-                    <MailOutlined /> <span>email@example.com</span>
+                    <MailOutlined /> <span>Email Us</span>
                 </a>
-                <a href="tel:(123)456-7890" className="contact-link">
-                    <PhoneOutlined /> <span>(123) 456-7890</span>
+
+                {/* Phone number link (clickable and opens call log) */}
+                <a href="tel:+1234567890" className="contact-link">
+                    <PhoneOutlined /> <span>Call Us</span>
                 </a>
             </div>
-            <div className='modal-responsive'>         
-                   <Modal1 />
+
+            {/* Modal on the right side */}
+            <div className="modal-container">
+                <Modal1 />
             </div>
-
-
-        </Header>
+        </div>
     );
 }
 

@@ -42,7 +42,7 @@ const Modal1 = () => {
   };
 
   return (
-    <> <Button className='submit-button' type="primary" onClick={showModal}>
+    <> <Button className='submit-button'  onClick={showModal}>
       Get a Free Proposal
     </Button>
       <Modal
