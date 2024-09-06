@@ -3,8 +3,6 @@ import React from 'react';
 import "./firstnav.css";
 import { Layout } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import Modal1 from '../modal';
 
 const { Header } = Layout;

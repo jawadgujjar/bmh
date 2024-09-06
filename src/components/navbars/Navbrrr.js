@@ -10,7 +10,6 @@ import { BiWorld } from "react-icons/bi";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiDeviceMobile } from "react-icons/hi";
 import { Col, Form, Row } from 'react-bootstrap';
-import Modal1 from '../modal';
 import "./Navbrr.css";
 import FirstNav from './firstnav';
 import { Button } from 'antd';

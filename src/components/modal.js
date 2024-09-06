@@ -18,18 +18,7 @@ const Modal1 = () => {
     console.log('Failed:', errorInfo);
   };
 
-  const [email, setEmail] = useState('');
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleButtonClick = () => {
-    console.log('Email:', email);
-    // Add your logic here for the button click
-  };
-
-
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
