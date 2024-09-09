@@ -52,7 +52,7 @@ function Navbrrr() {
                                 >
                                     <Container fluid>
                                         <Row>
-                                            <Col xs={12} md={4}>
+                                            <Col xs={12} md={6}>
                                                 <div className='image-h6'>
                                                     <GiPublicSpeaker />
                                                     <p className='dropdown-links'>Marketing</p>
@@ -88,7 +88,7 @@ function Navbrrr() {
                                                 </ul>
                                             </Col>
 
-                                            <Col xs={12} md={4}>
+                                            <Col xs={12} md={6}>
                                                 <div className='image-h6'>
                                                     <BiWorld />
                                                     <p className='dropdown-links'>Web Development</p>
@@ -99,7 +99,7 @@ function Navbrrr() {
                                                 <NavDropdown.Item as={Link} to="/custom-software">Custom Software</NavDropdown.Item>
                                             </Col>
 
-                                            <Col xs={12} md={4}>
+                                            <Col xs={12} md={6}>
                                                 <div className='image-h6'>
                                                     <HiDeviceMobile />
                                                     <p className='dropdown-links'>App Development</p>
