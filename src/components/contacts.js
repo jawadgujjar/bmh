@@ -12,9 +12,9 @@ const Contact = () => {
              <h4 className="gethelp">Get the Help you need</h4>
              <p className="contacttoday">Contact us today and let’s start creating something amazing together!</p>
            
-             <div className="cta-buttons">
-                    <a href="#contact" className="cta-button"> info@bmh.com</a>
-                    <a href="#contact" className="cta-button">(410) 834-9965</a>
+             <div className="cta-buttons1">
+                    <a href="#contact" className="cta-button1"> info@bmh.com</a>
+                    <a href="#contact" className="cta-button1">(410) 834-9965</a>
                 </div>
 
                 <p className="privacy">Privacy Policy</p>
