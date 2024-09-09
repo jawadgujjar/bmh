@@ -6,6 +6,7 @@ import Portfolio from './portfolio';
 const PortfolioRemain = () => {
   return (
     <div>
+        <p className="portfolio">PORTFOLIO</p>
       <Portfolio />
       <div className="container">
         <div className="text-box">
