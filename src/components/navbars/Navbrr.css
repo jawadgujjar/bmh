@@ -3,15 +3,19 @@
     width: 10rem;
     height: 10rem;
 }
-.navbars-fixed{
-    position: sticky; /* Keeps the navbar fixed at the top */
-    top: 0; /* Aligns the navbar to the top */
+
+.navbars-fixed {
+    position: sticky;
+    /* Keeps the navbar fixed at the top */
+    top: 0;
+    /* Aligns the navbar to the top */
     left: 0;
     right: 0;
     bottom: 5;
     z-index: 1000;
     background-color: white;
 }
+
 /* Navbar Styles */
 .navbar {
     border-bottom: none !important;
@@ -19,16 +23,20 @@
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
     height: 80px;
-    margin-bottom: 5rem ;
+    margin-bottom: 5rem;
     /* Set a fixed height for the navbar */
 }
-.first-fixed{
-    position: fixed; /* Keeps the navbar fixed at the top */
-    top: 0; /* Aligns the navbar to the top */
+
+.first-fixed {
+    position: fixed;
+    /* Keeps the navbar fixed at the top */
+    top: 0;
+    /* Aligns the navbar to the top */
     left: 0;
     right: 0;
     z-index: 500;
 }
+
 /* Navbar Custom Styles */
 .custom-navbar {
     display: flex;
@@ -86,7 +94,7 @@
 }
 
 .nav-link {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 /* Search Bar Styles */
@@ -112,7 +120,8 @@
 
 /* Search Button Styles */
 .search-button {
-    background-color: rgb(253, 126, 20);;
+    background-color: rgb(253, 126, 20);
+    ;
     color: #fff;
     transition: background-color 0.3s ease;
 }
@@ -182,15 +191,21 @@
 .dropdown-links {
     font-weight: 700;
 }
+
 @media (max-width: 1217px) {
 
-.nav-link {
-    margin-left: 1rem;
-}
+    .nav-link {
+        margin-left: 1rem;
+        font-size: small;
+    }
 }
 
 /* Responsive Styling for Screens Smaller Than 992px */
 @media (max-width: 992px) {
+    .search-form {
+        display: none;
+    }
+
     .dropdown-multi-column .dropdown-menu .row {
         display: flex;
         flex-direction: row;
@@ -221,11 +236,6 @@
         text-align: center;
     }
 
-    .search-form {
-        width: auto;
-        margin-top: 1rem;
-    }
-
     .navbar-brand {
         margin-bottom: 1rem;
     }
@@ -247,6 +257,7 @@
         width: 7rem;
         height: 7rem;
     }
+
     .dropdown-multi-column .dropdown-menu .row {
         display: flex;
         flex-direction: row;

@@ -4,9 +4,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Small padding */
-    height: 100px; 
+    padding: 10px; /* Small padding */
+    height: 60px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.hide-on{
+    display:none
 }
 
 .contact-info {
@@ -36,7 +39,14 @@
     display: flex;
     align-items: center;
 }
-
+@media (max-width: 992px) {
+    .hide-on{
+        display: flex;
+    }
+    .hide-2{
+        display:none
+    }
+}
 /* Responsive styling */
 @media (max-width: 768px) {
     .navbar1 {

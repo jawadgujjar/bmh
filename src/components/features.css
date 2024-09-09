@@ -112,10 +112,7 @@
 
 
 /* Different shades of gray for each card */
-.ant-card:nth-child(1) {
-    background-color: #c0c0c0;
-    /* Light gray */
-}
+ 
 
 .ant-card:nth-child(2) {
     background-color: #c0c0c0;
@@ -166,6 +163,8 @@
 
 }
 
+/* Hover effects */
+
 
 /* Card title styling */
 .ant-card-head-title {
@@ -180,6 +179,7 @@
 .spann {
     color: rgb(253, 126, 20);
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

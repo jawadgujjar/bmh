@@ -10,10 +10,10 @@ import { BiWorld } from "react-icons/bi";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiDeviceMobile } from "react-icons/hi";
 import { Col, Form, Row } from 'react-bootstrap';
-import Modal1 from '../modal';
 import "./Navbrr.css";
 import FirstNav from './firstnav';
 import { Button } from 'antd';
+import Modal1 from '../modal';
 
 function Navbrrr() {
     const navigate = useNavigate();
@@ -115,16 +115,28 @@ function Navbrrr() {
 
                                 <Nav.Link as={Link} to="/about" onClick={() => handleNavClick('/about')}>About</Nav.Link>
                                 <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Contact Us</Nav.Link>
+                                <Nav.Link as={Link} to="/portfolio" onClick={() => handleNavClick('/portfolio')}>Portfolio</Nav.Link>
+
                             </Nav>
-                            <Form className="d-flex search-form">
-                                <Form.Control
-                                    type="search"
-                                    placeholder="Search"
-                                    className="me-2"
-                                    aria-label="Search"
-                                />
-                                <Button className='search-button' variant="outline-light">Search</Button>
-                            </Form>
+                            <div className='hide-2 '>
+                                <div className='modal-container'>
+                                    <Modal1 />
+                                </div>
+                            </div>
+                            <div className='hide-on '>
+                                <div className='modal-container'>
+                                    <Form className="d-flex search-form " >
+                                        <Form.Control
+                                            type="search"
+                                            placeholder="Search"
+                                            className="me-2"
+                                            aria-label="Search"
+                                        />
+                                        <Button className='search-button' variant="outline-light">Search</Button>
+                                    </Form></div>
+
+                            </div>
+
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>

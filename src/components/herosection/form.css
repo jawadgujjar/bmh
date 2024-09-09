@@ -71,7 +71,7 @@
 
 .submit-button {
     /* Yellow button */
-    border-color: #FFD700;
+    border: 1px solid #ffffff;
     background-color: rgb(253, 126, 20) !important;
     /* Yellow border */
     color: white;
@@ -86,11 +86,10 @@
 
 .submit-button:hover {
     background-color: #FFD700 !important;
-
     /* Slightly darker yellow on hover */
     border-color: #e5c700;
     /* Keep border color the same */
-    color: black;
+    color: black !important;
     /* Keep text color the same */
 }
 
