@@ -1,82 +1,74 @@
 import React from 'react';
 import './portfolio.css';
 
-const TiltedCard = ({ previewImages, title, link }) => {
-  return (
-    <div className="card-container">
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <div className="tilted-card">
-          <div className="image-carousel">
-            {previewImages.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`${title} preview ${index + 1}`}
-                className="carousel-image"
-              />
-            ))}
-          </div>
-          <div className="card-overlay">
-            <h3 className="card-title">{title}</h3>
-          </div>
+const PortfolioCard = ({ image, previewImage, title, description, link }) => {
+    return (
+        <div className="portfolio-card">
+            <a href={link} target="_blank" rel="noopener noreferrer">
+                <div className="portfolio-card-inner">
+                    <div className="portfolio-card-image-wrapper">
+                        <img src={image} alt={title} className="portfolio-card-image" />
+                        <div className="portfolio-card-hover-preview">
+                            <img src={previewImage} alt={`${title} preview`} className="portfolio-preview-image" />
+                        </div>
+                    </div>
+                    <div className="portfolio-card-content">
+                        <h3>{title}</h3>
+                        <p>{description}</p>
+                    </div>
+                </div>
+            </a>
         </div>
-      </a>
-    </div>
-  );
+    );
 };
 
-const TiltedCards = () => {
-  const cardsData = [
-    {
-      previewImages: [
-        'https://via.placeholder.com/300x200/ff7f7f', // Replace with actual images
-        'https://via.placeholder.com/300x200/7f7fff',
-        'https://via.placeholder.com/300x200/7fff7f',
-      ],
-      title: 'Website 1',
-      link: 'https://website1.com',
-    },
-    {
-      previewImages: [
-        'https://via.placeholder.com/300x200/ff7f7f', 
-        'https://via.placeholder.com/300x200/7f7fff',
-        'https://via.placeholder.com/300x200/7fff7f',
-      ],
-      title: 'Website 2',
-      link: 'https://website2.com',
-    },
-    {
-      previewImages: [
-        'https://via.placeholder.com/300x200/ff7f7f', 
-        'https://via.placeholder.com/300x200/7f7fff',
-        'https://via.placeholder.com/300x200/7fff7f',
-      ],
-      title: 'Website 3',
-      link: 'https://website3.com',
-    },
-    {
-      previewImages: [
-        'https://via.placeholder.com/300x200/ff7f7f', 
-        'https://via.placeholder.com/300x200/7f7fff',
-        'https://via.placeholder.com/300x200/7fff7f',
-      ],
-      title: 'Website 4',
-      link: 'https://website4.com',
-    },
-  ];
+const Portfolio = () => {
+    const cardsData = [
+        {
+            image: 'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202210052123',
+            previewImage: '../images/apple.png',
+            title: 'Apple Website',
+            description: 'Apple’s official website showcasing their products.',
+            link: 'https://www.apple.com',
+        },
+        {
+            image: 'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202210052123',
+            previewImage: '../images/apple.png',
+            title: 'Apple Store',
+            description: 'Apple’s online store for purchasing products.',
+            link: 'https://store.apple.com',
+        },
+        {
+            image: 'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202210052123',
+            previewImage: '../images/apple.png',
+            title: 'Apple News',
+            description: 'Apple’s news section with latest updates.',
+            link: 'https://news.apple.com',
+        },
+        {
+            image: 'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202210052123',
+            previewImage: '../images/apple.png',
+            title: 'Apple Support',
+            description: 'Apple’s support page for customer service.',
+            link: 'https://support.apple.com',
+        },
+      
+    ];
 
-  return (
-    <div className="cards-wrapper">
-      {cardsData.map((card, index) => (
-        <TiltedCard
-          key={index}
-          previewImages={card.previewImages}
-          title={card.title}
-          link={card.link}
-        />
-      ))}
-    </div>
-  );
+    return (
+        <div className="portfolio-wrapper">
+            {cardsData.map((card, index) => (
+                <PortfolioCard
+                    key={index}
+                    image={card.image}
+                    previewImage={card.previewImage}
+                    title={card.title}
+                    description={card.description}
+                    link={card.link}
+                />
+            ))}
+        </div>
+    );
 };
 
-export default TiltedCards;
+export default Portfolio;
