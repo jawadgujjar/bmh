@@ -1,0 +1,79 @@
+/* src/portfolioremaining.css */
+
+/* Base styles for the container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Styles for the text-box */
+  .text-box {
+    background-color: #f5f5f5; /* Off-white background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text and button */
+    width: 100%; /* Full width on small screens */
+    max-width: 40rem; /* Maximum width for larger screens */
+  }
+  
+  /* Styles for the text inside the text-box */
+  .text-box p {
+    margin: 0 0 20px 0; /* Margin-bottom to separate text from button */
+    font-size: 2rem; /* Font size in rem for better scalability */
+    font-weight: bold;
+    color: #333; /* Darker text color for contrast */
+  }
+  
+  /* Styles for the action button */
+  .action-button {
+    background-color: #FFA500;  
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem; /* Font size in rem */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .action-button:hover {
+    background-color: #cc8400; /* Darker shade for hover effect */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .text-box {
+      padding: 15px;
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .text-box p {
+      font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+  
+    .action-button {
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+      font-size: 0.875rem; /* Smaller font size for the button */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-box {
+      padding: 10px;
+      width: 95%; /* Further adjust width for very small screens */
+    }
+  
+    .text-box p {
+      font-size: 1.25rem; /* Even smaller font size for very small screens */
+    }
+  
+    .action-button {
+      padding: 6px 12px; /* Adjust padding for very small screens */
+      font-size: 0.75rem; /* Smaller font size for the button */
+    }
+  }
+  
