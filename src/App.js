@@ -2,12 +2,15 @@ import React  from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppRoutes from './routes.js';
+import PortfolioRemain from './components/portfolio/portfolioremaining.js';
 
 const App = () => {
 
   return (
     <div className="App">
-      <AppRoutes  />
+      {/* <AppRoutes  /> */}
+       <PortfolioRemain/>
+
     </div>
 
      
