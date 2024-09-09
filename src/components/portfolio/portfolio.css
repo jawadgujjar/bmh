@@ -101,3 +101,9 @@
     font-size: 0.9rem;
     margin: 5px 0 0;
 }
+@media (max-width: 768px) {
+  .portfolio-card-image-wrapper {
+
+      transform: rotate(0deg) skew(0deg)
+  }
+}

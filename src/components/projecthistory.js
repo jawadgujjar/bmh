@@ -6,12 +6,12 @@ const Projecthistory1 = () => {
     return (
         <div><section className="project-history">
             <h1 className="section-title">Our <span className="span">Company</span> Success</h1>
-            <div className="container2">
+            <div className="projects2">
 
                 <div className="row">
                     <div className="col-md-4">
                         <div className="stat-card">
-                            <h3 className="stat-number">100+</h3>
+                            <h3 className="stat-number">300+</h3>
                             <p className="stat-label">Done Projects</p>
                         </div>
                     </div>

@@ -179,7 +179,7 @@
   padding: 12px 24px;
   font-size: 16px;
   color: #fff;
-  background-color: #0f0f0f;
+  background-color: rgb(253, 126, 20);
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -188,7 +188,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .cta-button1:hover {
-  background-color: #6a6b6d;
+  background-color: #ffc107;
   transform: translateY(-2px);
 }
 .cta-buttons1 {
