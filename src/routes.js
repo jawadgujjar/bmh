@@ -15,13 +15,14 @@ import Termofservice1 from './components/termofservice';
 import ScrollToTop from './components/scroll';
 import Navbrrr from './components/navbars/Navbrrr';
 import Footer12 from "./components/footer2"
+import PortfolioRemain from './components/portfolio/portfolioremaining';
 
 const AppRoutes = () => {
     return (
         <Router>
             <Navbrrr />
-            <> 
-            <ScrollToTop />
+            <>
+                <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Landingpage />} />
                     <Route path="/home" element={<Landingpage />} />
@@ -36,6 +37,7 @@ const AppRoutes = () => {
                     <Route path="/privacypolicy" element={<Privacy1 />} />
                     <Route path="/refundpolicy" element={<Refund1 />} />
                     <Route path="/termofservice" element={<Termofservice1 />} />
+                    <Route path="/portfolio" element={<PortfolioRemain />} />
                 </Routes>
                 <Footer12 />
             </>

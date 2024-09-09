@@ -1,102 +1,103 @@
 .portfolio-wrapper {
     display: flex;
-    overflow-x: auto;
-    padding: 20px;
-    gap: 2px;
-  }
-  
-  .portfolio-card {
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* Add perspective to the container */
-  }
-  
-  .portfolio-card-inner {
-    width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust the gap between cards as needed */
+    justify-content: center;
+}
+
+.portfolio-card {
     position: relative;
-    transform-style: preserve-3d; /* Preserve 3D effect */
-    transition: transform 0.3s ease;
-    transform: rotateY(-75deg); /* Tilt the card */
-  }
-  
-  .portfolio-card:hover .portfolio-card-inner {
-    transform: rotateY(0deg); /* Straighten the card on hover */
-  }
-  
-  .portfolio-card-image-wrapper {
+    margin-top: 5rem;
+    width: 300px;
+    /* Adjust the card width as needed */
+    height: 400px;
+    /* Adjust the card height as needed */
+    perspective: 1000px;
+    /* Optional: Add perspective for 3D effect */
+}
+
+.portfolio-card-inner {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.portfolio-card-image-wrapper {
+    position: absolute;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(-10deg) skew(-10deg);
+    overflow: hidden;
+    background: white;
+    transition: transform 0.5s;
+}
+
+.portfolio-card-hover-preview {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background */
+    transform: rotate(0deg) skew(0deg);
     overflow: hidden;
-    transform: rotateY(0deg);
-  }
-  
-  .portfolio-card-image {
-    width: 100%;
-    height: 100%;
+    transition: transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.portfolio-preview-image {
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
-    transition: opacity 0.5s ease;
-  }
-  
-  .portfolio-card-hover-preview {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: none;
-    transform: rotateY(0deg);
-  }
-  
-  .portfolio-preview-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.5s ease;
-  }
-  
-  .portfolio-card-content {
+    transition: transform 0.5s ease;
+}
+
+.portfolio-card-content {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark background for text */
     color: white;
+    padding: 20px;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .portfolio-card:hover .portfolio-card-content {
-    opacity: 1; /* Show content on hover */
-  }
-  
-  .portfolio-card:hover .portfolio-card-image {
-    opacity: 0; /* Hide the original image */
-  }
-  
-  .portfolio-card:hover .portfolio-card-hover-preview {
-    display: block; /* Show the preview on hover */
-  }
-  
-  .portfolio-card:hover .portfolio-preview-image {
-    opacity: 1; /* Ensure preview image is visible on hover */
-  }
-  
-  .portfolio-card h3 {
+    transition: opacity 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-card-inner {
+    transform: rotateY(0);
+}
+
+.portfolio-card:hover .portfolio-card-image-wrapper {
+    transform: rotate(0deg) skew(0deg);
+}
+
+.portfolio-card:hover .portfolio-card-hover-preview {
+    opacity: 1;
+    transform: rotate(0deg) skew(0deg);
+}
+
+.portfolio-card:hover .portfolio-preview-image {
+    transform: scale(1.1);
+    /* Slightly zoom the preview image on hover */
+}
+
+.portfolio-card h3 {
     font-size: 1.2rem;
     margin: 0;
-  }
-  
-  .portfolio-card p {
+}
+
+.portfolio-card p {
     font-size: 0.9rem;
     margin: 5px 0 0;
-  }
-  
-
-  
+}
