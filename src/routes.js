@@ -15,7 +15,7 @@ import Termofservice1 from './components/termofservice';
 import ScrollToTop from './components/scroll';
 import Navbrrr from './components/navbars/Navbrrr';
 import Footer12 from "./components/footer2"
-import Portfolio from './components/portfolio/portfolio';
+import PortfolioRemain from './components/portfolio/portfolioremaining';
 
 const AppRoutes = () => {
     return (
@@ -37,7 +37,7 @@ const AppRoutes = () => {
                     <Route path="/privacypolicy" element={<Privacy1 />} />
                     <Route path="/refundpolicy" element={<Refund1 />} />
                     <Route path="/termofservice" element={<Termofservice1 />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/portfolio" element={<PortfolioRemain />} />
                 </Routes>
                 <Footer12 />
             </>
