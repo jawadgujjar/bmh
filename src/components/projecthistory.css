@@ -5,8 +5,8 @@
     /* Dark background for contrast */
 }
 
-.container2 {
-    width: 90%;
+.projects2 {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
@@ -49,6 +49,8 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+    
 }
 
 .stat-card:hover {
