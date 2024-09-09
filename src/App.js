@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppRoutes from './routes.js';
 import PortfolioRemain from './components/portfolio/portfolioremaining.js';
+import Portfolio from './components/portfolio/portfolio.js';
 
 const App = () => {
 
@@ -10,6 +11,7 @@ const App = () => {
     <div className="App">
       {/* <AppRoutes  /> */}
        <PortfolioRemain/>
+       
 
     </div>
 

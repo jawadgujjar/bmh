@@ -1,88 +1,101 @@
-.cards-wrapper {
+.portfolio-wrapper {
     display: flex;
-    justify-content: space-between;
+    overflow-x: auto;
     padding: 20px;
+    gap: 2px;
   }
   
-  .card-container {
+  .portfolio-card {
     width: 300px;
     height: 200px;
-    perspective: 1000px;
-    margin: 0 10px;
+    perspective: 1000px; /* Add perspective to the container */
   }
   
-  .tilted-card {
+  .portfolio-card-inner {
     width: 100%;
     height: 100%;
     position: relative;
-    transition: transform 0.3s ease-in-out;
-    transform: rotate(-10deg); /* Tilt the card */
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    transform-style: preserve-3d; /* Preserve 3D effect */
+    transition: transform 0.3s ease;
+    transform: rotateY(-75deg); /* Tilt the card */
   }
   
-  .tilted-card:hover {
-    transform: rotate(0deg); /* Straighten the card on hover */
+  .portfolio-card:hover .portfolio-card-inner {
+    transform: rotateY(0deg); /* Straighten the card on hover */
   }
   
-  .image-carousel {
+  .portfolio-card-image-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: row;
-    transition: all 0.3s ease-in-out;
-    animation: scroll-images 9s linear infinite; /* Added animation to scroll images */
+    overflow: hidden;
+    transform: rotateY(0deg);
   }
   
-  .carousel-image {
+  .portfolio-card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    flex-shrink: 0;
+    transition: opacity 0.5s ease;
   }
   
-  @keyframes scroll-images {
-    0% {
-      transform: translateX(0);
-    }
-    33% {
-      transform: translateX(-100%);
-    }
-    66% {
-      transform: translateX(-200%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-  
-  .card-overlay {
+  .portfolio-card-hover-preview {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+    transform: rotateY(0deg);
+  }
+  
+  .portfolio-preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+  }
+  
+  .portfolio-card-content {
+    position: absolute;
     bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .tilted-card:hover .card-overlay {
-    opacity: 1; /* Show overlay on hover */
-  }
-  
-  .card-title {
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    font-size: 1.5em;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-card:hover .portfolio-card-content {
+    opacity: 1; /* Show content on hover */
+  }
+  
+  .portfolio-card:hover .portfolio-card-image {
+    opacity: 0; /* Hide the original image */
+  }
+  
+  .portfolio-card:hover .portfolio-card-hover-preview {
+    display: block; /* Show the preview on hover */
+  }
+  
+  .portfolio-card:hover .portfolio-preview-image {
+    opacity: 1; /* Ensure preview image is visible on hover */
+  }
+  
+  .portfolio-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .portfolio-card p {
+    font-size: 0.9rem;
+    margin: 5px 0 0;
   }
   
 
