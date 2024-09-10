@@ -102,7 +102,7 @@ function Navbrrr() {
                                             <Col xs={12} md={4}>
                                                 <div className='image-h6'>
                                                     <HiDeviceMobile />
-                                                    <p className='dropdown-links'>App Development</p>
+                                                    <Link className='dropdown-links' to="/appdevelopment" >App Development</Link>
                                                 </div>
                                                 <NavDropdown.Item as={Link} to="/strategy-consulting">Strategy Consulting</NavDropdown.Item>
                                                 <NavDropdown.Item as={Link} to="/business-consulting">Business Consulting</NavDropdown.Item>
