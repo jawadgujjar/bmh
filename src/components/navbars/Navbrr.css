@@ -197,7 +197,12 @@
     line-height: 1; /* Ensure no extra space in the text */
     color: #000;
 }
-
+@media (max-width: 1156px) {
+    .dropdown-multi-column .dropdown-menu {
+        width: 42rem;
+        padding: 20px;
+    }
+    }
 @media (max-width: 1217px) {
 
     .nav-link {

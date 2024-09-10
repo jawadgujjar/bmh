@@ -17,6 +17,8 @@ import Navbrrr from './components/navbars/Navbrrr';
 import Footer12 from "./components/footer2"
 import PortfolioRemain from './components/portfolio/portfolioremaining';
 import Appdevelopment1 from './components/webdevelopmentmain/appdevelopment';
+import Socialmediamarketing1 from './components/socialmediamarketing';
+import Ecommercedevelopment1 from './components/ecommercedevelopment';
 
 const AppRoutes = () => {
     return (
@@ -40,6 +42,8 @@ const AppRoutes = () => {
                     <Route path="/termofservice" element={<Termofservice1 />} />
                     <Route path="/portfolio" element={<PortfolioRemain />} />
                     <Route path="/appdevelopment" element={<Appdevelopment1 />} />
+                    <Route path="/socialmediamarketing" element={<Socialmediamarketing1 />} />
+                    <Route path="/ecommercedevelopment" element={<Ecommercedevelopment1 />} />
                 </Routes>
                 <Footer12 />
             </>

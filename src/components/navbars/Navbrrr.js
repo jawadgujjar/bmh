@@ -58,34 +58,11 @@ function Navbrrr() {
                                                     <p className='dropdown-links'>Marketing</p>
                                                 </div>
                                                 <NavDropdown.Item as={Link} to="/digitalmarketingpage">Digital Marketing</NavDropdown.Item>
-                                                <ul className='unorder-list'>
-                                                    <li>Marketing Strategy Development</li>
-                                                    <li>Franchise Digital Marketing</li>
-                                                    <li>Enterprise Digital Marketing</li>
-                                                </ul>
+                                               
                                                 <NavDropdown.Item as={Link} to="/seopage">SEO Services</NavDropdown.Item>
-                                                <ul className='unorder-list'>
-                                                    <li>Technical SEO</li>
-                                                    <li>Franchise SEO</li>
-                                                    <li>Enterprise SEO Audit</li>
-                                                    <li>SEO Audits</li>
-                                                    <li>Franchise SEO Audit</li>
-                                                </ul>
-                                                <NavDropdown.Item as={Link} to="/social-media-marketing">Social Media Marketing</NavDropdown.Item>
-                                                <ul className='unorder-list'>
-                                                    <li>Social Media Management</li>
-                                                    <li>Social Media Brand Management</li>
-                                                    <li>Franchise Social Media</li>
-                                                    <li>Enterprise Social Media</li>
-                                                </ul>
-                                                <NavDropdown.Item as={Link} to="/email-marketing">Email Marketing</NavDropdown.Item>
-                                                <ul className='unorder-list'>
-                                                    <li>Email Campaign Creation</li>
-                                                    <li>Audience Segmentation</li>
-                                                    <li>Automated Email Workflows</li>
-                                                    <li>Personalized Email Content</li>
-                                                    <li>Email Analytics & Reporting</li>
-                                                </ul>
+                                              
+                                                <NavDropdown.Item as={Link} to="/socialmediamarketing">Social Media Marketing</NavDropdown.Item>
+                                               
                                             </Col>
 
                                             <Col xs={12} sm={6} md={4} lg={3}>
@@ -93,21 +70,17 @@ function Navbrrr() {
                                                     <BiWorld />
                                                     <p className='dropdown-links'>Web Development</p>
                                                 </div>
-                                                <NavDropdown.Item as={Link} to="/web-development">Website Design</NavDropdown.Item>
-                                                <NavDropdown.Item as={Link} to="/ecommerce-development">E-commerce Development</NavDropdown.Item>
-                                                <NavDropdown.Item as={Link} to="/app-development">App Development</NavDropdown.Item>
-                                                <NavDropdown.Item as={Link} to="/custom-software">Custom Software</NavDropdown.Item>
+                                                <NavDropdown.Item as={Link} to="/webdevelopmentpage">Website Design</NavDropdown.Item>
+                                                <NavDropdown.Item as={Link} to="/ecommercedevelopment">E-commerce Development</NavDropdown.Item>                                                <NavDropdown.Item as={Link} to="/custom-software">Custom Software</NavDropdown.Item>
                                             </Col>
 
                                             <Col xs={12} sm={6} md={4} lg={3}>
                                                 <div className='image-h6'>
                                                     <HiDeviceMobile />
-                                                    <Link className='dropdown-links' to="/appdevelopment" >App Development</Link>
+                                                    <p className='dropdown-links'>App Development</p>
                                                 </div>
-                                                <NavDropdown.Item as={Link} to="/strategy-consulting">Strategy Consulting</NavDropdown.Item>
-                                                <NavDropdown.Item as={Link} to="/business-consulting">Business Consulting</NavDropdown.Item>
-                                                <NavDropdown.Item as={Link} to="/marketing-consulting">Marketing Consulting</NavDropdown.Item>
-                                                <NavDropdown.Item as={Link} to="/it-consulting">IT Consulting</NavDropdown.Item>
+                                                <NavDropdown.Item as={Link} to="/appdevelopment" >App Development</NavDropdown.Item>
+                                               
                                             </Col>
                                         </Row>
                                     </Container>
