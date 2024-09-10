@@ -1,7 +1,7 @@
 /* src/portfolioremaining.css */
 
 /* Base styles for the container */
-.container {
+.containerportfolio {
     display: flex;
     align-items: center;
     justify-content: center;
