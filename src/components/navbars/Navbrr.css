@@ -183,13 +183,18 @@
 
 .image-h6 {
     display: flex;
-    justify-content: left;
-    gap: 6px;
-    align-items: center !important;
+    align-items: center;
+    gap: 0.5rem; /* Adds space between the icon and text */
+}
+
+.image-h6 svg {
+    font-size: 1.5rem; /* Adjust icon size */
 }
 
 .dropdown-links {
     font-weight: 700;
+    margin: 0;
+    line-height: 1; /* Ensure no extra space in the text */
 }
 
 @media (max-width: 1217px) {
