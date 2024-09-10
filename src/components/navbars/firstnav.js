@@ -9,7 +9,8 @@ import Modal1 from '../modal';
 
 function FirstNav() {
     return (
-        <div><div className="navbar1">
+        <div>
+            <div className="navbar1">
             <div className="contact-info">
                 {/* Email link (clickable and opens email client) */}
                 <a href="mailto:email@example.com" className="contact-link">
