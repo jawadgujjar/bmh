@@ -63,7 +63,7 @@ function Navbrrr() {
                                                     <li>Franchise Digital Marketing</li>
                                                     <li>Enterprise Digital Marketing</li>
                                                 </ul>
-                                                <NavDropdown.Item as={Link} to="/seo">SEO Services</NavDropdown.Item>
+                                                <NavDropdown.Item as={Link} to="/seopage">SEO Services</NavDropdown.Item>
                                                 <ul className='unorder-list'>
                                                     <li>Technical SEO</li>
                                                     <li>Franchise SEO</li>

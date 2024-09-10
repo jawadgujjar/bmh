@@ -8,7 +8,7 @@ const PortfolioRemain = () => {
     <div>
         <p className="portfolio">PORTFOLIO</p>
       <Portfolio />
-      <div className="container">
+      <div className="containerportfolio">
         <div className="text-box">
           <p>How Does Your Site Compare?</p>
           <button className="action-button">Free SEO Report</button>
