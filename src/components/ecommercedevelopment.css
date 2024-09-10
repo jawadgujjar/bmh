@@ -1,0 +1,228 @@
+
+/* General styling */
+.brand {
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.text-content {
+    font-size: 1rem;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.text-content h3 {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.span {
+    color: rgb(253, 126, 20);
+    font-weight: bold;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 992px) {
+    .container {
+        display: flex; /* Flexbox for larger screens */
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-content {
+        flex: 1;
+        padding-right: 20px; /* Space between text and image */
+    }
+
+    .image-content {
+        flex: 1;
+    }
+
+    .image-content img {
+        width: 100%; /* Ensure image takes up full width of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 991px) {
+    .brand {
+        font-size: 3rem;
+    }
+
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .info-row {
+        flex-direction: column; /* Stack columns vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .info-column {
+        text-align: center; /* Center text and icon within column */
+        padding: 20px 0; /* Add vertical padding */
+    }
+
+    .info-icon {
+        font-size: 2.5rem; /* Larger icon size for smaller screens */
+    }
+
+    .info-text {
+        font-size: 0.9rem; /* Smaller text size */
+    }
+}
+
+/* Ensures info-row aligns icons horizontally */
+.info-row {
+    display: flex; /* Use Flexbox for row layout */
+    justify-content: space-around; /* Space out columns evenly */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding around the row */
+}
+
+/* Style for each column */
+.info-column {
+    text-align: center; /* Center text and icon within column */
+    flex: 1; /* Allow columns to grow equally */
+    padding: 10px; /* Add padding within each column */
+}
+
+/* Style for the icons */
+.info-icon {
+    font-size: 3rem; /* Set the size of the icons to 3rem */
+    color: rgb(253, 126, 20); /* Set icon color */
+    margin-bottom: 10px; /* Add space below the icon */
+}
+
+/* Style for the text */
+.info-text {
+    font-size: 1.5rem; /* Set the font size */
+    color: #555; /* Set text color */
+    font-weight: bold;
+}
+.info-text1 {
+    font-size: 15px; /* Set the font size */
+    color: #555; /* Set text color */
+    font-weight: bold;
+}
+ 
+
+/* extra */
+/* src/components/someComponent.css */
+
+/* Ensure container is a flexbox */
+.point {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    gap: 20px; /* Space between flex items */
+    padding: 20px; /* Add padding around the container */
+}
+
+/* Styling for the points list */
+.points-list {
+    flex: 1; /* Allow the list to take up available space */
+    display: flex; /* Use Flexbox for list items */
+    flex-direction: column; /* Stack list items vertically */
+    gap: 10px; /* Space between items */
+     
+}
+
+/* Style for each point */
+.points-text {
+    font-size: 1rem; /* Default font size */
+    color: #555; /* Set text color */
+    font-weight: bold; /* Make text bold */
+    text-align: left; /* Align text to the left */
+}
+.points-textx{
+    font-size: 2rem; /* Default font size */
+    color: #0a0a0a; /* Set text color */
+    font-weight: bold; /* Make text bold */
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for image content */
+.image-content {
+    flex: 1; /* Allow the image container to take up available space */
+     
+}
+.image-content1 {
+    flex: 1; /* Allow the image container to take up available space */
+     margin-top: 5rem;
+}
+
+/* Ensure image fits well */
+.image-content img {
+    width: 100%; /* Ensure image takes up full width of container */
+    height: auto; /* Maintain aspect ratio */
+}
+.image-content1 img {
+    width: 100%; /* Ensure image takes up full width of container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Container for CTA buttons */
+.cta-buttons {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center the button horizontally */
+    margin-top: -1rem; /* Adjust the top margin if needed */
+}
+
+/* Style for CTA buttons */
+.cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0f0f0f; /* Background color */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0; /* Remove margin if any is applied to the button itself */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for CTA buttons */
+.cta-button:hover {
+    background-color: #6a6b6d; /* Hover background color */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .point {
+        flex-direction: column; /* Stack flex items vertically on small screens */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .points-list {
+        flex-direction: column; /* Stack list items vertically on small screens */
+    }
+
+    .points-text {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .image-content {
+        margin-top: 20px; /* Add space above the image when stacked */
+    }
+    .image-content1 {
+        margin-top: 20px; /* Add space above the image when stacked */
+    }
+}
+
