@@ -51,13 +51,13 @@ function Navbrrr() {
                                     className="dropdown-multi-column"
                                 >
                                     <Container fluid>
-                                        <Row>
-                                            <Col xs={12} md={4}>
+                                        <Row className="g-3">  {/* g-3 adds some gutter (spacing) between columns */}
+                                            <Col xs={12} sm={6} md={4} lg={3}>
                                                 <div className='image-h6'>
                                                     <GiPublicSpeaker />
                                                     <p className='dropdown-links'>Marketing</p>
                                                 </div>
-                                                <NavDropdown.Item as={Link} to="/digital-marketing">Digital Marketing</NavDropdown.Item>
+                                                <NavDropdown.Item as={Link} to="/digitalmarketingpage">Digital Marketing</NavDropdown.Item>
                                                 <ul className='unorder-list'>
                                                     <li>Marketing Strategy Development</li>
                                                     <li>Franchise Digital Marketing</li>
@@ -88,7 +88,7 @@ function Navbrrr() {
                                                 </ul>
                                             </Col>
 
-                                            <Col xs={12} md={4}>
+                                            <Col xs={12} sm={6} md={4} lg={3}>
                                                 <div className='image-h6'>
                                                     <BiWorld />
                                                     <p className='dropdown-links'>Web Development</p>
@@ -99,10 +99,10 @@ function Navbrrr() {
                                                 <NavDropdown.Item as={Link} to="/custom-software">Custom Software</NavDropdown.Item>
                                             </Col>
 
-                                            <Col xs={12} md={4}>
+                                            <Col xs={12} sm={6} md={4} lg={3}>
                                                 <div className='image-h6'>
                                                     <HiDeviceMobile />
-                                                    <p className='dropdown-links'>App Development</p>
+                                                    <Link className='dropdown-links' to="/appdevelopment" >App Development</Link>
                                                 </div>
                                                 <NavDropdown.Item as={Link} to="/strategy-consulting">Strategy Consulting</NavDropdown.Item>
                                                 <NavDropdown.Item as={Link} to="/business-consulting">Business Consulting</NavDropdown.Item>

@@ -16,6 +16,7 @@ import ScrollToTop from './components/scroll';
 import Navbrrr from './components/navbars/Navbrrr';
 import Footer12 from "./components/footer2"
 import PortfolioRemain from './components/portfolio/portfolioremaining';
+import Appdevelopment1 from './components/webdevelopmentmain/appdevelopment';
 
 const AppRoutes = () => {
     return (
@@ -38,6 +39,7 @@ const AppRoutes = () => {
                     <Route path="/refundpolicy" element={<Refund1 />} />
                     <Route path="/termofservice" element={<Termofservice1 />} />
                     <Route path="/portfolio" element={<PortfolioRemain />} />
+                    <Route path="/appdevelopment" element={<Appdevelopment1 />} />
                 </Routes>
                 <Footer12 />
             </>
