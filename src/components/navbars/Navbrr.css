@@ -195,6 +195,7 @@
     font-weight: 700;
     margin: 0;
     line-height: 1; /* Ensure no extra space in the text */
+    color: #000;
 }
 
 @media (max-width: 1217px) {

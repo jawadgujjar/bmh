@@ -57,7 +57,7 @@ function Navbrrr() {
                                                     <GiPublicSpeaker />
                                                     <p className='dropdown-links'>Marketing</p>
                                                 </div>
-                                                <NavDropdown.Item as={Link} to="/digital-marketing">Digital Marketing</NavDropdown.Item>
+                                                <NavDropdown.Item as={Link} to="/digitalmarketingpage">Digital Marketing</NavDropdown.Item>
                                                 <ul className='unorder-list'>
                                                     <li>Marketing Strategy Development</li>
                                                     <li>Franchise Digital Marketing</li>
