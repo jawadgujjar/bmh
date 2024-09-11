@@ -11,7 +11,6 @@ import { GiPublicSpeaker } from "react-icons/gi";
 import { HiDeviceMobile } from "react-icons/hi";
 import { Col, Form, Row } from 'react-bootstrap';
 import "./Navbrr.css";
-import FirstNav from './firstnav';
 import { Button } from 'antd';
 import Modal1 from '../modal';
  
@@ -26,7 +25,6 @@ function Navbrrr() {
 
     return (
         <div className='navbars-fixed'>
-            <FirstNav />
             <Navbar expand={expand} className="custom-navbar" >
                 <Container fluid>
                     <Navbar.Brand as={Link} to="/" onClick={() => handleNavClick('/')}>
@@ -59,11 +57,11 @@ function Navbrrr() {
                                                     <p className='dropdown-links'>Marketing</p>
                                                 </div>
                                                 <NavDropdown.Item as={Link} to="/digitalmarketingpage">Digital Marketing</NavDropdown.Item>
-                                               
+
                                                 <NavDropdown.Item as={Link} to="/seopage">SEO Services</NavDropdown.Item>
-                                              
+
                                                 <NavDropdown.Item as={Link} to="/socialmediamarketing">Social Media Marketing</NavDropdown.Item>
-                                               
+
                                             </Col>
 
                                             <Col xs={12} sm={6} md={4} lg={3}>
@@ -81,36 +79,24 @@ function Navbrrr() {
                                                     <p className='dropdown-links'>App Development</p>
                                                 </div>
                                                 <NavDropdown.Item as={Link} to="/appdevelopment" >App Development</NavDropdown.Item>
-                                               
+
                                             </Col>
                                         </Row>
                                     </Container>
                                 </NavDropdown>
 
-                                <Nav.Link as={Link} to="/about" onClick={() => handleNavClick('/about')}>About</Nav.Link>
-                                <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Contact Us</Nav.Link>
+                                <Nav.Link as={Link} to="/about" onClick={() => handleNavClick('/about')}>Digital Marketing</Nav.Link>
+                                <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Web Development</Nav.Link>
                                 <Nav.Link as={Link} to="/portfolio" onClick={() => handleNavClick('/portfolio')}>Portfolio</Nav.Link>
+                                <Nav.Link >  <h6 className='h6-form'> <a href="tel:+1234567890" style={{ color: 'orange', textDecoration: 'none' }}>
+                                    +123-456-7890
+                                </a></h6></Nav.Link>
 
-                            </Nav>
-                            <div className='hide-2 '>
+
                                 <div className='modal-container'>
                                     <Modal1 />
                                 </div>
-                            </div>
-                            <div className='hide-on '>
-                                <div className='modal-container'>
-                                    <Form className="d-flex search-form " >
-                                        <Form.Control
-                                            type="search"
-                                            placeholder="Search"
-                                            className="me-2"
-                                            aria-label="Search"
-                                        />
-                                        <Button className='search-button' variant="outline-light">Search</Button>
-                                    </Form></div>
-
-                            </div>
-
+                            </Nav>
                         </Offcanvas.Body>
                     </Navbar.Offcanvas>
                 </Container>
