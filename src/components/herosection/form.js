@@ -13,7 +13,7 @@ function Form1() {
     return (
         <div className="form-container">
             <h2 className="form-heading">
-                Get a Free Proposal
+            Get My Free Proposal
             </h2>
             <Form layout="vertical" onFinish={onFinish}>
                 <Form.Item

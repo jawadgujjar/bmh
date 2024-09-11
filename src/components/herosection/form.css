@@ -1,14 +1,14 @@
 .form-container {
-    max-width: 550px;
-    margin: 3rem auto;
+    max-width: auto;
+    height: auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.3);
+    background: black;
     /* Transparent black background */
-    border-radius: 12px;
     /* Smooth border radius */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     /* Deeper shadow for depth */
     backdrop-filter: blur(10px);
+    border-radius: 3px;
     /* Blur effect for modern look */
 }
 
