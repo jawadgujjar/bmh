@@ -13,6 +13,7 @@ import { Col, Form, Row } from 'react-bootstrap';
 import "./Navbrr.css";
 import { Button } from 'antd';
 import Modal1 from '../modal';
+ 
 
 function Navbrrr() {
     const navigate = useNavigate();

@@ -1,0 +1,31 @@
+ 
+
+.modal-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 10px;
+    margin-bottom: 20px; /* Space between gallery and form */
+}
+
+.modal-gallery img {
+    width: 100%;
+    max-height: 300px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Optional: Add shadow to images */
+}
+
+/* Ensure the gallery doesn't extend beyond modal bounds */
+.modal-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.modal-gallery::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-gallery::-webkit-scrollbar-track {
+    background: transparent;
+}
