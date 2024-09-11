@@ -32,7 +32,7 @@ const Modal1 = () => {
 
   return (
     <> <Button className='submit-button'  onClick={showModal}>
-      Get a Free Proposal
+      Get My Free Proposal
     </Button>
       <Modal
         open={isModalOpen}

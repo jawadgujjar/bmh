@@ -42,7 +42,7 @@
     display: flex;
     justify-content: space-between;
     background-color: transparent;
-    margin: 0 2rem;
+    margin: 0%;
 }
 
 .custom-navbar:hover {
@@ -53,6 +53,11 @@
     color: #FFFFFF;
     font-weight: bold;
 }
+.nav-links .nav-link {
+    font-size: small;
+
+}
+
 
 .nav-links .nav-link,
 .nav-links .nav-dropdown {
@@ -93,9 +98,7 @@
     flex: 1;
 }
 
-.nav-link {
-    margin-left: 1.5rem;
-}
+
 
 /* Search Bar Styles */
 .search-form {
@@ -205,9 +208,9 @@
     }
 @media (max-width: 1217px) {
 
-    .nav-link {
+    .nav-links .nav-link {
         margin-left: 1rem;
-        font-size: small;
+        font-size:xx-small;
     }
 }
 

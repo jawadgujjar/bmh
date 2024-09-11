@@ -1,4 +1,25 @@
 /* Container for centering and responsiveness */
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: none !important; /* Forcefully hide the buttons */
+}
+.alice-carousel__dots {
+  display: none !important; /* Forcefully hide the dots */
+}
+
+
+
+
+
+.carousel-wrapper {
+  position: relative; /* Make wrapper relative for absolute buttons */
+  padding: 20px; /* Add some padding to avoid arrow overlap */
+}
+
+
+/* Hide pagination dots */
+
+
 .customerdiv {
   text-align: center;
   margin-top: 0.4rem;
@@ -26,9 +47,7 @@
   position: relative;
   border-radius: 15px;
   /* Rounded corners for carousel container */
-  background: linear-gradient(135deg, #f5f3f3, #faf8f6);
   /* Light gradient background */
-  box-shadow: 0 4px 8px rgba(248, 246, 246, 0.2);
 }
 
 /* Hide carousel indicators */
@@ -61,19 +80,12 @@
   text-align: center;
   width: 100%;
   max-width: 420px;
-  /* Increased card width */
   color: #000000;
-  /* Set card text color to black */
-  padding: 1rem;
-  /* Padding for better spacing */
-  border-radius: 0px;
-  /* Rounded corners for the card */
-  background: #fff;
-  /* White background for the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Light shadow for card */
-  margin: auto;
-  /* Center the card horizontally */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  box-shadow: none; /* Remove shadow */
+  margin: auto; /* Center the card horizontally */
 }
 
 /* Card avatar styling */
