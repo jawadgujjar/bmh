@@ -6,11 +6,18 @@
 
 /* Navbar Styles */
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensure it's on top of other elements */
     border-bottom: none !important;
     box-shadow: none !important;
     background-color: black;
     height: 80px;
     /* Set a fixed height for the navbar */
+}
+.navbar-scrolled {
+    background-color: black !important;
 }
 
 /* Navbar Custom Styles */
@@ -29,10 +36,11 @@
     color: #FFFFFF;
     font-weight: bold;
 }
-
+.nav-link{
+    color: white !important;
+}
 .nav-links .nav-link {
     font-size: small;
-
 }
 
 

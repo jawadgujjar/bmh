@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,14 +13,37 @@ import "./Navbrr.css";
 import Modal1 from '../modal';
 
 function NavbarBmh() {
+    const [navbarBackground, setNavbarBackground] = useState(false);
     const navigate = useNavigate();
+
+    // Handle scroll event to change navbar background color
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) { // Change the value to adjust when the background changes
+                setNavbarBackground(true);
+            } else {
+                setNavbarBackground(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     const handleNavClick = (path) => {
         navigate(path);
         window.scrollTo(0, 0);
     };
 
     return (
-        <Navbar expand="lg" className="mb-3 custom-navbar">
+        <Navbar
+            expand="lg"
+            className={`mb-3 custom-navbar ${navbarBackground ? 'navbar-scrolled' : 'black'}`}
+            fixed='top'
+        >
             <Container fluid className='container-size'>
                 <Navbar.Brand as={Link} to="/" onClick={() => handleNavClick('/')}>
                     <img className='logo-width' src='bmhlogo.svg' alt="Brand Logo" />

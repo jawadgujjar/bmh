@@ -1,5 +1,4 @@
 .form-container {
-    
     max-width: auto;
     height: auto;
     padding: 20px;
@@ -10,6 +9,7 @@
     /* Deeper shadow for depth */
     border-radius: 3px;
     /* Blur effect for modern look */
+    margin-top: 4rem;
 }
 
 
