@@ -7,7 +7,7 @@
     /* Smooth border radius */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     /* Deeper shadow for depth */
-    border-radius: 3px;
+    border-radius: 10px;
     /* Blur effect for modern look */
     margin-top: 4rem;
 }
