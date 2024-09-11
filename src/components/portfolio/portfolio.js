@@ -43,15 +43,16 @@ const Portfolio = () => {
       images: [
         '../images/largecard.jpeg',
         '../images/largecard.jpeg',
-        
+        '../images/largecard.jpeg',
       ],
     },
     {
       previewImage: '../images/largecard1.jpeg',
       title: 'Apple Store',
       description: 'Apple’s online store for purchasing products.',
-      link: 'https://store.apple.com',
+       
       images: [
+        '../images/largecard.jpeg',
         '../images/largecard.jpeg',
         '../images/largecard.jpeg',
        
@@ -61,8 +62,9 @@ const Portfolio = () => {
         previewImage: '../images/largecard1.jpeg',
         title: 'Apple Store',
         description: 'Apple’s online store for purchasing products.',
-        link: 'https://store.apple.com',
+        
         images: [
+          '../images/largecard.jpeg',
           '../images/largecard.jpeg',
           '../images/largecard.jpeg',
          
@@ -72,8 +74,9 @@ const Portfolio = () => {
         previewImage: '../images/largecard1.jpeg',
         title: 'Apple Store',
         description: 'Apple’s online store for purchasing products.',
-        link: 'https://store.apple.com',
+        
         images: [
+          '../images/largecard.jpeg',
           '../images/largecard.jpeg',
           '../images/largecard.jpeg',
          
@@ -83,8 +86,9 @@ const Portfolio = () => {
         previewImage: '../images/largecard1.jpeg',
         title: 'Apple Store',
         description: 'Apple’s online store for purchasing products.',
-        link: 'https://store.apple.com',
+        
         images: [
+          '../images/largecard.jpeg',
           '../images/largecard.jpeg',
           '../images/largecard.jpeg',
          

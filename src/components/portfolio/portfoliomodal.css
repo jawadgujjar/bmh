@@ -29,3 +29,100 @@
 .modal-gallery::-webkit-scrollbar-track {
     background: transparent;
 }
+
+
+.portfolio-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .portfolio-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    width: 100%; /* Increased width */
+    max-width: 850px; /* Maximum width to prevent excessive stretching */
+    height: 100%;
+    max-height: 630px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Keeps the column layout if needed */
+}
+  
+  .portfolio-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .portfolio-modal-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .portfolio-modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust this based on your design */
+  }
+  
+
+  
+
+  
+ 
+/* ............................................................................ */
+  .portfolio-modal-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all items in the column */
+  }
+  
+  .all-logos-contact {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center align logos */
+    margin-bottom: 20px; /* Space between logos and call section */
+  }
+  
+  .div-logos {
+    font-size: 24px;
+  }
+  
+  .fontsize-call {
+    margin: 10px 0;
+    text-align: center; /* Center align text in the call section */
+  }
+  
+  .discover-button1 {
+    background-color: rgb(15, 15, 15) !important; /* Set button color to orange */
+    color: white; /* Ensure text color is white for contrast */
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Optional: Adjust font size as needed */
+  }
+  
+  
+  .portfolio-modal-footer > div {
+    width: 100%; /* Ensure that the container spans the full width */
+    text-align: center; /* Center align its contents */
+  }
+
+ 
