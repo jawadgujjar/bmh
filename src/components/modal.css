@@ -1,0 +1,12 @@
+.modal-button{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1231px) {
+
+.modal-button{
+    font-size: x-small;
+    width: 6.5rem;
+}
+}

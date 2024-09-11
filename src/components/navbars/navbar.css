@@ -1,0 +1,58 @@
+/* Navbrr.css */
+.custom-navbar {
+    position: absolute;
+    /* Make the navbar position absolute */
+    top: 0;
+    /* Align it to the top of the containing element */
+    left: 0;
+    /* Align it to the left of the containing element */
+    width: 100%;
+    /* Make sure it spans the full width */
+    z-index: 9999;
+    /* Ensure it is on top of other content */
+    padding: 0 15px;
+    /* Padding around the navbar */
+}
+
+.logo-width {
+    max-height: 50px;
+    /* Adjust logo size */
+}
+
+
+
+.image-h6 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Add space between icon and text */
+}
+
+.dropdown-links {
+    margin: 0;
+}
+
+.h6-form {
+    margin: 0;
+}
+
+.nav-link {
+    margin: 0 5px;
+    /* Adjust space between navigation links */
+    color: white !important;
+    /* Set color to white */
+    /* Ensure color is not overridden */
+}
+
+/* Ensure responsiveness and spacing */
+@media (max-width: 767.98px) {
+    .custom-navbar {
+        padding: 0;
+        /* Remove padding on small screens */
+    }
+
+    .nav-link {
+        margin: 5px 0;
+        /* Adjust margin for vertical stacking on small screens */
+    }
+}

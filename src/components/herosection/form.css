@@ -1,13 +1,13 @@
 .form-container {
+    
     max-width: auto;
     height: auto;
     padding: 20px;
-    background: black;
+    background: transparent;
     /* Transparent black background */
     /* Smooth border radius */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     /* Deeper shadow for depth */
-    backdrop-filter: blur(10px);
     border-radius: 3px;
     /* Blur effect for modern look */
 }
@@ -34,9 +34,9 @@
 .custom-textarea {
     border-radius: 8px;
     /* Subtle rounded corners */
-    color: #4d4c4b;
+    color: white;
     /* Yellowish-golden text color */
-    background-color: #faf7f7;
+    background-color: transparent !important;
     /* Dark background for inputs */
     border: 1px solid #FFD700;
     /* Yellow border */
@@ -72,7 +72,7 @@
 .submit-button {
     /* Yellow button */
     border: 1px solid #ffffff;
-    background-color: rgb(253, 126, 20) !important;
+    background-color: transparent !important;
     /* Yellow border */
     color: white;
     /* Black text color */
@@ -85,7 +85,7 @@
 }
 
 .submit-button:hover {
-    background-color: #FFD700 !important;
+    background-color: rgb(253,126,20) !important;
     /* Slightly darker yellow on hover */
     border-color: #e5c700;
     /* Keep border color the same */

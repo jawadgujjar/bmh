@@ -13,17 +13,17 @@ import Privacy1 from './components/privacypolicy';
 import Refund1 from './components/refundpolicy';
 import Termofservice1 from './components/termofservice';
 import ScrollToTop from './components/scroll';
-import Navbrrr from './components/navbars/Navbrrr';
 import Footer12 from "./components/footer2"
 import PortfolioRemain from './components/portfolio/portfolioremaining';
 import Appdevelopment1 from './components/webdevelopmentmain/appdevelopment';
 import Socialmediamarketing1 from './components/socialmediamarketing';
 import Ecommercedevelopment1 from './components/ecommercedevelopment';
+import NavbarBmh from './components/navbars/navbar';
 
 const AppRoutes = () => {
     return (
         <Router>
-            <Navbrrr />
+            <NavbarBmh />
             <>
                 <ScrollToTop />
                 <Routes>

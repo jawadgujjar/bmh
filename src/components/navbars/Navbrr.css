@@ -4,37 +4,13 @@
     height: 10rem;
 }
 
-.navbars-fixed {
-    position: sticky;
-    /* Keeps the navbar fixed at the top */
-    top: 0;
-    /* Aligns the navbar to the top */
-    left: 0;
-    right: 0;
-    bottom: 5;
-    z-index: 1000;
-    background-color: white;
-}
-
 /* Navbar Styles */
 .navbar {
     border-bottom: none !important;
     box-shadow: none !important;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
+    background-color: black;
     height: 80px;
-    margin-bottom: 5rem;
     /* Set a fixed height for the navbar */
-}
-
-.first-fixed {
-    position: fixed;
-    /* Keeps the navbar fixed at the top */
-    top: 0;
-    /* Aligns the navbar to the top */
-    left: 0;
-    right: 0;
-    z-index: 500;
 }
 
 /* Navbar Custom Styles */
@@ -53,6 +29,7 @@
     color: #FFFFFF;
     font-weight: bold;
 }
+
 .nav-links .nav-link {
     font-size: small;
 
@@ -61,7 +38,7 @@
 
 .nav-links .nav-link,
 .nav-links .nav-dropdown {
-    color: #000;
+    color: white;
     margin-right: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -74,7 +51,7 @@
 }
 
 .nav-links .nav-dropdown .dropdown-item {
-    color: #000;
+    color: white;
     font-weight: normal;
     text-align: left !important;
 
@@ -187,30 +164,40 @@
 .image-h6 {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Adds space between the icon and text */
+    gap: 0.5rem;
+    /* Adds space between the icon and text */
 }
 
 .image-h6 svg {
-    font-size: 1.5rem; /* Adjust icon size */
+    font-size: 1.5rem;
+    /* Adjust icon size */
 }
 
 .dropdown-links {
     font-weight: 700;
     margin: 0;
-    line-height: 1; /* Ensure no extra space in the text */
+    line-height: 1;
+    /* Ensure no extra space in the text */
     color: #000;
 }
+
+.service-tab {
+    width: 850px;
+    height: auto;
+}
+
 @media (max-width: 1156px) {
     .dropdown-multi-column .dropdown-menu {
         width: 42rem;
         padding: 20px;
     }
-    }
+}
+
 @media (max-width: 1217px) {
 
     .nav-links .nav-link {
         margin-left: 1rem;
-        font-size:xx-small;
+        font-size: xx-small;
     }
 }
 
@@ -247,7 +234,7 @@
     .navbar-collapse {
         justify-content: center;
         width: 100%;
-        text-align: center;
+        text-align: left !important;
     }
 
     .navbar-brand {

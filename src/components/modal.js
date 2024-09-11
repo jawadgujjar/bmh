@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./modal.css"
 import { Modal, Input, Button, Form, notification } from 'antd';
 
 const Modal1 = () => {
@@ -31,7 +32,7 @@ const Modal1 = () => {
   };
 
   return (
-    <> <Button className='submit-button'  onClick={showModal}>
+    <> <Button className='modal-button'  onClick={showModal}>
       Get My Free Proposal
     </Button>
       <Modal
