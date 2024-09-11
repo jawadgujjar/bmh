@@ -14,6 +14,7 @@ import "./Navbrr.css";
 import FirstNav from './firstnav';
 import { Button } from 'antd';
 import Modal1 from '../modal';
+ 
 
 function Navbrrr() {
     const navigate = useNavigate();
