@@ -11,11 +11,13 @@ function HeroMain() {
                 Your browser does not support the video tag.
             </video>
             <Row className='row-margin'>
-                <Col xs={0} sm={0} md={8} lg={6} xl={6} xxl={6} />
-                {/* Left side will be empty, keeping form on the right */}
-                <Col xs={24} sm={24} md={16} lg={18} xl={18} xxl={18} className="form-column">
-                    <Form1 />
+                <Col xs={0} sm={0} md={8} lg={6} xl={6} xxl={6} >
+                    <p className='affordable-text'>Your most Affordable</p>
                 </Col>
+                {/* Left side will be empty, keeping form on the right */}
+                {/* <Col xs={24} sm={24} md={16} lg={18} xl={18} xxl={18} className="form-column">
+                    <Form1 />
+                </Col> */}
             </Row>
         </div>
     );
