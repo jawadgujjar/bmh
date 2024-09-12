@@ -1,6 +1,5 @@
 /* Ensure html and body take full height */
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -10,78 +9,69 @@ body {
 .back {
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
-    align-items: stretch;
-}
-.affordable-text{
-    color: white;
-    font-size: 2rem;
-    position: absolute;
-    margin-top: -10rem;
-    margin-left: 15rem ;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Ensure the video takes up the entire background */
+/* Text Styling */
+.affordable-text {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden; /* Hides the overflowing text while typing */
+    animation: typing 3.5s steps(30, end) 1s infinite, blinkCaret 0.75s step-end infinite;
+}
+
+/* Typewriter animation */
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; } /* Show full text */
+    100% { width: 0; } /* Hide text after full width is shown */
+}
+
+/* Caret blinking effect */
+@keyframes blinkCaret {
+    50% { border-color: transparent; }
+    100% { border-color: white; }
+}
+
+/* Ensure the video takes up the entire background without stretching */
 .back video {
     position: absolute;
-    top: 0;     
-    left: 0;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
+    transform: translate(-50%, -50%);
     object-fit: cover;
     z-index: -1;
 }
 
-/* Column for the form */
-.form-column {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 2rem;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-/* Ensure row takes full height and stretches properly */
-.row-margin {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
-    .form-column {
-        padding: 1.5rem;
+    .affordable-text {
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 768px) {
-    .form-column {
-        padding: 1rem;
-        height: auto;
-    }
-
-    .row-margin {
-        flex-direction: column;
+    .affordable-text {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 576px) {
-    .form-column {
-        padding: 0.5rem;
-        height: auto;
-    }
-
-    .row-margin {
-        padding: 0;
-        flex-direction: column;
+    .affordable-text {
+        font-size: 1.8rem;
     }
 }
