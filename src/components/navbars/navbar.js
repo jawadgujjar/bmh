@@ -5,16 +5,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, useNavigate } from 'react-router-dom';
-import { BiWorld, BiSearch } from "react-icons/bi";
+import { BiWorld } from "react-icons/bi";
 import { GiPublicSpeaker } from "react-icons/gi";
-import { HiDeviceMobile } from "react-icons/hi";
+import { HiDeviceMobile, HiSearch } from "react-icons/hi"; // Added HiSearch for search icon
 import { Col, Row } from 'react-bootstrap';
 import "./Navbrr.css";
 import Modal1 from '../modal';
 
 function NavbarBmh() {
     const [navbarBackground, setNavbarBackground] = useState(false);
-    const [searchVisible, setSearchVisible] = useState(false);
+    const [isSearchOpen, setIsSearchOpen] = useState(false); // State for search bar visibility
     const navigate = useNavigate();
 
     // Handle scroll event to change navbar background color
@@ -34,13 +34,25 @@ function NavbarBmh() {
         };
     }, []);
 
+    // Handle clicks outside of the search bar to close it
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            const searchBar = document.getElementById('search-bar');
+            const searchIcon = document.getElementById('search-icon');
+            if (searchBar && !searchBar.contains(event.target) && !searchIcon.contains(event.target)) {
+                setIsSearchOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     const handleNavClick = (path) => {
         navigate(path);
         window.scrollTo(0, 0);
-    };
-
-    const toggleSearch = () => {
-        setSearchVisible(!searchVisible);
     };
 
     return (
@@ -100,7 +112,7 @@ function NavbarBmh() {
                                     </Row>
                                 </Container>
                             </NavDropdown>
-                            <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Contact</Nav.Link>
+                            <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Web Development</Nav.Link>
                             <Nav.Link as={Link} to="/portfolio" onClick={() => handleNavClick('/portfolio')}>Portfolio</Nav.Link>
                             <Nav.Link>
                                 <h6 className='h6-form'>
@@ -109,16 +121,22 @@ function NavbarBmh() {
                                     </a>
                                 </h6>
                             </Nav.Link>
+
                             <div className='modal-container'>
                                 <Modal1 />
                             </div>
                             <div className='search-container'>
-                                <BiSearch className='search-icon' onClick={toggleSearch} />
-                                {searchVisible && (
-                                    <form className='search-form'>
-                                        <input type='text' className='form-control' placeholder='Search...' />
-                                    </form>
-                                )}
+                                <HiSearch
+                                    id="search-icon"
+                                    className="search-icon"
+                                    onClick={() => setIsSearchOpen(!isSearchOpen)}
+                                />
+                                <div
+                                    id="search-bar"
+                                    className={`search-bar ${isSearchOpen ? 'show' : ''}`}
+                                >
+                                    <input type="text" placeholder="Search..." />
+                                </div>
                             </div>
                         </Nav>
                     </Offcanvas.Body>
