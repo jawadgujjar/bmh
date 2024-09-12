@@ -1,147 +1,120 @@
-.form-container {
-    max-width: auto;
-    height: auto;
-    padding: 20px;
-    background: transparent;
-    /* Transparent black background */
-    /* Smooth border radius */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    /* Deeper shadow for depth */
-    border-radius: 10px;
-    /* Blur effect for modern look */
-    margin-top: 4rem;
+/* Center-align the form-wrapper and add some padding */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background: #f4f4f4; /* Light grey background for contrast */
+    padding: 20px; /* Add some padding around the form */
 }
 
+.form-container {
+    max-width: 100%; /* Full width on smaller screens */
+    width: 100%;
+    padding: 20px;
+    background: #fff; /* White background for the form */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    margin: 1rem auto; /* Margin for spacing */
+}
 
+/* Heading styling */
 .form-heading {
     text-align: center;
     font-weight: 700;
-    /* Bolder text */
-    margin-bottom: 2rem;
-    color: white;
-    /* Yellowish-golden color */
+    margin-bottom: 1.5rem; /* Reduced margin */
+    color: #333; /* Darker text color for readability */
     text-transform: uppercase;
-    /* Capitalize heading */
 }
 
+/* Label styling */
 .form-label {
-    color: #fcfbf8;
-    /* Yellowish-golden color */
+    color: #333; /* Darker label color for better contrast */
 }
 
+/* General input styling */
 .custom-select,
 .custom-input,
-.custom-textarea {
+.custom-textarea,
+.custom-input-number {
     border-radius: 8px;
-    /* Subtle rounded corners */
-    color: white;
-    /* Yellowish-golden text color */
-    background-color: transparent !important;
-    /* Dark background for inputs */
-    border: 1px solid #FFD700;
-    /* Yellow border */
+    color: #333; /* Darker text color for better readability */
+    background-color: #f4f4f4; /* Light grey background for inputs */
+    border: 1px solid #ccc; /* Light border color */
     transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
 }
 
+/* Height adjustments */
 .custom-input,
-.custom-textarea {
+.custom-textarea,
+.custom-input-number {
     height: 40px;
-    /* Increased height for better usability */
 }
 
+/* Specific adjustments for textarea */
 .custom-textarea {
     min-height: 120px;
-    /* Minimum height for large text input */
     rows: 4;
-    /* Number of visible rows */
 }
 
-/* Placeholder color for TextArea */
+/* Placeholder color adjustments */
 .custom-textarea::placeholder {
-    color: #8d8b8b;
-    /* Black placeholder text */
+    color: #888; /* Lighter placeholder text */
 }
 
-/* Placeholder color for Input */
-.custom-input::placeholder {
-    color: #8d8b8b;
-    /* Same as input text color for consistency */
+.custom-input::placeholder,
+.custom-input-number::placeholder {
+    color: #888; /* Consistent placeholder color */
 }
 
+/* Adjust height for number input */
+.custom-input-number {
+    height: auto;
+}
+
+/* Submit button styling */
 .submit-button {
-    /* Yellow button */
-    border: 1px solid #ffffff;
-    background-color: transparent !important;
-    /* Yellow border */
-    color: white;
-    /* Black text color */
+    border: 1px solid #000; /* Black border */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
     font-weight: 600;
-    /* Bolder text */
     border-radius: 8px;
-    /* Rounded corners */
     transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
 }
 
+/* Submit button hover effect */
 .submit-button:hover {
-    background-color: rgb(253,126,20) !important;
-    /* Slightly darker yellow on hover */
-    border-color: #e5c700;
-    /* Keep border color the same */
-    color: black !important;
-    /* Keep text color the same */
+    background-color: #333; /* Darker black on hover */
+    border-color: #000; /* Border color remains black */
+    color: #fff; /* White text color remains the same */
 }
 
-.number-css {
-    color: orange;
-}
-
-.how-it-works-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.how-it-works-heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.steps-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 15px;
-}
-
-.step-number {
-    width: 90px;
-    height: 60px;
-    border-radius: 50%;
-    background: #FFD700;
-    /* Yellowish color */
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.step-description {
-    font-size: 0.7rem;
-    color: #ffffff;
-}
-
+/* Footer styling */
 .h6-form {
-    color: #ffffff;
+    text-align: center;
+    color: #333; /* Darker text color */
+}
+
+/* Phone link styling */
+.call-link {
+    color: #FFA500; /* Orange color for the phone link */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Phone link hover effect */
+.call-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .custom-input,
+    .custom-textarea,
+    .custom-input-number {
+        height: auto; /* Adjust height for better fit on smaller screens */
+    }
 }
