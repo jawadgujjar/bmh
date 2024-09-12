@@ -19,6 +19,7 @@ import Appdevelopment1 from './components/webdevelopmentmain/appdevelopment';
 import Socialmediamarketing1 from './components/socialmediamarketing';
 import Ecommercedevelopment1 from './components/ecommercedevelopment';
 import NavbarBmh from './components/navbars/navbar';
+import Digitalmarketingmain from './pages/digitalmarketingmain';
 
 const AppRoutes = () => {
     return (
@@ -36,6 +37,7 @@ const AppRoutes = () => {
                     <Route path="/Seopage" element={<Seopage1 />} />
                     <Route path="/ecommercepage" element={<Ecommercepage1 />} />
                     <Route path="/digitalmarketingpage" element={<Digitalmarketingpage1 />} />
+                    <Route path="/digitalmarketingmain" element={<Digitalmarketingmain />} />
                     <Route path="/webdevelopmentpage" element={<Webdevelopmentpage1 />} />
                     <Route path="/privacypolicy" element={<Privacy1 />} />
                     <Route path="/refundpolicy" element={<Refund1 />} />

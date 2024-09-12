@@ -1,0 +1,115 @@
+.ant-card-head-title {
+    text-decoration: underline !important; /* Force underline to appear */
+}
+
+
+.container-digital {
+    margin-top: 3rem;
+    padding: 0 1rem;
+    /* Add some horizontal padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align the container content */
+}
+
+.text1-digital {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text2-digital {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* Reduced space between the text elements and cards */
+}
+
+.seo-container {
+    display: grid;
+    /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr);
+    /* Three columns by default */
+    gap: 0.5rem;
+    /* Reduced space between cards */
+    max-width: auto;
+    /* Limit max width of the grid */
+    width: auto;
+    /* Ensure the grid takes full width of its container */
+}
+
+.ant-card {
+    border: none !important;
+    /* Remove the card border */
+    background: transparent !important;
+    /* Make the card background transparent */
+    box-shadow: none !important;
+    /* Remove the card shadow */
+
+}
+
+.ant-card-head {
+    border-bottom: none !important;
+    /* Remove the bottom border of the card title */
+}
+
+.ant-card-head-title {
+    font-size: 1.25rem;
+    /* Adjust title font size if needed */
+    font-weight: bold;
+    /* Make title bold if needed */
+}
+
+.card-title-link {
+    color: inherit; /* Inherit color from parent to match the card title styling */
+    text-decoration: underline; /* Add underline */
+}
+
+.card-title-link:hover {
+    color: #6b6c6d; /* Change color on hover (optional) */
+    text-decoration: underline; /* Ensure underline stays on hover */
+}
+
+
+@media (max-width: 1024px) {
+    .seo-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .seo-container {
+        grid-template-columns: 1fr;
+        /* One column on small screens */
+       text-align: center;
+
+    }
+
+}
+
+@media (max-width: 425px) {
+    .text1-digital {
+        font-size: 1.25rem;
+        /* Adjust font size for smaller screens */
+    }
+
+    .text2-digital {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 375px) {
+    .text1-digital {
+        font-size: 1.25rem;
+        /* Adjust font size for smaller screens */
+
+    }
+
+    .text2-digital {
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
+    }
+}
