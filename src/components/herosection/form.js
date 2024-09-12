@@ -1,9 +1,8 @@
 import React from 'react';
-import { Form, Input, Button, Select, InputNumber } from 'antd';
+import { Form, Input, Button, InputNumber } from 'antd';
 import './form.css';
 
 const { TextArea } = Input;
-const { Option } = Select;
 
 function Form1() {
     const onFinish = (values) => {
@@ -15,81 +14,85 @@ function Form1() {
             <div className="form-container">
                 <h2 className="form-heading">Get My Free Proposal</h2>
                 <Form layout="vertical" onFinish={onFinish}>
-                    <Form.Item
-                        label={<span className="form-label">First Name</span>}
-                        name="firstName"
-                        rules={[{ required: true, message: 'Please enter your first name!' }]}
-                    >
-                        <Input
-                            placeholder="Enter your first name"
-                            className="custom-input"
-                        />
-                    </Form.Item>
+                    <div className="form-item-row">
+                        <Form.Item
+                            label={<span className="form-label">First Name</span>}
+                            name="firstName"
+                            rules={[{ required: true, message: 'Please enter your first name!' }]}
+                        >
+                            <Input
+                                placeholder="Enter your first name"
+                                className="custom-input"
+                            />
+                        </Form.Item>
 
-                    <Form.Item
-                        label={<span className="form-label">Last Name</span>}
-                        name="lastName"
-                        rules={[{ required: true, message: 'Please enter your last name!' }]}
-                    >
-                        <Input
-                            placeholder="Enter your last name"
-                            className="custom-input"
-                        />
-                    </Form.Item>
+                        <Form.Item
+                            label={<span className="form-label">Last Name</span>}
+                            name="lastName"
+                            rules={[{ required: true, message: 'Please enter your last name!' }]}
+                        >
+                            <Input
+                                placeholder="Enter your last name"
+                                className="custom-input"
+                            />
+                        </Form.Item>
+                    </div>
 
-                    <Form.Item
-                        label={<span className="form-label">Phone Number</span>}
-                        name="phoneNumber"
-                        rules={[
-                            { required: true, message: 'Please enter your phone number!' },
-                            { pattern: /^\d+$/, message: 'Please enter a valid phone number!' }
-                        ]}
-                    >
-                        <Input
-                            placeholder="Enter your phone number"
-                            className="custom-input"
-                        />
-                    </Form.Item>
+                    <div className="form-item-row">
+                        <Form.Item
+                            label={<span className="form-label">Phone Number</span>}
+                            name="phoneNumber"
+                            rules={[
+                                { required: true, message: 'Please enter your phone number!' },
+                                { pattern: /^\d+$/, message: 'Please enter a valid phone number!' }
+                            ]}
+                        >
+                            <Input
+                                placeholder="Enter your phone number"
+                                className="custom-input"
+                            />
+                        </Form.Item>
 
-                    <Form.Item
-                        label={<span className="form-label">Email Address</span>}
-                        name="email"
-                        rules={[
-                            { required: true, message: 'Please enter your email!' },
-                            { type: 'email', message: 'Please enter a valid email!' },
-                        ]}
-                    >
-                        <Input
-                            placeholder="Enter your email address"
-                            className="custom-input"
-                        />
-                    </Form.Item>
+                        <Form.Item
+                            label={<span className="form-label">Email Address</span>}
+                            name="email"
+                            rules={[
+                                { required: true, message: 'Please enter your email!' },
+                                { type: 'email', message: 'Please enter a valid email!' },
+                            ]}
+                        >
+                            <Input
+                                placeholder="Enter your email address"
+                                className="custom-input"
+                            />
+                        </Form.Item>
+                    </div>
 
-                    <Form.Item
-                        label={<span className="form-label">Website URL (Optional)</span>}
-                        name="website"
-                        rules={[
-                            { type: 'url', message: 'Please enter a valid URL!' }
-                        ]}
-                    >
-                        <Input
-                            placeholder="Enter your website URL"
-                            className="custom-input"
-                        />
-                    </Form.Item>
+                    <div className="form-item-row">
+                        <Form.Item
+                            label={<span className="form-label">Website URL (Optional)</span>}
+                            name="website"
+                            rules={[{ type: 'url', message: 'Please enter a valid URL!' }]}
+                        >
+                            <Input
+                                placeholder="Enter your website URL"
+                                className="custom-input"
+                            />
+                        </Form.Item>
 
-                    <Form.Item
-                        label={<span className="form-label">Projected Monthly Budget</span>}
-                        name="budget"
-                        rules={[{ required: true, message: 'Please enter your projected monthly budget!' }]}
-                    >
-                        <InputNumber
-                            placeholder="Enter your budget"
-                            className="custom-input-number"
-                            formatter={value => `$ ${value}`}
-                            parser={value => value.replace('$ ', '')}
-                        />
-                    </Form.Item>
+                        <Form.Item
+                            label={<span className="form-label">Projected Monthly Budget</span>}
+                            name="budget"
+                            rules={[{ required: true, message: 'Please enter your projected monthly budget!' }]}
+                        >
+                            <InputNumber
+                                placeholder="Enter your budget"
+                                className="custom-input-number"
+                                formatter={value => `$ ${value}`}
+                                parser={value => value.replace('$ ', '')}
+                            />
+                        </Form.Item>
+                    </div>
 
                     <Form.Item
                         label={<span className="form-label">Project Details</span>}
