@@ -22,7 +22,7 @@ html, body {
     font-size: 3rem;
     font-weight: bold;
     position: absolute;
-    top: 28%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -66,12 +66,12 @@ html, body {
 
 @media (max-width: 768px) {
     .affordable-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 576px) {
     .affordable-text {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
