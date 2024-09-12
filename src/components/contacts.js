@@ -3,6 +3,7 @@ import React from 'react';
 import {  FaClock } from 'react-icons/fa';
 import { GiScales } from 'react-icons/gi';
 import { AiOutlineCalculator } from 'react-icons/ai'; 
+import Form1 from './herosection/form';
 import './contacts.css';
 
 const Contact = () => {
@@ -21,7 +22,7 @@ const Contact = () => {
              <p className="nomobile"> 1. No email or name information will be shared with third parties or affiliates for marketing or IT purposes. All other categories of information are excluded from this policy.</p>
              <p className="byproviding"> 2.By providing your email address, name and message and submitting this form, you are consenting to be contacted via email.You can opt-out of further emails by replying to the email with 'UNSUBSCRIBE'.</p>
 
-            <div className="contact-container">
+            {/* <div className="contact-container">
                 
                 <form className="contact-form" action="#" method="post">
                     <div className="form-group">
@@ -38,7 +39,8 @@ const Contact = () => {
                     </div>
                     <button type="submit" className="submit-button">Send Message</button>
                 </form>
-            </div>
+            </div> */}
+            <Form1/>
 
             <div className="info-row1">
             <div className="info-column">

@@ -1,71 +1,87 @@
+/* Ensure html and body take full height */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Background container for video */
 .back {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 110vh;
     overflow: hidden;
     display: flex;
-    align-items: stretch; /* Ensure children stretch to fill height */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    align-items: stretch;
+}
+.affordable-text{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    margin-top: -10rem;
+    margin-left: 15rem ;
+    width: 100%;
 }
 
-.video-column {
-    height: 100%; /* Ensure the column takes full height */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-}
-
+/* Ensure the video takes up the entire background */
 .back video {
+    position: absolute;
+    top: 0;     
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure video covers the entire container */
-    z-index: -1; /* Place the video behind other content */
+    object-fit: cover;
+    z-index: -1;
 }
 
+/* Column for the form */
 .form-column {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 2rem;
-    height: 100%; /* Ensure form column takes full height */
+    height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
+/* Ensure row takes full height and stretches properly */
 .row-margin {
+    height: 100%;
     width: 100%;
-    height: 100%; /* Ensure the row takes full height */
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
     .form-column {
-        padding: 1.5rem; /* Adjust padding on medium screens */
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .form-column {
         padding: 1rem;
-        height: auto; /* Allow the form to take its content height */
+        height: auto;
     }
 
     .row-margin {
         flex-direction: column;
-        /* Stack columns on top of each other */
     }
 }
 
 @media (max-width: 576px) {
     .form-column {
         padding: 0.5rem;
-        height: auto; /* Adjust height on small screens */
+        height: auto;
     }
 
     .row-margin {
         padding: 0;
         flex-direction: column;
-        /* Ensure the form stacks below the video on small screens */
     }
 }
