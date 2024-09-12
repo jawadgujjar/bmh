@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link, useNavigate } from 'react-router-dom';
-import { BiWorld } from "react-icons/bi";
+import { BiWorld, BiSearch } from "react-icons/bi";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiDeviceMobile } from "react-icons/hi";
 import { Col, Row } from 'react-bootstrap';
@@ -14,12 +14,13 @@ import Modal1 from '../modal';
 
 function NavbarBmh() {
     const [navbarBackground, setNavbarBackground] = useState(false);
+    const [searchVisible, setSearchVisible] = useState(false);
     const navigate = useNavigate();
 
     // Handle scroll event to change navbar background color
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) { // Change the value to adjust when the background changes
+            if (window.scrollY > 50) {
                 setNavbarBackground(true);
             } else {
                 setNavbarBackground(false);
@@ -36,6 +37,10 @@ function NavbarBmh() {
     const handleNavClick = (path) => {
         navigate(path);
         window.scrollTo(0, 0);
+    };
+
+    const toggleSearch = () => {
+        setSearchVisible(!searchVisible);
     };
 
     return (
@@ -62,7 +67,7 @@ function NavbarBmh() {
                     <Offcanvas.Body>
                         <Nav className="d-flex flex-column flex-lg-row align-items-center justify-content-between flex-grow-1 pe-3">
                             <Nav.Link as={Link} to="/home" onClick={() => handleNavClick('/home')}>Home</Nav.Link>
-                            <NavDropdown title="Services" id="offcanvasNavbarDropdown">
+                            <NavDropdown title="Digital Marketing" id="offcanvasNavbarDropdown">
                                 <Container fluid>
                                     <Row className="g-3 service-tab">
                                         <Col xs={12} sm={6} md={4} lg={3}>
@@ -95,8 +100,7 @@ function NavbarBmh() {
                                     </Row>
                                 </Container>
                             </NavDropdown>
-                            <Nav.Link as={Link} to="/about" onClick={() => handleNavClick('/about')}>Digital Marketing</Nav.Link>
-                            <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Web Development</Nav.Link>
+                            <Nav.Link as={Link} to="/contact" onClick={() => handleNavClick('/contact')}>Contact</Nav.Link>
                             <Nav.Link as={Link} to="/portfolio" onClick={() => handleNavClick('/portfolio')}>Portfolio</Nav.Link>
                             <Nav.Link>
                                 <h6 className='h6-form'>
@@ -107,6 +111,14 @@ function NavbarBmh() {
                             </Nav.Link>
                             <div className='modal-container'>
                                 <Modal1 />
+                            </div>
+                            <div className='search-container'>
+                                <BiSearch className='search-icon' onClick={toggleSearch} />
+                                {searchVisible && (
+                                    <form className='search-form'>
+                                        <input type='text' className='form-control' placeholder='Search...' />
+                                    </form>
+                                )}
                             </div>
                         </Nav>
                     </Offcanvas.Body>

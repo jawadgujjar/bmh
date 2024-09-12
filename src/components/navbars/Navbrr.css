@@ -9,13 +9,10 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    /* Ensure it's on top of other elements */
-    border-bottom: none !important;
-    box-shadow: none !important;
     background-color: black;
     height: 80px;
-    /* Set a fixed height for the navbar */
 }
+
 .navbar-scrolled {
     background-color: black !important;
 }
@@ -36,13 +33,14 @@
     color: #FFFFFF;
     font-weight: bold;
 }
-.nav-link{
+
+.nav-link {
     color: white !important;
 }
+
 .nav-links .nav-link {
     font-size: small;
 }
-
 
 .nav-links .nav-link,
 .nav-links .nav-dropdown {
@@ -62,7 +60,6 @@
     color: white;
     font-weight: normal;
     text-align: left !important;
-
 }
 
 .dropdown-item {
@@ -72,7 +69,6 @@
 }
 
 .nav-links .nav-dropdown .dropdown-item:hover {
-
     color: #FFA500;
 }
 
@@ -83,41 +79,35 @@
     flex: 1;
 }
 
-
-
-/* Search Bar Styles */
-.search-form {
+/* Search Icon and Form Styles */
+.search-container {
     position: relative;
-    width: auto;
-    transition: width 0.4s ease-in-out;
-    margin-right: 1rem;
+}
+.search-icon {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.search-form {
+    position: absolute;
+    right: 0;
+    top: 100%;
     display: flex;
-    align-items: center;
+    width: 200px;
+    transition: width 0.4s ease-in-out;
 }
 
-.search-form:hover,
-.search-form:focus-within {
-    width: 300px;
-}
-
-.search-form .form-control {
-    border-radius: 20px;
-    background-color: white;
+.search-form input {
     border: 1px solid #ddd;
+    padding: 0.5rem;
+    width: 100%;
 }
 
-/* Search Button Styles */
-.search-button {
-    background-color: rgb(253, 126, 20);
-    ;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.search-button:hover {
-    background-color: #FFA500;
+.search-form input:focus {
+    outline: none;
     border-color: #FFA500;
-    color: #000;
 }
 
 /* Dropdown Styles */
@@ -172,120 +162,11 @@
 .image-h6 {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    /* Adds space between the icon and text */
+    margin-bottom: 1rem;
 }
 
-.image-h6 svg {
-    font-size: 1.5rem;
-    /* Adjust icon size */
-}
-
-.dropdown-links {
-    font-weight: 700;
-    margin: 0;
-    line-height: 1;
-    /* Ensure no extra space in the text */
-    color: #000;
-}
-
-.service-tab {
-    width: 850px;
-    height: auto;
-}
-
-@media (max-width: 1156px) {
-    .dropdown-multi-column .dropdown-menu {
-        width: 42rem;
-        padding: 20px;
-    }
-}
-
-@media (max-width: 1217px) {
-
-    .nav-links .nav-link {
-        margin-left: 1rem;
-        font-size: xx-small;
-    }
-}
-
-/* Responsive Styling for Screens Smaller Than 992px */
-@media (max-width: 992px) {
-    .search-form {
-        display: none;
-    }
-
-    .dropdown-multi-column .dropdown-menu .row {
-        display: flex;
-        flex-direction: row;
-        /* Keep row direction */
-        flex-wrap: nowrap;
-        /* Prevent columns from wrapping */
-        justify-content: space-between;
-    }
-
-    .dropdown-multi-column .dropdown-menu .col {
-        flex: 0 0 45%;
-        /* Adjust width for mobile, allowing some gap */
-    }
-
-    .navbar {
-        height: auto;
-        margin: 0%;
-    }
-
-    .custom-navbar {
-        flex-direction: column;
-        height: 10rem !important;
-    }
-
-    .navbar-collapse {
-        justify-content: center;
-        width: 100%;
-        text-align: left !important;
-    }
-
-    .navbar-brand {
-        margin-bottom: 1rem;
-    }
-
-    .navbar-nav {
-        /* flex-direction: column; */
-        margin: 0;
-    }
-
-    .nav-link {
-        margin-left: 0;
-        margin-bottom: 0.5rem;
-    }
-}
-
-/* Responsive Styling for Screens Smaller Than 576px */
-@media (max-width: 576px) {
-    .logo-width {
-        width: 7rem;
-        height: 7rem;
-    }
-
-    .dropdown-multi-column .dropdown-menu .row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-
-    .dropdown-multi-column .dropdown-menu .col {
-        flex: 0 0 100%;
-        /* Full width in very small screens */
-    }
-
-
-    .nav-link {
-        margin-left: 0;
-        margin-bottom: 0.5rem;
-    }
-
-    .search-form {
-        width: 100%;
-    }
+.image-h6 p {
+    font-weight: bold;
+    color: orange;
+    margin-left: 0.5rem;
 }
