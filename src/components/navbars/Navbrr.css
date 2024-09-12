@@ -16,6 +16,7 @@
     height: 80px;
     /* Set a fixed height for the navbar */
 }
+
 .navbar-scrolled {
     background-color: black !important;
 }
@@ -36,9 +37,11 @@
     color: #FFFFFF;
     font-weight: bold;
 }
-.nav-link{
+
+.nav-link {
     color: white !important;
 }
+
 .nav-links .nav-link {
     font-size: small;
 }
@@ -193,6 +196,59 @@
     width: 850px;
     height: auto;
 }
+.navbar-toggler-icon{
+background-image: url("../../../public/images/menuicon.png") !important;
+}
+/* Search Icon Styling */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem; /* Adjust as needed */
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white; /* Adjust color as needed */
+}
+
+.search-bar {
+    margin-top: 1rem;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 5px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search-bar.show {
+    display: block;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+      width: 100% !important;
+    }
+    .nav-link {
+        text-align: left !important;
+        color: black !important;
+    }
+
+}
 
 @media (max-width: 1156px) {
     .dropdown-multi-column .dropdown-menu {
@@ -230,7 +286,6 @@
     }
 
     .navbar {
-        height: auto;
         margin: 0%;
     }
 
