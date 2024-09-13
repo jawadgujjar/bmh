@@ -100,3 +100,12 @@
     }
 
 }
+
+@media (max-width: 425px) {
+
+    .proposal-button {
+
+        font-size: medium;
+
+    }
+}

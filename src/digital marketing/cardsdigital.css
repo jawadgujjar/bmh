@@ -1,0 +1,29 @@
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Ensures that cards wrap on smaller screens */
+    padding: 20px;
+}
+
+.image-digitalcard {
+    height: 13rem;
+    width: 20rem !important;
+}
+
+.digital-card {
+    width: 20rem;
+    background-color: white !important;
+}
+
+.card-div {
+    background-color: rgb(253, 126, 20);
+    color: white;
+    padding: 0.5rem;
+    width: auto;
+    text-align: center;
+}
+.title-digital{
+    font-size: medium;
+    font-weight: bold   ;
+}

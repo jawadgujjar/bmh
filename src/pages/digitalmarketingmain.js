@@ -2,7 +2,9 @@ import React from 'react'
 import HeroDigitalMarketing from '../digital marketing/hero'
 import Aboutdigital from '../digital marketing/aboutdigital'
 import Whydigital from '../digital marketing/whydigital'
-import Whyyouneed from '../digital marketing/whyyouneed'
+import Reviews from '../components/Reviews'
+import Howdigital from '../digital marketing/howdigital'
+import Cardsdigital from '../digital marketing/cardsdigital'
 
 function Digitalmarketingmain() {
     return (
@@ -10,7 +12,9 @@ function Digitalmarketingmain() {
             <HeroDigitalMarketing />
             <Aboutdigital />
             <Whydigital />
-            <Whyyouneed />
+            <Reviews />
+            <Howdigital />
+            <Cardsdigital />
         </div>
     )
 }
