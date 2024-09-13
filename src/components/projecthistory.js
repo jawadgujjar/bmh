@@ -4,7 +4,8 @@ import './projecthistory.css';
 
 const Projecthistory1 = () => {
     return (
-        <div><section className="project-history">
+        <div>
+            <section className="project-history">
             <h1 className="section-title">Our <span className="span">Company</span> Success</h1>
             <div className="projects2">
 
@@ -32,11 +33,12 @@ const Projecthistory1 = () => {
 
         </section>
             <div className='video-sizes'>
-            <video className='video-player' controls autoPlay loop muted>
+                <video className='video-player' controls autoPlay loop muted>
                     <source src='../video/team.mp4' type='video/mp4' />
                     Your browser does not support the video tag.
                 </video>
-            </div></div>
+            </div>
+        </div>
 
     );
 };
