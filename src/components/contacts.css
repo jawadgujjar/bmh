@@ -308,3 +308,16 @@
     /* Smaller text size */
   }
 }
+
+@media (max-width: 375px) {
+  .cta-buttons1 {
+      flex-direction: column; /* Stack buttons vertically on very small screens */
+      align-items: center; /* Center align buttons horizontally */
+      gap: 10px; /* Reduced gap between buttons */
+  }
+
+  .cta-button1 {
+      width: 70%; /* Adjust button width for better fit on small screens */
+      margin-bottom: 1rem; /* Remove bottom margin for last button */
+  }
+}

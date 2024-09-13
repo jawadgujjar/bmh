@@ -87,7 +87,7 @@ function NavbarBmh() {
                                                 <GiPublicSpeaker />
                                                 <p className='dropdown-links'>Marketing</p>
                                             </div>
-                                            <NavDropdown.Item as={Link} to="/digitalmarketingpage">Digital Marketing</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/digitalmarketingmain">Digital Marketing</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/seopage">SEO Services</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">Social Media Marketing</NavDropdown.Item>
                                         </Col>
