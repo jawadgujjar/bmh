@@ -11,7 +11,6 @@ function Howdigital() {
 
             </p>
             <Row justify="center">
-
                 <Col
                     xs={22}   // Full width on extra small screens
                     sm={22}   // Full width on small screens
