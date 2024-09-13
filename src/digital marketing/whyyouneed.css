@@ -1,150 +1,90 @@
-/* General styling */
-.digital-why-3 {
-    font-weight: bold;
-    font-size: 2rem;
+.aboutdigital-main2 {
+    padding: 2rem;
+}
+
+.proven-text-digital2 {
     text-align: center;
-    margin-bottom: 1rem; /* Space below the heading */
-}
-
-.engage-why-3 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 2rem; /* Space below the subheading */
-}
-
-.text-content-3 {
-    font-size: 1rem;
-    line-height: 1.6; /* Improve readability */
-}
-
-.text-content-3 h2 {
-    font-size: 2rem;
-    text-align: left;
-    margin-bottom: 1rem; /* Space below the subheading */
-}
-
-.text-content-3 h3 {
-    font-size: 1rem;
-    text-align: left;
-    margin-bottom: 1rem; /* Space below the content */
-}
-
-.span {
-    color: rgb(253, 126, 20);
+    font-size: 1.5rem; /* Adjust as needed */
+    margin-bottom: 1rem;
     font-weight: bold;
 }
 
-/* Flex container for .container-3 */
-.container-3 {
+.engage-text2 {
+    text-align: center;
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+.image-col2 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem; /* Space below the section */
 }
 
-.text-content-3 {
-    flex: 1;
-    padding-right: 20px; /* Space between text and image */
+.image2 {
+    width: 100%;
+    height: auto;
 }
 
-.image-content-3 {
-    flex: 1;
+.all-text-digital12 {
+    font-size: large;
+    line-height: 1.6;
+    margin-top: 3rem;
 }
 
-.image-content-3 img {
-    width: 100%; /* Ensure image takes up full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners */
+.special-text12 {
+    font-weight: bold;
+    color: rgb(5, 5, 5); /* Example color */
 }
 
-/* Responsive styles for larger screens */
-@media (min-width: 992px) {
-    /* Default styles are already suitable */
+.column-content {
+    padding: 1rem; /* Adjust padding as needed */
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 991px) {
-    .digital-why-3 {
-        font-size: 3rem;
-        margin-bottom: 1.5rem; /* Adjust spacing for smaller screens */
+.bullet-list {
+    list-style-type: disc;
+    margin-left: 1.5rem; /* Space from the left edge */
+    font-size: large;
+}
+
+.bullet-list li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Add margin-top to all rows */
+.ant-row {
+    margin-top: 2rem; /* Adjust as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .proven-text-digital2 {
+        font-size: 1.25rem;
     }
 
-    .text-content-3 h2 {
-        font-size: 1.5rem;
+    .engage-text2 {
+        font-size: medium;
     }
 
-    .text-content-3 h3 {
-        font-size: 0.9rem;
-    }
-
-    .point-3 {
-        flex-direction: column; /* Stack flex items vertically on small screens */
-        align-items: center; /* Center items horizontally */
-        text-align: center; /* Center text */
-        margin-top: 2rem; /* Add space above the points section */
-    }
-
-    .points-list-3 {
-        flex-direction: column; /* Stack list items vertically on small screens */
-    }
-
-    .points-text-3 {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-        margin-top: 1rem; /* Space above the text */
-    }
-
-    .image-content-3,
-    .image-content2-3 {
-        margin-top: 20px; /* Add space above the image when stacked */
+    .all-text-digital12 {
+        font-size: medium;
     }
 }
 
-/* Ensure container is a flexbox */
-.point-3 {
-    display: flex; /* Use Flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-    align-items: flex-start; /* Align items at the start of the cross axis */
-    gap: 20px; /* Space between flex items */
-    padding: 20px; /* Add padding around the container */
-}
+@media (max-width: 576px) {
+    .proven-text-digital2 {
+        font-size: 1rem;
+    }
 
-/* Styling for the points list */
-.points-list-3 {
-    flex: 1; /* Allow the list to take up available space */
-    display: flex; /* Use Flexbox for list items */
-    flex-direction: column; /* Stack list items vertically */
-    gap: 10px; /* Space between items */
-}
+    .engage-text2 {
+        font-size: small;
+    }
 
-/* Style for each point */
-.points-item-3 {
-    font-size: 1rem; /* Default font size */
-    color: #555; /* Set text color */
-    font-weight: bold; /* Make text bold */
-    text-align: left; /* Align text to the left */
-    padding: 5px 0; /* Padding for better spacing */
-}
+    .all-text-digital12 {
+        font-size: small;
+    }
 
-/* Styling for image content */
-.image-content-3 {
-    flex: 1; /* Allow the image container to take up available space */
-}
-
-.image-content2-3 {
-    flex: 1; /* Allow the image container to take up available space */
-}
-
-/* Ensure image fits well */
-.image-content-3 img,
-.image-content2-3 img {
-    width: 100%; /* Ensure image takes up full width of container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for images */
-}
-
-/* Container for CTA buttons */
-.cta-buttons-3 {
-    display: flex; /* Use Flexbox for centering */
-    justify-content: center; /* Center the button horizontally */
-    margin-top: 2rem; /* Adjust the top margin */
+    .image-col2 {
+        margin-bottom: 1rem;
+    }
 }
