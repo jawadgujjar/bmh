@@ -57,7 +57,7 @@ function Digitalservices1() {
       <p className='text2-digital'>Build Brand Recognition as an Industry Leader and Increase Profitability</p>
       <div className='seo-container'>
         {services.map((service, index) => (
-          <Card 
+          <Card className='ant-card-digital'
             key={index}
             title={
               <a href={service.link} className='card-title-link' target='_blank' rel='noopener noreferrer'>

@@ -9,7 +9,9 @@ import Howdigital from '../digital marketing/howdigital'
 import Cardsdigital from '../digital marketing/cardsdigital'
 import Whychose1 from '../digital marketing/whychose'
 import Whychosecard1 from '../digital marketing/whychosecard'
-import Reward from '../components/rewards'
+import Rewarddigital1 from '../digital marketing/rewarddigital'
+import Faqdigitalmarketing1 from '../components/faqdigitalmarketing'
+import Form1 from '../components/herosection/form'
 
 function Digitalmarketingmain() {
     return (
@@ -24,7 +26,9 @@ function Digitalmarketingmain() {
             <Whyyouneed1 />
             <Whychose1/>
             <Whychosecard1/>
-            <Reward/>
+            <Rewarddigital1/>
+            <Faqdigitalmarketing1/>
+            <Form1/>
           
         </div>
     )
