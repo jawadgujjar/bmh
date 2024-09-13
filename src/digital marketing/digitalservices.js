@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'antd';  // Correct import for the Card component from Ant Design
+import { Card,Button} from 'antd';  // Correct import for the Card component from Ant Design
 import './digitalservices.css';   // Import your CSS file for styling
 
 const services = [
@@ -69,7 +69,11 @@ function Digitalservices1() {
             <p>{service.description}</p>
           </Card>
         ))}
+       
       </div>
+      <div className='digital-button'>         
+                   <Button className='proposal-button1'>GET STARTED NOW</Button>
+            </div>
     </div>
   );
 }
