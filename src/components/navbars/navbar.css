@@ -2,6 +2,7 @@
 .logo-width {
     width: 10rem;
     height: 10rem;
+    margin-right: 3rem;
 }
 
 /* Navbar Styles */
@@ -15,6 +16,10 @@
     background-color: black;
     height: 80px;
     /* Set a fixed height for the navbar */
+}
+
+.container-size {
+    width: 97% !important;
 }
 
 .navbar-scrolled {
@@ -185,6 +190,7 @@
 }
 
 .dropdown-links {
+    text-decoration:dotted !important;
     font-weight: 700;
     margin: 0;
     line-height: 1;
@@ -196,21 +202,25 @@
     width: 850px;
     height: auto;
 }
-.navbar-toggler-icon{
-background-image: url("../../../public/images/menuicon.png") !important;
+
+.navbar-toggler-icon {
+    background-image: url("../../../public/images/menuicon.png") !important;
 }
+
 /* Search Icon Styling */
 .search-container {
     position: relative;
     display: flex;
     align-items: center;
-    margin-left: 1rem; /* Adjust as needed */
+    margin-left: 1rem;
+    /* Adjust as needed */
 }
 
 .search-icon {
     font-size: 1.5rem;
     cursor: pointer;
-    color: white; /* Adjust color as needed */
+    color: white;
+    /* Adjust color as needed */
 }
 
 .search-bar {
@@ -222,7 +232,7 @@ background-image: url("../../../public/images/menuicon.png") !important;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     padding: 5px;
     width: 200px;
     transition: all 0.3s ease;
@@ -241,8 +251,9 @@ background-image: url("../../../public/images/menuicon.png") !important;
 
 @media (max-width: 991px) {
     .navbar {
-      width: 100% !important;
+        width: 100% !important;
     }
+
     .nav-link {
         text-align: left !important;
         color: black !important;

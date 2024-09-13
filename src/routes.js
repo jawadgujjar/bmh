@@ -37,7 +37,7 @@ const AppRoutes = () => {
                     <Route path="/Seopage" element={<Seopage1 />} />
                     <Route path="/ecommercepage" element={<Ecommercepage1 />} />
                     <Route path="/digitalmarketingpage" element={<Digitalmarketingpage1 />} />
-                    <Route path="/digitalmarketingmain" element={<Digitalmarketingmain />} />
+                    <Route path="/digital-marketing" element={<Digitalmarketingmain />} />
                     <Route path="/webdevelopmentpage" element={<Webdevelopmentpage1 />} />
                     <Route path="/privacypolicy" element={<Privacy1 />} />
                     <Route path="/refundpolicy" element={<Refund1 />} />
