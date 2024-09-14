@@ -1,50 +1,65 @@
 import React from 'react';
-import { Card } from 'antd';  // Correct import for the Card component from Ant Design
-import './whychosecard.css';   // Import the updated CSS file
+import { Card } from 'antd';
+import { FaChartLine, FaIndustry, FaCogs, FaUserFriends, FaCalendarCheck, FaMoneyBillWave } from 'react-icons/fa'; // Import icons
+import './whychosecard.css'; // Import the updated CSS file
+
 
 const services = [
-  {
-    title: "Search Engine Optimization (SEO)",
-    description: "Through careful keyword research and white hat SEO practices, we can help you achieve higher organic rankings and increased visibility in search results. Our internet marketing company performs extensive keyword research, conducts on-page and off-page optimization and tracks your results with Google Search Console. These practices allow us to attract high-quality leads and traffic and increase your conversions as part of your digital marketing services.",
-  },
-  {
-    title: "Franchise SEO",
-    description: "Amplify your market reach and improve your brand reputation with Thrive’s franchise SEO services. Our team creates a franchise marketing plan around your ideal prospects and service location. We claim and optimize your business listings, publish geo-modified service pages and blog posts, ensure brand consistency and garner positive online reviews from your best customers. In this way, we help you manage and promote all your franchisees and secure high local rankings.",
-  },
-  {
-    title: "Local SEO",
-    description: "Statistics show that 88 percent of consumers searching for local businesses online will call or visit a store within 24 hours. Attract your ideal customers and generate more leads and sales with Thrive’s internet marketing services. Our internet marketing company ensures your name, address and phone number (NAP) consistency, enhances your location pages and conducts local link building. We also leverage social media platforms to stay top of mind with your audiences.",
-  },
-  {
-    title: "Technical SEO",
-    description: "Establish a strong online foundation with on-point technical SEO and internet marketing services. Our technical SEO experts run crawl error reports, check your HTTPS status codes, optimize your site speed, audit redirects and eliminate duplicate content. In doing so, we increase your website’s crawlability and indexability. We also add structured data markup to your website and facilitate site migration, depending on your needs and requirements.",
-  },
-  {
-    title: "Link Building",
-    description: "Acquire a steady stream of traffic from high-authority websites and increase your consumer trust. Our internet marketing agency capitalizes on paid advertisements, sponsorships and collaborations to put your page content where influential people will see them. We utilize strategic guest blogging, publish unique, compelling content, distribute data-driven infographics and boost your social media engagement. In this way, we build quality backlinks that drive more sales.",
-  },
-  {
-    title: "Web Design & Development",
-    description: "Thrive builds custom, mobile-ready and search engine optimized websites that help you meet your business objectives and support your digital marketing campaigns. We create a visual hierarchy to highlight your important site elements and encourage page visitors to take your desired action. Our web design experts utilize clear calls-to-action (CTAs), avoid carousels and rotating sliders, simplify form fields and create content for your persona.",
-  },
+    {
+        title: "Data-driven Digital Marketing Services",
+        description: "Research and data are essential parts of business success. Deliver the right message at the right time using the right platform with Thrive’s results-oriented digital marketing services. We analyze your brand’s strengths, weaknesses, opportunities and threats (SWOT) to create up-to-date metrics and generate actionable insights.",
+        icon: <FaChartLine className='service-icon2' /> // Add an icon
+    },
+    {
+        title: "Industry Experts",
+        description: "Thrive is composed of digital marketing professionals who have more than 10 years of industry experience. We keep track of the latest trends and innovations, develop goal-oriented strategies and ensure all our campaigns meet search engine guidelines. Whether you need support in Walmart Marketplace integration, Shopify SEO or other digital marketing services, we can help you.",
+        icon: <FaIndustry className='service-icon2' /> // Add an icon
+    },
+    {
+        title: "Custom Digital Marketing Framework",
+        description: "Our internet marketing company takes a 360-degree approach to online marketing. We review your current marketing strategies and digital presence, set key performance indicators (KPIs), identify your brand personality and integrate your customer experience in all levels of your strategy-building. In doing so, we create a structured marketing framework that optimizes all your digital touchpoints.",
+        icon: <FaCogs className='service-icon2' /> // Add an icon
+    },
+    {
+        title: "Omnichannel Personalization",
+        description: "Results of a RedPoint Global survey by The Harris Poll revealed that 63 percent of consumers expect personalized brand experiences as the standard of service. At Thrive, we perform audience analyses and needs assessments to develop customized internet marketing strategies that drive more business. Omnichannel personalization increases your revenue and boosts brand loyalty.",
+        icon: <FaUserFriends className='service-icon2' /> // Add an icon
+    },
+    {
+        title: "Campaign Monitoring and Evaluation",
+        description: "How do you know if the digital marketing services work for your firm? At Thrive, we establish your campaign metrics and perform regular monitoring and evaluation to determine your strategies' success. Using Google Analytics results, we adjust your online marketing tactics and improve your approach to audience targeting to put you in a stronger financial position.",
+        icon: <FaCalendarCheck className='service-icon2' /> // Add an icon
+    },
+    {
+        title: "Competitive Pricing",
+        description: "Thrive Internet Marketing Agency is a customer-centric digital marketing company. We shape our internet marketing services based on your industry demands, online needs and financial capacity. In this way, we help you acquire the online attention you need without breaking the bank. We also provide white label services that offer huge ROI for your SEO agency.",
+        icon: <FaMoneyBillWave className='service-icon2' /> // Add an icon
+    },
 ];
 
-function Whychosecard3() {
-  return (
-    <div className='container-digital3'>
-      <div className='seo-container3'>
-        {services.map((service, index) => (
-          <Card 
-            key={index}
-            title={service.title}
-            style={{ margin: '0.5rem', background: 'none', boxShadow: 'none' }} 
-          >
-            <p>{service.description}</p>
-          </Card>
-        ))}
-      </div>
-    </div>
-  );
+
+function Whychosecard1() {
+    return (
+        <div className='container-digital3'>
+            <div className='seo-container3'>
+                {services.map((service, index) => (
+                    <Card
+                        className='ant-card-why'
+                        key={index}
+                        title={
+                            <div className='card-title'>
+                                {service.icon}
+                                {service.title}
+                            </div>
+                        }
+                        style={{ margin: '0.5rem', background: 'none', boxShadow: 'none' }}
+                    >
+                        <p>{service.description}</p>
+                    </Card>
+                ))}
+            </div>
+        </div>
+    );
 }
 
-export default Whychosecard3;
+export default Whychosecard1;

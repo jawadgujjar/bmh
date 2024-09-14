@@ -12,6 +12,7 @@ import Whychosecard1 from '../digital marketing/whychosecard'
 import Rewarddigital1 from '../digital marketing/rewarddigital'
 import Faqdigitalmarketing1 from '../components/faqdigitalmarketing'
 import Form1 from '../components/herosection/form'
+import Landingcontact from '../components/landingcontact'
 
 function Digitalmarketingmain() {
     return (
@@ -29,7 +30,7 @@ function Digitalmarketingmain() {
             <Rewarddigital1/>
             <Faqdigitalmarketing1/>
             <Form1/>
-          
+            <Landingcontact/>
         </div>
     )
 }

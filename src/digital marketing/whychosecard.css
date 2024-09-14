@@ -34,7 +34,7 @@
     /* Ensure the grid takes full width of its container */
 }
 
-.ant-card {
+.ant-card-why {
     border: none !important;
     /* Remove the card border */
     background: transparent !important;
@@ -78,6 +78,7 @@
     background-color: white !important;
     border: 2px solid rgb(253, 126, 20) !important;
 }
+ 
 
 @media (max-width: 1024px) {
     .seo-container3 {
