@@ -22,7 +22,7 @@
 .form-heading {
     text-align: center;
     font-weight: 700;
-    margin-bottom: 1.5rem; /* Reduced margin */
+    margin-bottom: 1rem; /* Reduced margin */
     color: #333; /* Darker text color for readability */
     text-transform: uppercase;
 }
@@ -94,6 +94,7 @@
 .h6-form {
     text-align: center;
     color: #333; /* Darker text color */
+    margin: 2rem;
 }
 
 /* Phone link styling */
@@ -112,13 +113,16 @@
     display: flex;
     gap: 16px;
     flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
-    margin-bottom: 1rem; /* Space between rows */
-}
+ }
+ .ant-form-item{
+    margin-bottom: 0rem !important
+ }
 
 .form-item-row .ant-form-item {
     flex: 1; /* Ensures items take up available space */
     min-width: 0; /* Prevents items from shrinking too much */
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -145,3 +149,5 @@
 
 
 }
+
+/* .......................... */

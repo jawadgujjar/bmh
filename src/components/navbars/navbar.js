@@ -9,8 +9,8 @@ import { BiWorld } from "react-icons/bi";
 import { GiPublicSpeaker } from "react-icons/gi";
 import { HiDeviceMobile, HiSearch } from "react-icons/hi"; // Added HiSearch for search icon
 import { Col, Row } from 'react-bootstrap';
-import "./Navbrr.css";
 import Modal1 from '../modal';
+import "./navbar.css";
 
 function NavbarBmh() {
     const [navbarBackground, setNavbarBackground] = useState(false);
@@ -85,11 +85,26 @@ function NavbarBmh() {
                                         <Col xs={12} sm={6} md={4} lg={3}>
                                             <div className='image-h6'>
                                                 <GiPublicSpeaker />
-                                                <p className='dropdown-links'>Marketing</p>
+                                                <Link style={{ textDecoration: "none" }} to="digital-marketing"> <p className='dropdown-links' >Digital Marketing</p></Link>
                                             </div>
-                                            <NavDropdown.Item as={Link} to="/digitalmarketingmain">Digital Marketing</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/seopage">SEO Services</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">Social Media Marketing</NavDropdown.Item>
+                                            <br />
+                                            <NavDropdown.Item as={Link} to="/seopage">•	SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Local SEO</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Hire SEO Consultant</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Dental SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Cosmetics SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Fitness Marketing SEO</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Fashion SEO Services</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Jewelry SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Vaping SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Cannabis Marketing & SEO Services</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Delta 8 CBD SEO Marketing Services</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Ammunition and Gun Marketing Services</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Automotive SEO Services and Car Rental Marketing</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Small Business SEO Services</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Lead Generation SEO</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Ecommerce SEO</NavDropdown.Item>
+
                                         </Col>
 
                                         <Col xs={12} sm={6} md={4} lg={3}>

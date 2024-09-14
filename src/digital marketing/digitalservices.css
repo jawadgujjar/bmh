@@ -1,5 +1,6 @@
-.ant-card-head-title {
-    text-decoration: underline !important; /* Force underline to appear */
+.ant-card-digital-head-title {
+    text-decoration: underline !important;
+    /* Force underline to appear */
 }
 
 .container-digital {
@@ -38,7 +39,7 @@
     /* Ensure the grid takes full width of its container */
 }
 
-.ant-card {
+.ant-digital {
     border: none !important;
     /* Remove the card border */
     background: transparent !important;
@@ -47,12 +48,12 @@
     /* Remove the card shadow */
 }
 
-.ant-card-head {
+.ant-card-digital-head-digital {
     border-bottom: none !important;
     /* Remove the bottom border of the card title */
 }
 
-.ant-card-head-title {
+.ant-card-digital-head-title {
     font-size: 1.25rem;
     /* Adjust title font size if needed */
     font-weight: bold;
@@ -60,18 +61,23 @@
 }
 
 .card-title-link {
-    color: inherit; /* Inherit color from parent to match the card title styling */
-    text-decoration: underline; /* Add underline */
+    color: inherit;
+    /* Inherit color from parent to match the card title styling */
+    text-decoration: underline;
+    /* Add underline */
 }
 
 .card-title-link:hover {
-    color: #6b6c6d; /* Change color on hover (optional) */
-    text-decoration: underline; /* Ensure underline stays on hover */
+    color: #6b6c6d;
+    /* Change color on hover (optional) */
+    text-decoration: underline;
+    /* Ensure underline stays on hover */
 }
 
 .digital-button {
     display: flex;
-    justify-content: center; /* Center the button horizontally */
+    justify-content: center;
+    /* Center the button horizontally */
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -91,6 +97,13 @@
     background-color: white(253, 126, 20) !important;
     border: 2px solid rgb(253, 126, 20) !important;
 }
+.service-icon-1 {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-right: 8px; /* Space between icon and title */
+    vertical-align: middle; /* Align icon with text */
+    color: #080808; /* Icon color (match to your design) */
+}
+
 
 @media (max-width: 1024px) {
     .seo-container {
@@ -103,7 +116,7 @@
     .seo-container {
         grid-template-columns: 1fr;
         /* One column on small screens */
-       text-align: center;
+        text-align: center;
     }
 }
 
@@ -130,6 +143,7 @@
         /* Adjust font size for smaller screens */
     }
 }
+
 @media (max-width: 425px) {
 
     .proposal-button1 {

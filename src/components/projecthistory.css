@@ -2,14 +2,16 @@
 
 .project-history {
     padding: 60px 0;
-    /* Dark background for contrast */
+    /* Adjust padding for smaller screens */
 }
 
 .projects2 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
+    padding: 0 20px;
+    /* Add padding to prevent content from touching screen edges */
+    box-sizing: border-box;
 }
 
 .section-title {
@@ -29,18 +31,19 @@
 .row {
     display: flex;
     justify-content: center;
-    /* Center align items horizontally */
+    flex-wrap: wrap;
+    /* Ensures content wraps on smaller screens */
     text-align: center;
+    margin: 0 -15px;
+    /* Prevent overflow due to margin between columns */
 }
 
 .col-md-4 {
-    flex: 1;
-    max-width: 33.333%;
-    /* Ensure that columns fit into three columns layout */
-    margin: 0 15px;
-    /* Add margin for spacing between columns */
+    flex: 1 1 33%;
+    /* Make each column 33% width */
+    margin: 15px;
+    /* Adjust margin to prevent extra space */
     box-sizing: border-box;
-    /* Ensure padding and borders are included in the width */
 }
 
 .stat-card {
@@ -50,7 +53,6 @@
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 1rem;
-    
 }
 
 .stat-card:hover {
@@ -105,11 +107,12 @@
     .row {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     .col-md-4 {
         margin-bottom: 20px;
-        max-width: 100%;
+        max-width: 90% !important;
     }
 }
 
@@ -117,11 +120,10 @@
     .row {
         flex-direction: column;
         align-items: center;
-        margin-left: -2.6rem;
     }
 
     .col-md-4 {
+        max-width: 90% !important;
         margin-bottom: 20px;
-        max-width: 100%;
     }
 }

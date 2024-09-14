@@ -7,6 +7,12 @@ import Whyyouneed1 from '../digital marketing/whyyouneed'
 import Reviews from '../components/Reviews'
 import Howdigital from '../digital marketing/howdigital'
 import Cardsdigital from '../digital marketing/cardsdigital'
+import Whychose1 from '../digital marketing/whychose'
+import Whychosecard1 from '../digital marketing/whychosecard'
+import Rewarddigital1 from '../digital marketing/rewarddigital'
+import Faqdigitalmarketing1 from '../components/faqdigitalmarketing'
+import Form1 from '../components/herosection/form'
+import Landingcontact from '../components/landingcontact'
 
 function Digitalmarketingmain() {
     return (
@@ -19,7 +25,12 @@ function Digitalmarketingmain() {
             <Cardsdigital />
             <Digitalservices1/>
             <Whyyouneed1 />
-          
+            <Whychose1/>
+            <Whychosecard1/>
+            <Rewarddigital1/>
+            <Faqdigitalmarketing1/>
+            <Form1/>
+            <Landingcontact/>
         </div>
     )
 }
