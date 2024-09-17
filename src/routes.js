@@ -20,6 +20,8 @@ import Socialmediamarketing1 from './components/socialmediamarketing';
 import Ecommercedevelopment1 from './components/ecommercedevelopment';
 import NavbarBmh from './components/navbars/navbar';
 import Digitalmarketingmain from './pages/digitalmarketingmain';
+import Hireseo from './pages/hireseo';
+import Dentalseo from './pages/dentalseo';
 
 const AppRoutes = () => {
     return (
@@ -46,6 +48,11 @@ const AppRoutes = () => {
                     <Route path="/appdevelopment" element={<Appdevelopment1 />} />
                     <Route path="/socialmediamarketing" element={<Socialmediamarketing1 />} />
                     <Route path="/ecommercedevelopment" element={<Ecommercedevelopment1 />} />
+                    <Route path="/hireseoconsultant" element={<Hireseo />} />
+                    <Route path="/Dentalseo" element={<Dentalseo />} />
+
+                    
+
                 </Routes>
                 <Footer12 />
             </>

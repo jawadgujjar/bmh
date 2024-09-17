@@ -90,8 +90,8 @@ function NavbarBmh() {
                                             <br />
                                             <NavDropdown.Item as={Link} to="/seopage">•	SEO Company</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Local SEO</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Hire SEO Consultant</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Dental SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/hireseoconsultant">• Hire SEO Consultant</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/dentalseo">• Dental SEO Company</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Cosmetics SEO Company</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Fitness Marketing SEO</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Fashion SEO Services</NavDropdown.Item>
@@ -112,6 +112,8 @@ function NavbarBmh() {
                                                 <BiWorld />
                                                 <p className='dropdown-links'>Web Development</p>
                                             </div>
+                                            <br />
+
                                             <NavDropdown.Item as={Link} to="/webdevelopmentpage">Website Design</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/ecommercedevelopment">E-commerce Development</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/custom-software">Custom Software</NavDropdown.Item>
@@ -122,6 +124,8 @@ function NavbarBmh() {
                                                 <HiDeviceMobile />
                                                 <p className='dropdown-links'>App Development</p>
                                             </div>
+                                            <br />
+
                                             <NavDropdown.Item as={Link} to="/appdevelopment">App Development</NavDropdown.Item>
                                         </Col>
                                     </Row>
