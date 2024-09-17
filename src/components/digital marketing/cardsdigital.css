@@ -1,0 +1,52 @@
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Ensures that cards wrap on smaller screens */
+    padding: 20px;
+    text-align: center;
+}
+
+.image-digitalcard {
+    height: 13rem;
+    width: 20rem !important;
+}
+
+.digital-card {
+    width: 20rem;
+    background-color: white !important;
+}
+
+.card-div {
+    background-color: white;
+    padding: 0.5rem;
+    width: auto;
+    text-align: center;
+    height: 7rem;
+}
+
+.title-digital {
+    font-size: medium;
+    font-weight: bold;
+}
+.percent-text{
+    font-weight: 700;
+    font-size: larger;
+}
+.divline{
+    height: 4rem;
+    width: 0.1px;
+    background-color: black;
+}
+.margt-cardtext{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 90%;
+}
+@media (max-width: 1100px) {
+
+    .digital-card {
+        margin-bottom: 2rem;
+    }
+
+}

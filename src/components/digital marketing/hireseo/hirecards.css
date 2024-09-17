@@ -1,0 +1,52 @@
+.hirecards-container {
+    padding: 20px;
+}
+
+.hirecard {
+    text-align: center;
+    border: none !important;
+    border-radius: 8px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.card-icon {
+    font-size: 40px;
+    color: rgb(253, 126, 20);
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+hirecard-p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hirecard {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
