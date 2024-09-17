@@ -1,6 +1,8 @@
 import React from 'react'
 import Seo1 from '../components/seo';
 import FAQseo from '../components/faqseo';
+ 
+ 
 
 
 function Seopage1() {
@@ -8,6 +10,7 @@ function Seopage1() {
     <div>
         <Seo1/>
         <FAQseo/>
+         
 
     </div>
   )

@@ -88,7 +88,7 @@ function NavbarBmh() {
                                                 <Link style={{ textDecoration: "none" }} to="digital-marketing"> <p className='dropdown-links' >Digital Marketing</p></Link>
                                             </div>
                                             <br />
-                                            <NavDropdown.Item as={Link} to="/seopage">•	SEO Company</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/seocompany">•	SEO Company</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Local SEO</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Hire SEO Consultant</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Dental SEO Company</NavDropdown.Item>

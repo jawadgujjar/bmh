@@ -1,0 +1,34 @@
+.finally-head{
+text-align: center;
+font-size: 1.7rem;
+font-weight: bold;  
+padding-top: 1rem;
+}
+.finally-subhead{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.btn{
+   display: flex !important;
+   justify-content: center !important;
+  
+
+}
+.button-seo{
+    color: white;
+    background-color: rgb(253, 126, 20);
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    height: 3rem;
+    width: 28rem;
+}
+.button-seo:hover {
+    color: rgb(253, 126, 20) !important;
+    background-color: white !important;
+    border: 2px solid rgb(253, 126, 20) !important;
+}
+.fin{
+    background-color: rgb(243,243,243);
+    
+}

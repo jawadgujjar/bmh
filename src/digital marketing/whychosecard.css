@@ -1,126 +1,42 @@
-.container-digital3 {
-    margin-top: 3rem;
-    padding: 0 1rem;
-    /* Add some horizontal padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center align the container content */
-}
-
-.text1-digital3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.text2-digital3 {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    /* Reduced space between the text elements and cards */
+.container-digital4 {
+    padding: 1rem;
 }
 
 .seo-container3 {
-    display: grid;
-    /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr);
-    /* Three columns by default */
-    gap: 0.5rem;
-    /* Reduced space between cards */
-    max-width: auto;
-    /* Limit max width of the grid */
-    width: auto;
-    /* Ensure the grid takes full width of its container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .ant-card-why {
-    border: none !important;
-    /* Remove the card border */
-    background: transparent !important;
-    /* Make the card background transparent */
-    box-shadow: none !important;
-    /* Remove the card shadow */
-}
-
-.ant-card-head {
-    border-bottom: none !important;
-    /* Remove the bottom border of the card title */
-}
-
-.ant-card-head-title {
-    font-size: 1.25rem;
-    /* Adjust title font size if needed */
-    font-weight: bold;
-    /* Make title bold if needed */
-    text-decoration: none; /* Ensure no underline */
-}
-
-.digital-button3 {
-    display: flex;
-    justify-content: center; /* Center the button horizontally */
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
-
-.proposal-button13 {
-    color: white;
-    background-color: rgb(253, 126, 20);
+    flex: 1 1 calc(33.333% - 1rem); /* Three cards in a row with spacing */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     border: none;
-    font-size: large;
-    font-weight: bold;
-    height: 3rem;
-    width: 22rem;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
 }
 
-.proposal-button13:hover {
-    color: rgb(253, 126, 20) !important;
-    background-color: white !important;
-    border: 2px solid rgb(253, 126, 20) !important;
+.card-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
- 
 
-@media (max-width: 1024px) {
-    .seo-container3 {
-        grid-template-columns: repeat(2, 1fr);
-        /* Two columns on medium screens */
-    }
+.service-icon2 {
+    margin-right: 0.5rem;
 }
 
 @media (max-width: 768px) {
-    .seo-container3 {
-        grid-template-columns: 1fr;
-        /* One column on small screens */
-        text-align: center;
+    .ant-card-why {
+        flex: 1 1 calc(50% - 1rem); /* Two cards per row on smaller screens */
     }
 }
 
-@media (max-width: 425px) {
-    .text1-digital3 {
-        font-size: 1.25rem;
-        /* Adjust font size for smaller screens */
-    }
-
-    .text2-digital3 {
-        font-size: 1rem;
-        /* Adjust font size for smaller screens */
-    }
-}
-
-@media (max-width: 375px) {
-    .text1-digital3 {
-        font-size: 1.25rem;
-        /* Adjust font size for smaller screens */
-    }
-
-    .text2-digital3 {
-        font-size: 1rem;
-        /* Adjust font size for smaller screens */
-    }
-}
-
-@media (max-width: 425px) {
-    .proposal-button13 {
-        font-size: medium;
+@media (max-width: 480px) {
+    .ant-card-why {
+        flex: 1 1 100%; /* One card per row on very small screens */
     }
 }
