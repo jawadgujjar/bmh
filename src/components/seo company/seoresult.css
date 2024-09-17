@@ -1,0 +1,129 @@
+/* src/components/ProjectHistory.css */
+
+.project-history {
+    padding: 60px 0;
+    /* Adjust padding for smaller screens */
+}
+
+.projects2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    /* Add padding to prevent content from touching screen edges */
+    box-sizing: border-box;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    /* Space between heading and the statistics */
+    color: black;
+    font-weight: bold;
+    position: relative;
+    /* Ensure the title is positioned relative to its normal flow */
+}
+
+.span {
+    color: rgb(253, 126, 20);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Ensures content wraps on smaller screens */
+    text-align: center;
+    margin: 0 -15px;
+    /* Prevent overflow due to margin between columns */
+}
+
+.col-md-4 {
+    flex: 1 1 33%;
+    /* Make each column 33% width */
+    margin: 15px;
+    /* Adjust margin to prevent extra space */
+    box-sizing: border-box;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 3rem;
+    margin: 0;
+    color: #0a0a0a;
+    animation: pulse 1.5s infinite;
+}
+
+.stat-label {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #080808;
+}
+
+.video-sizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.video-player {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .col-md-4 {
+        margin-bottom: 20px;
+        max-width: 90% !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        max-width: 90% !important;
+        margin-bottom: 20px;
+    }
+}

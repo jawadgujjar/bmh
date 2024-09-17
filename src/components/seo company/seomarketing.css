@@ -1,0 +1,27 @@
+.seomarketing-main {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.marketing-text-seo {
+    font-size: 1.7rem;
+    font-weight: bolder;
+}
+
+.special-text-seo {
+    font-weight: bolder;
+}
+
+.all-text-seo {
+    font-size: 1.1rem;
+}
+.bullet-list-seo {
+    list-style-type: disc; /* Adds bullets to the list items */
+    margin-left: 1.5rem; /* Indents the list from the left */
+    padding-left: 0; /* Removes default padding */
+    font-size: 1.1rem; /* Adjust font size if needed */
+}
+
+.bullet-list-seo li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}

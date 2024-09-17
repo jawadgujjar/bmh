@@ -148,7 +148,38 @@
 
     .proposal-button1 {
 
-        font-size: medium;
+        font-size: small;
 
+    }
+}
+/* Additional styles for very small screens */
+@media (max-width: 375px) {
+    .text1-digital {
+        font-size: 1.1rem; /* Further reduce font size for very small screens */
+        margin: 0 0.5rem; /* Add some horizontal margin to avoid touching edges */
+    }
+
+    .text2-digital {
+        font-size: 0.9rem; /* Further reduce font size for very small screens */
+        margin: 0 0.5rem; /* Add some horizontal margin to avoid touching edges */
+    }
+
+    .seo-container {
+        grid-template-columns: 1fr; /* Ensure one column layout on very small screens */
+        text-align: center; /* Center-align text inside the cards */
+    }
+
+    .ant-digital {
+        margin: 0 auto; /* Center the cards horizontally */
+        width: 100%; /* Ensure the cards take full width of their container */
+    }
+
+    .proposal-button1 {
+        font-size: small; /* Adjust button font size */
+        width: 100%; /* Make button width responsive */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
     }
 }

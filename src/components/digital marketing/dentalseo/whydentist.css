@@ -1,0 +1,44 @@
+.dentist-seo-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dentist-text {
+    color: rgb(253, 126, 20);
+}
+
+.dentist-proven-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.dentist-all-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.dentist-all-text span.dentist-special-text {
+    font-weight: bold;
+    color: #1890ff;
+    /* Change this to match your theme color */
+}
+
+.dentist-seo-container p {
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px) {
+    .dentist-proven-text {
+        font-size: 20px;
+    }
+
+    .dentist-all-text {
+        font-size: 16px;
+    }
+}

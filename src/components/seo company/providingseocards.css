@@ -1,0 +1,66 @@
+.seocards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* Ensures that cards wrap on smaller screens */
+    padding: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.image-seocard {
+    height: 13rem;
+    width: 20rem !important;
+}
+
+.seo-card {
+    width: 20rem;
+    background-color: white !important;
+    margin-top: 1rem;
+}
+
+.card-div {
+    background-color: white;
+    padding: 0.5rem;
+    width: auto;
+    text-align: center;
+    height: 7rem;
+}
+
+.title-seo {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.seocard-text {
+    font-weight: 700;
+    font-size: larger;
+}
+
+.seodivline {
+    height: 4rem;
+    width: 0.1px;
+    background-color: black;
+}
+
+.seo-cardtext {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 90%;
+}
+ 
+.texthead{
+font-weight: bold;
+ 
+font-size: 1.7rem;
+}
+.textsubhead{
+    font-size: 1.1rem;}
+.textbody{
+    font-size: 1.1rem;}
+
+@media (max-width: 1100px) {
+    .seo-card {
+        margin-bottom: 2rem;
+    }
+}
