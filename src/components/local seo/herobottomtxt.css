@@ -1,0 +1,28 @@
+.herobottomtxt {
+    text-align: center; /* Center align the text */
+    padding: 1rem; /* Add some padding for better spacing */
+    max-width: 800px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the div horizontally */
+    margin-top: 2rem;
+}
+
+.herobottomtxt p {
+    font-size: 1.2rem; /* Base font size */
+    line-height: 1.5; /* Improve readability */
+}
+.percent{
+ font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .herobottomtxt p {
+        font-size: 0.9rem; /* Slightly smaller font on smaller screens */
+    }
+}
+
+@media (max-width: 425px) {
+    .herobottomtxt p {
+        font-size: 0.8rem; /* Even smaller font on very small screens */
+    }
+}

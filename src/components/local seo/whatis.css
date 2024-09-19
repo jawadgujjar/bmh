@@ -1,0 +1,49 @@
+.what-main {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.what-text-seo {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.all-text-localseo {
+    font-size: 1.1rem;
+}
+.what-text-seo-subheading{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.all-text-localseo1 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+.whatbottomtxt{
+    text-align: center; /* Center align the text */ 
+    max-width: 1150px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the div horizontally */
+    margin-top: 1rem;
+}
+.bullets{
+    text-align: left;
+}
+
+.bullet-list-localseo {
+    list-style-type: disc; /* Adds bullets to the list items */
+    margin-left: 1.5rem; /* Indents the list from the left */
+    padding-left: 0; /* Removes default padding */
+    font-size: 1.1rem; /* Adjust font size if needed */
+}
+
+.bullet-list-localseo li {
+    margin-bottom: 0.5rem; /* Space between list items */
+}
+.hirecard-p1{
+    font-size: 1.2rem   ;
+}
+card-icon h3{
+    font-size: 1.2rem;
+     
+}

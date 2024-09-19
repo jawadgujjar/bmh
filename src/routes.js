@@ -23,6 +23,7 @@ import Digitalmarketingmain from './pages/digitalmarketingmain';
 import Seocompanymain1 from './pages/seocompanymain';
 import Hireseo from './pages/hireseo';
 import Dentalseo from './pages/dentalseo';
+import Localseomain1 from './pages/localseomain';
 
 const AppRoutes = () => {
     return (
@@ -50,6 +51,7 @@ const AppRoutes = () => {
                     <Route path="/socialmediamarketing" element={<Socialmediamarketing1 />} />
                     <Route path="/ecommercedevelopment" element={<Ecommercedevelopment1 />} />
                     <Route path="/seocompany" element={<Seocompanymain1/>} />
+                    <Route path="/localseo" element={<Localseomain1/>} />
                     <Route path="/hireseoconsultant" element={<Hireseo />} />
                     <Route path="/Dentalseo" element={<Dentalseo />} />
 

@@ -30,7 +30,7 @@ const Seohistory1 = () => {
                         </div>
                     </div>
                 </div>
-                <div className='btn'><Button className='button-seo'>CONTACT US TO OUTRANK YOUR COMPETITORS</Button></div>
+                <div className='btn'><Button className='button-seo1'>CONTACT US TO OUTRANK YOUR COMPETITORS</Button></div>
             </div>
 
         </section>

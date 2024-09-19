@@ -89,7 +89,7 @@ function NavbarBmh() {
                                             </div>
                                             <br />
                                             <NavDropdown.Item as={Link} to="/seocompany">•	SEO Company</NavDropdown.Item>
-                                            <NavDropdown.Item as={Link} to="/socialmediamarketing">• Local SEO</NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="/localseo">• Local SEO</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/hireseoconsultant">• Hire SEO Consultant</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/dentalseo">• Dental SEO Company</NavDropdown.Item>
                                             <NavDropdown.Item as={Link} to="/socialmediamarketing">• Cosmetics SEO Company</NavDropdown.Item>
