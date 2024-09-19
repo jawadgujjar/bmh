@@ -1,0 +1,53 @@
+.heading1 {
+    text-align: center;
+}
+
+.heading2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.heading3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.heading4 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+.heading5{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.tick {
+    margin-top: 2rem; /* Add spacing above */
+    display: flex;
+    justify-content: center; /* Center the entire section */
+    align-items: center; /* Center items vertically */
+}
+
+@media (max-width: 425px) {
+    .tick {
+        margin-left: 3rem; /* Add left margin for screens 425px and below */
+    }
+}
+
+@media (max-width: 375px) {
+    .tick {
+        margin-left: 3rem; /* Maintain the same margin for screens 375px and below */
+    }
+}
+
+.ready{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+     
+}
+
+

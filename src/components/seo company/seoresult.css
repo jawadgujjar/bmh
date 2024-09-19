@@ -72,7 +72,6 @@
     margin: 0;
     color: #080808;
 }
-
 .video-sizes {
     display: flex;
     justify-content: center;
@@ -84,6 +83,33 @@
     max-width: 100%;
     height: auto;
 
+}
+.button-seo1 {
+    color: white;
+    background-color: rgb(253, 126, 20);
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    height: 3rem;
+    width: 28rem;
+    padding: 0.5rem; /* Add padding for better touch targets */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.button-seo1:hover {
+    color: rgb(253, 126, 20) !important;
+    background-color: white !important;
+    border: 2px solid rgb(253, 126, 20) !important;
+}
+
+@media (max-width: 425px) {
+    .button-seo1 {
+        font-size: small;
+        height: 2.5rem; /* Adjust height for smaller screens */
+        width: 100%; /* Full width on small screens */
+        padding: 0.5rem; /* Adjust padding */
+    }
 }
 
 
@@ -127,3 +153,4 @@
         margin-bottom: 20px;
     }
 }
+ 
